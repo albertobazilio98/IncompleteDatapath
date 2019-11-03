@@ -1,0 +1,50 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+Entity DEMUX is
+    port(
+        S : in std_logic_vector (4 downto 0);
+        E0,E1,E2,E3,E4,E5,E6,E7,E8,E9,E10,E11,E12,E13,E14,E15 : in std_logic_vector(15 downto 0);
+        R : out std_logic_vector(15 downto 0)
+    );
+END DEMUX;
+
+Architecture SELECTOR of DEMUX is
+begin
+    process(R,E0,E1,E2,E3,E4,E5,E6,E7,E8,E9,E10,E11,E12,E13,E14,E15)
+    begin
+      if (S = "0000") then
+         E0 <= R;
+		elsif (S = "0001") then
+         E1 <= R;
+      elsif (S = "0010") then
+         E2 <= R;
+      elsif (S = "0011") then
+         E3 <= R;
+      elsif (S = "0100") then
+         E4 <= R;
+      elsif (S = "0101") then
+         E5 <= R;
+      elsif (S = "0110") then
+         E6 <= R;
+      elsif (S = "0111") then
+         E7 <= R;
+      elsif (S = "1000") then
+         E8 <= R;
+      elsif (S = "1001") then
+         E9 <= R;
+      elsif (S = "1010") then
+         E10 <= R;
+      elsif (S = "1011") then
+         E11 <= R;
+      elsif (S = "1100") then
+         E12 <= R;
+      elsif (S = "1101") then
+         E13 <= R;
+		elsif (S = "1110") then
+         E14 <= R;
+		elsif (S = "1111") then
+         E15 <= R;
+		end if;
+    end process;
+end SELECTOR;
