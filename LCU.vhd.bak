@@ -1,0 +1,5 @@
+entity LCU is -- Lookahead Carry Unit
+  port
+  (
+    
+  )
