@@ -1,0 +1,6 @@
+entity demux2bit is
+  port
+  (
+    e0, e1: in  std_logic_vector(15 downto 0)
+  );
+end demux2bit;

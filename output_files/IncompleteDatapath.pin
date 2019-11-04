@@ -88,10 +88,10 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : A9        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : A10       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A11       :        :                   :         : 8         :                
 GND+                         : A12       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A13       :        :                   :         : 7         :                
+pin_name610                  : A13       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A14       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A15       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A16       :        :                   :         : 7         :                
+pin_name50                   : A15       : input  : 2.5 V             :         : 7         : N              
+pin_name4[11]                : A16       : input  : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A17       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A18       :        :                   :         : 7         :                
 GXB_NC                       : B1        :        :                   :         : QL0       :                
@@ -106,10 +106,10 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : B9        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : B10       :        :                   :         : 8         :                
 GND                          : B11       : gnd    :                   :         :           :                
 GND+                         : B12       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B13       :        :                   :         : 7         :                
+pin_name510                  : B13       : input  : 2.5 V             :         : 7         : N              
 GND                          : B14       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B15       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B16       :        :                   :         : 7         :                
+pin_name511                  : B16       : input  : 2.5 V             :         : 7         : N              
 GND                          : B17       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B18       :        :                   :         : 7         :                
 GND                          : C1        : gnd    :                   :         :           :                
@@ -121,10 +121,10 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : C6        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : C7        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C8        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C9        :        :                   :         : 8         :                
-pin_name33                   : C10       : input  : 2.5 V             :         : 8         : N              
-pin_name30                   : C11       : input  : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : C12       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C13       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C10       :        :                   :         : 8         :                
+pin_name64                   : C11       : output : 2.5 V             :         : 8         : N              
+pin_name611                  : C12       : output : 2.5 V             :         : 7         : N              
+pin_name4[0]                 : C13       : input  : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C14       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C15       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C16       :        :                   :         : 7         :                
@@ -139,15 +139,15 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : D7        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D8        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D9        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D10       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D11       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D12       :        :                   :         : 7         :                
+pin_name54                   : D10       : input  : 2.5 V             :         : 7         : N              
+pin_name60                   : D11       : output : 2.5 V             :         : 7         : N              
+pin_name4[10]                : D12       : input  : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D13       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D14       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D15       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D16       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D17       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D18       :        :                   :         : 6         :                
+pin_name4[9]                 : D17       : input  : 2.5 V             :         : 6         : N              
+pin_name59                   : D18       : input  : 2.5 V             :         : 6         : N              
 GND                          : E1        : gnd    :                   :         :           :                
 GND                          : E2        : gnd    :                   :         :           :                
 TMS                          : E3        : input  :                   :         : 9         :                
@@ -157,13 +157,13 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : E6        :        :                   :      
 VCCIO8                       : E7        : power  :                   : 2.5V    : 8         :                
 GND                          : E8        : gnd    :                   :         :           :                
 VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
-pin_name31                   : E10       : input  : 2.5 V             :         : 7         : N              
+pin_name4[4]                 : E10       : input  : 2.5 V             :         : 7         : N              
 GND                          : E11       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E12       :        :                   :         : 7         :                
 VCCIO7                       : E13       : power  :                   : 2.5V    : 7         :                
 GND                          : E14       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E15       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E16       :        :                   :         : 6         :                
+pin_name615                  : E15       : output : 2.5 V             :         : 6         : N              
+pin_name69                   : E16       : output : 2.5 V             :         : 6         : N              
 GND                          : E17       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E18       :        :                   :         : 6         :                
 GXB_NC                       : F1        :        :                   :         : QL0       :                
@@ -181,8 +181,8 @@ VCCIO7                       : F12       : power  :                   : 2.5V    
 GND                          : F13       : gnd    :                   :         :           :                
 VCCD_PLL                     : F14       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F15       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F16       :        :                   :         : 6         :                
-pin_name6[1]                 : F17       : output : 2.5 V             :         : 6         : N              
+pin_name4[15]                : F16       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F17       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F18       :        :                   :         : 6         :                
 GND                          : G1        : gnd    :                   :         :           :                
 GND                          : G2        : gnd    :                   :         :           :                
@@ -201,7 +201,7 @@ VCCIO6                       : G14       : power  :                   : 2.5V    
 RESERVED_INPUT_WITH_WEAK_PULLUP : G15       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G16       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G17       :        :                   :         : 6         :                
-pin_name7[1]                 : G18       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G18       :        :                   :         : 6         :                
 GXB_GND*                     : H1        :        :                   :         : QL0       :                
 GXB_GND*                     : H2        :        :                   :         : QL0       :                
 VCCL_GXB                     : H3        : power  :                   : 1.2V    :           :                
@@ -219,7 +219,7 @@ GND                          : H14       : gnd    :                   :         
 VCCIO6                       : H15       : power  :                   : 2.5V    : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H16       :        :                   :         : 6         :                
 GND                          : H17       : gnd    :                   :         :           :                
-pin_name11                   : H18       : input  : 2.5 V             :         : 6         : N              
+GND+                         : H18       :        :                   :         : 6         :                
 GND                          : J1        : gnd    :                   :         :           :                
 GND                          : J2        : gnd    :                   :         :           :                
 VCCA_GXB                     : J3        : power  :                   : 2.5V    :           :                
@@ -235,9 +235,9 @@ VCCINT                       : J12       : power  :                   : 1.2V    
 GND                          : J13       : gnd    :                   :         :           :                
 VCCINT                       : J14       : power  :                   : 1.2V    :           :                
 VCCIO6                       : J15       : power  :                   : 2.5V    : 6         :                
-pin_name7[5]                 : J16       : output : 2.5 V             :         : 6         : N              
-pin_name6[5]                 : J17       : output : 2.5 V             :         : 6         : N              
-pin_name10                   : J18       : input  : 2.5 V             :         : 6         : N              
+pin_name4[6]                 : J16       : input  : 2.5 V             :         : 6         : N              
+pin_name66                   : J17       : output : 2.5 V             :         : 6         : N              
+GND+                         : J18       :        :                   :         : 6         :                
 GXB_NC                       : K1        :        :                   :         : QL0       :                
 GXB_NC                       : K2        :        :                   :         : QL0       :                
 VCCL_GXB                     : K3        : power  :                   : 1.2V    :           :                
@@ -252,8 +252,8 @@ VCCINT                       : K11       : power  :                   : 1.2V    
 GND                          : K12       : gnd    :                   :         :           :                
 VCCINT                       : K13       : power  :                   : 1.2V    :           :                
 VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
-pin_name7[7]                 : K15       : output : 2.5 V             :         : 5         : N              
-pin_name4[7]                 : K16       : input  : 2.5 V             :         : 5         : N              
+pin_name53                   : K15       : input  : 2.5 V             :         : 5         : N              
+pin_name63                   : K16       : output : 2.5 V             :         : 5         : N              
 GND+                         : K17       :        :                   :         : 5         :                
 GND+                         : K18       :        :                   :         : 5         :                
 GND                          : L1        : gnd    :                   :         :           :                
@@ -270,10 +270,10 @@ GND                          : L11       : gnd    :                   :         
 VCCINT                       : L12       : power  :                   : 1.2V    :           :                
 VCCA                         : L13       : power  :                   : 2.5V    :           :                
 GND                          : L14       : gnd    :                   :         :           :                
-pin_name6[12]                : L15       : output : 2.5 V             :         : 5         : N              
-pin_name6[13]                : L16       : output : 2.5 V             :         : 5         : N              
+pin_name52                   : L15       : input  : 2.5 V             :         : 5         : N              
+pin_name62                   : L16       : output : 2.5 V             :         : 5         : N              
 GND                          : L17       : gnd    :                   :         :           :                
-pin_name4[5]                 : L18       : input  : 2.5 V             :         : 5         : N              
+pin_name4[3]                 : L18       : input  : 2.5 V             :         : 5         : N              
 GXB_GND*                     : M1        :        :                   :         : QL0       :                
 GXB_GND*                     : M2        :        :                   :         : QL0       :                
 VCCL_GXB                     : M3        : power  :                   : 1.2V    :           :                
@@ -289,9 +289,9 @@ GND                          : M12       : gnd    :                   :         
 GND                          : M13       : gnd    :                   :         :           :                
 VCCD_PLL                     : M14       : power  :                   : 1.2V    :           :                
 VCCIO5                       : M15       : power  :                   : 2.5V    : 5         :                
-pin_name7[10]                : M16       : output : 2.5 V             :         : 5         : N              
-pin_name4[2]                 : M17       : input  : 2.5 V             :         : 5         : N              
-pin_name4[1]                 : M18       : input  : 2.5 V             :         : 5         : N              
+pin_name67                   : M16       : output : 2.5 V             :         : 5         : N              
+pin_name4[7]                 : M17       : input  : 2.5 V             :         : 5         : N              
+pin_name56                   : M18       : input  : 2.5 V             :         : 5         : N              
 GND                          : N1        : gnd    :                   :         :           :                
 GND                          : N2        : gnd    :                   :         :           :                
 VCCA_GXB                     : N3        : power  :                   : 2.5V    :           :                
@@ -306,10 +306,10 @@ VCCIO4                       : N11       : power  :                   : 2.5V    
 VCCIO4                       : N12       : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : N13       : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : N14       : power  :                   : 2.5V    : 4         :                
-pin_name6[9]                 : N15       : output : 2.5 V             :         : 5         : N              
-pin_name4[8]                 : N16       : input  : 2.5 V             :         : 5         : N              
-pin_name4[10]                : N17       : input  : 2.5 V             :         : 5         : N              
-pin_name4[13]                : N18       : input  : 2.5 V             :         : 5         : N              
+pin_name513                  : N15       : input  : 2.5 V             :         : 5         : N              
+pin_name4[13]                : N16       : input  : 2.5 V             :         : 5         : N              
+pin_name57                   : N17       : input  : 2.5 V             :         : 5         : N              
+pin_name4[2]                 : N18       : input  : 2.5 V             :         : 5         : N              
 GXB_NC                       : P1        :        :                   :         : QL0       :                
 GXB_NC                       : P2        :        :                   :         : QL0       :                
 GND                          : P3        : gnd    :                   :         :           :                
@@ -319,15 +319,15 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : P6        :        :                   :      
 VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
 GND                          : P8        : gnd    :                   :         :           :                
 VCCIO3                       : P9        : power  :                   : 2.5V    : 3         :                
-pin_name6[14]                : P10       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P10       :        :                   :         : 3         :                
 GND                          : P11       : gnd    :                   :         :           :                
-pin_name6[3]                 : P12       : output : 2.5 V             :         : 4         : N              
-pin_name4[3]                 : P13       : input  : 2.5 V             :         : 4         : N              
+pin_name51                   : P12       : input  : 2.5 V             :         : 4         : N              
+pin_name4[1]                 : P13       : input  : 2.5 V             :         : 4         : N              
 GND                          : P14       : gnd    :                   :         :           :                
-pin_name6[6]                 : P15       : output : 2.5 V             :         : 4         : N              
-pin_name7[4]                 : P16       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P15       :        :                   :         : 4         :                
+pin_name613                  : P16       : output : 2.5 V             :         : 5         : N              
 GND                          : P17       : gnd    :                   :         :           :                
-pin_name6[8]                 : P18       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P18       :        :                   :         : 5         :                
 GND                          : R1        : gnd    :                   :         :           :                
 GND                          : R2        : gnd    :                   :         :           :                
 GND                          : R3        : gnd    :                   :         :           :                
@@ -337,15 +337,15 @@ MSEL1                        : R5        :        :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : R7        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R8        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R9        :        :                   :         : 3         :                
-pin_name7[14]                : R10       : output : 2.5 V             :         : 3         : N              
-pin_name4[9]                 : R11       : input  : 2.5 V             :         : 4         : N              
-pin_name2                    : R12       : input  : 2.5 V             :         : 4         : N              
-pin_name4[15]                : R13       : input  : 2.5 V             :         : 4         : N              
-pin_name7[13]                : R14       : output : 2.5 V             :         : 4         : N              
+pin_name68                   : R10       : output : 2.5 V             :         : 3         : N              
+pin_name614                  : R11       : output : 2.5 V             :         : 4         : N              
+pin_name4[12]                : R12       : input  : 2.5 V             :         : 4         : N              
+pin_name61                   : R13       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R14       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R15       :        :                   :         : 4         :                
-pin_name4[12]                : R16       : input  : 2.5 V             :         : 5         : N              
-pin_name6[10]                : R17       : output : 2.5 V             :         : 5         : N              
-pin_name6[2]                 : R18       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R16       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R17       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R18       :        :                   :         : 5         :                
 GXB_GND*                     : T1        :        :                   :         : QL0       :                
 GXB_GND*                     : T2        :        :                   :         : QL0       :                
 GND                          : T3        : gnd    :                   :         :           :                
@@ -354,16 +354,16 @@ MSEL0                        : T5        :        :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : T6        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T7        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T8        :        :                   :         : 3         :                
-pin_name6[7]                 : T9        : output : 2.5 V             :         : 3         : N              
-pin_name32                   : T10       : input  : 2.5 V             :         : 3         : N              
-pin_name4[14]                : T11       : input  : 2.5 V             :         : 4         : N              
-pin_name4[11]                : T12       : input  : 2.5 V             :         : 4         : N              
-pin_name7[3]                 : T13       : output : 2.5 V             :         : 4         : N              
-pin_name6[0]                 : T14       : output : 2.5 V             :         : 4         : N              
-pin_name7[12]                : T15       : output : 2.5 V             :         : 4         : N              
-pin_name4[6]                 : T16       : input  : 2.5 V             :         : 4         : N              
-pin_name3                    : T17       : input  : 2.5 V             :         : 4         : N              
-pin_name7[8]                 : T18       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T9        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T10       :        :                   :         : 3         :                
+pin_name514                  : T11       : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T12       :        :                   :         : 4         :                
+pin_name4[5]                 : T13       : input  : 2.5 V             :         : 4         : N              
+pin_name65                   : T14       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T15       :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T16       :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T17       :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T18       :        :                   :         : 5         :                
 GND                          : U1        : gnd    :                   :         :           :                
 GND                          : U2        : gnd    :                   :         :           :                
 NC                           : U3        :        :                   :         :           :                
@@ -373,15 +373,15 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : U6        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : U7        :        :                   :         : 3         :                
 GND                          : U8        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U9        :        :                   :         : 3         :                
-pin_name7[9]                 : U10       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U10       :        :                   :         : 3         :                
 GND                          : U11       : gnd    :                   :         :           :                
-pin_name7[15]                : U12       : output : 2.5 V             :         : 4         : N              
-pin_name7[11]                : U13       : output : 2.5 V             :         : 4         : N              
+pin_name4[14]                : U12       : input  : 2.5 V             :         : 4         : N              
+pin_name58                   : U13       : input  : 2.5 V             :         : 4         : N              
 GND                          : U14       : gnd    :                   :         :           :                
-pin_name7[2]                 : U15       : output : 2.5 V             :         : 4         : N              
-pin_name7[0]                 : U16       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U15       :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U16       :        :                   :         : 4         :                
 GND                          : U17       : gnd    :                   :         :           :                
-pin_name12                   : U18       : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U18       :        :                   :         : 4         :                
 RREF                         : V1        :        :                   :         :           :                
 GND                          : V2        : gnd    :                   :         :           :                
 NC                           : V3        :        :                   :         :           :                
@@ -390,13 +390,13 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : V5        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : V6        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V7        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V8        :        :                   :         : 3         :                
-pin_name6[4]                 : V9        : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V9        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V10       :        :                   :         : 3         :                
-pin_name1                    : V11       : input  : 2.5 V             :         : 4         : N              
-pin_name0                    : V12       : input  : 2.5 V             :         : 4         : N              
-pin_name6[11]                : V13       : output : 2.5 V             :         : 4         : N              
-pin_name6[15]                : V14       : output : 2.5 V             :         : 4         : N              
-pin_name4[4]                 : V15       : input  : 2.5 V             :         : 4         : N              
-pin_name4[0]                 : V16       : input  : 2.5 V             :         : 4         : N              
-pin_name7[6]                 : V17       : output : 2.5 V             :         : 4         : N              
-pin_name13                   : V18       : input  : 2.5 V             :         : 4         : N              
+pin_name6                    : V11       : input  : 2.5 V             :         : 4         : N              
+pin_name515                  : V12       : input  : 2.5 V             :         : 4         : N              
+pin_name4[8]                 : V13       : input  : 2.5 V             :         : 4         : N              
+pin_name612                  : V14       : output : 2.5 V             :         : 4         : N              
+pin_name512                  : V15       : input  : 2.5 V             :         : 4         : N              
+pin_name55                   : V16       : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V17       :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V18       :        :                   :         : 4         :                
