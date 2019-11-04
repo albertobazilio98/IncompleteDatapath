@@ -4,7 +4,7 @@ use ieee.std_logic_1164.all;
 Entity DEMUX is
     port(
         S : in std_logic_vector (3 downto 0);
-        E0,E1,E2,E3,E4,E5,E6,E7,E8,E9,E10,E11,E12,E13,E14,E15 : out std_logic_vector(15 downto 0);
+        D0,D1,D2,D3,D4,D5,D6,D7,D8,D9,Da,Db,Dc,Dd,De,Df : out std_logic_vector(15 downto 0);
         R : in std_logic_vector(15 downto 0)
     );
 END DEMUX;
@@ -14,37 +14,37 @@ begin
     process(S, R)
     begin
       if (S = "0000") then
-         E0 <= R;
+         D0 <= R;
 		elsif (S = "0001") then
-         E1 <= R;
+         D1 <= R;
       elsif (S = "0010") then
-         E2 <= R;
+         D2 <= R;
       elsif (S = "0011") then
-         E3 <= R;
+         D3 <= R;
       elsif (S = "0100") then
-         E4 <= R;
+         D4 <= R;
       elsif (S = "0101") then
-         E5 <= R;
+         D5 <= R;
       elsif (S = "0110") then
-         E6 <= R;
+         D6 <= R;
       elsif (S = "0111") then
-         E7 <= R;
+         D7 <= R;
       elsif (S = "1000") then
-         E8 <= R;
+         D8 <= R;
       elsif (S = "1001") then
-         E9 <= R;
+         D9 <= R;
       elsif (S = "1010") then
-         E10 <= R;
+         Da <= R;
       elsif (S = "1011") then
-         E11 <= R;
+         Db <= R;
       elsif (S = "1100") then
-         E12 <= R;
+         Dc <= R;
       elsif (S = "1101") then
-         E13 <= R;
+         Dd <= R;
 		elsif (S = "1110") then
-         E14 <= R;
+         De <= R;
 		elsif (S = "1111") then
-         E15 <= R;
+         Df <= R;
 		end if;
     end process;
 end SELECTOR;
