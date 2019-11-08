@@ -21,15 +21,15 @@ agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 176 144)
+	(rect 16 16 200 144)
 	(text "ALU" (rect 5 0 29 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "aluOp" (rect 0 0 33 14)(font "Arial" (font_size 8)))
-		(text "aluOp" (rect 21 27 54 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
+		(text "aluOp[1..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "aluOp[1..0]" (rect 21 27 82 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
 		(pt 0 48)
@@ -53,13 +53,13 @@ agreement for further details.
 		(line (pt 0 80)(pt 16 80))
 	)
 	(port
-		(pt 160 32)
+		(pt 184 32)
 		(output)
 		(text "result[15..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
-		(text "result[15..0]" (rect 72 27 139 41)(font "Arial" (font_size 8)))
-		(line (pt 160 32)(pt 144 32)(line_width 3))
+		(text "result[15..0]" (rect 96 27 163 41)(font "Arial" (font_size 8)))
+		(line (pt 184 32)(pt 168 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 144 112))
+		(rectangle (rect 16 16 168 112))
 	)
 )

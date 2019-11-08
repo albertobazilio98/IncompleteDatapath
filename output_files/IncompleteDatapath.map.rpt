@@ -1,5 +1,5 @@
 Analysis & Synthesis report for IncompleteDatapath
-Sun Nov 03 22:12:09 2019
+Thu Nov 07 21:42:05 2019
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -43,16 +43,16 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 03 22:12:09 2019      ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 07 21:42:05 2019      ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                      ; IncompleteDatapath                         ;
 ; Top-level Entity Name              ; IncompleteDatapath                         ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 16                                         ;
-;     Total combinational functions  ; 16                                         ;
-;     Dedicated logic registers      ; 16                                         ;
-; Total registers                    ; 16                                         ;
-; Total pins                         ; 50                                         ;
+; Total logic elements               ; 0                                          ;
+;     Total combinational functions  ; 0                                          ;
+;     Dedicated logic registers      ; 0                                          ;
+; Total registers                    ; 0                                          ;
+; Total pins                         ; 17                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -167,20 +167,26 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                              ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                    ; Library ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------+---------+
-; ALU.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/ALU.bdf                ;         ;
-; demux2bit.vhd                    ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/demux2bit.vhd          ;         ;
-; IncompleteDatapath.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/IncompleteDatapath.bdf ;         ;
-; LCU.vhd                          ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/LCU.vhd                ;         ;
-; halfAdder.vhd                    ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/halfAdder.vhd          ;         ;
-; fullAdder.vhd                    ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/fullAdder.vhd          ;         ;
-; adder16bit.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/adder16bit.bdf         ;         ;
-; registrador.vhd                  ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/registrador.vhd        ;         ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                      ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------+---------+
+; CU.vhd                           ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/CU.vhd                   ;         ;
+; ALU.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/ALU.bdf                  ;         ;
+; demux2bit.vhd                    ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/demux2bit.vhd            ;         ;
+; IncompleteDatapath.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/IncompleteDatapath.bdf   ;         ;
+; bancoDeRegistradores.bdf         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/bancoDeRegistradores.bdf ;         ;
+; LCU.vhd                          ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/LCU.vhd                  ;         ;
+; halfAdder.vhd                    ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/halfAdder.vhd            ;         ;
+; fullAdder.vhd                    ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/fullAdder.vhd            ;         ;
+; adder16bit.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/adder16bit.bdf           ;         ;
+; registrador.vhd                  ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/registrador.vhd          ;         ;
+; mux.vhd                          ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/mux.vhd                  ;         ;
+; demux.vhd                        ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/demux.vhd                ;         ;
+; mux_1_bit.vhd                    ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/mux_1_bit.vhd            ;         ;
+; sign_extend.vhd                  ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/sign_extend.vhd          ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -188,26 +194,24 @@ agreement for further details.
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 50               ;
+; I/O pins                 ; 17               ;
 ;                          ;                  ;
 ; DSP block 9-bit elements ; 0                ;
 ;                          ;                  ;
-; Maximum fan-out node     ; pin_name5~input  ;
-; Maximum fan-out          ; 16               ;
-; Total fan-out            ; 130              ;
-; Average fan-out          ; 0.98             ;
+; Maximum fan-out node     ; clk              ;
+; Maximum fan-out          ; 1                ;
+; Total fan-out            ; 17               ;
+; Average fan-out          ; 0.50             ;
 +--------------------------+------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                            ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------+--------------+
-; |IncompleteDatapath        ; 16 (0)            ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 50   ; 0            ; |IncompleteDatapath                            ; work         ;
-;    |ALU:inst|              ; 16 (16)           ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|ALU:inst                   ; work         ;
-;       |registrador:inst4|  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|ALU:inst|registrador:inst4 ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; |IncompleteDatapath        ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 17   ; 0            ; |IncompleteDatapath ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -216,7 +220,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 16    ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -228,19 +232,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 50                          ;
-; cycloneiii_ff         ; 16                          ;
-;     plain             ; 16                          ;
-; cycloneiii_lcell_comb ; 16                          ;
-;     normal            ; 16                          ;
-;         2 data inputs ; 16                          ;
-;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.74                        ;
-+-----------------------+-----------------------------+
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 17                              ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
 
 
 +-------------------------------+
@@ -248,7 +247,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -258,9 +257,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Sun Nov 03 22:11:47 2019
+    Info: Processing started: Thu Nov 07 21:41:30 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off IncompleteDatapath -c IncompleteDatapath
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info (12021): Found 2 design units, including 1 entities, in source file cu.vhd
+    Info (12022): Found design unit 1: CU-behavior
+    Info (12023): Found entity 1: CU
 Info (12021): Found 1 design units, including 1 entities, in source file alu.bdf
     Info (12023): Found entity 1: ALU
 Info (12021): Found 2 design units, including 1 entities, in source file demux2bit.vhd
@@ -291,13 +293,13 @@ Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file demux.vhd
     Info (12022): Found design unit 1: DEMUX-SELECTOR
     Info (12023): Found entity 1: DEMUX
+Info (12021): Found 2 design units, including 1 entities, in source file mux_1_bit.vhd
+    Info (12022): Found design unit 1: MUX_1_bit-SELECTOR
+    Info (12023): Found entity 1: MUX_1_bit
+Info (12021): Found 2 design units, including 1 entities, in source file sign_extend.vhd
+    Info (12022): Found design unit 1: sign_extend-behavior
+    Info (12023): Found entity 1: sign_extend
 Info (12127): Elaborating entity "IncompleteDatapath" for the top level hierarchy
-Warning (275085): Found inconsistent dimensions for element "pin_name5"
-Warning (275085): Found inconsistent dimensions for element "pin_name6"
-Warning (275080): Converted elements in bus name "pin_name5" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "pin_name5[15..0]" to "pin_name515..0"
-Warning (275080): Converted elements in bus name "pin_name6" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "pin_name6[15..0]" to "pin_name615..0"
 Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst"
 Warning (275011): Block or symbol "NOT" of instance "inst1" overlaps another block or symbol
 Info (12128): Elaborating entity "registrador" for hierarchy "ALU:inst|registrador:inst4"
@@ -309,20 +311,333 @@ Info (12128): Elaborating entity "fullAdder" for hierarchy "ALU:inst|adder16bit:
 Info (12128): Elaborating entity "LCU" for hierarchy "ALU:inst|adder16bit:inst3|LCU:inst"
 Warning (10492): VHDL Process Statement warning at LCU.vhd(19): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at LCU.vhd(21): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (12001): Port "aluOp" does not exist in entity definition of "ALU".  The port's range differs between the entity definition and its actual instantiation, "ALU:inst".
-Info (286030): Timing-Driven Synthesis is running
+Info (12128): Elaborating entity "MUX_1_bit" for hierarchy "MUX_1_bit:inst4"
+Info (12128): Elaborating entity "CU" for hierarchy "CU:inst6"
+Warning (10631): VHDL Process Statement warning at CU.vhd(16): inferring latch(es) for signal or variable "aluOp", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at CU.vhd(16): inferring latch(es) for signal or variable "bInvert", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "bInvert" at CU.vhd(16)
+Info (10041): Inferred latch for "aluOp[0]" at CU.vhd(16)
+Info (10041): Inferred latch for "aluOp[1]" at CU.vhd(16)
+Info (12128): Elaborating entity "bancoDeRegistradores" for hierarchy "bancoDeRegistradores:inst1"
+Info (12128): Elaborating entity "MUX" for hierarchy "bancoDeRegistradores:inst1|MUX:inst18"
+Warning (10631): VHDL Process Statement warning at mux.vhd(14): inferring latch(es) for signal or variable "R", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "R[0]" at mux.vhd(14)
+Info (10041): Inferred latch for "R[1]" at mux.vhd(14)
+Info (10041): Inferred latch for "R[2]" at mux.vhd(14)
+Info (10041): Inferred latch for "R[3]" at mux.vhd(14)
+Info (10041): Inferred latch for "R[4]" at mux.vhd(14)
+Info (10041): Inferred latch for "R[5]" at mux.vhd(14)
+Info (10041): Inferred latch for "R[6]" at mux.vhd(14)
+Info (10041): Inferred latch for "R[7]" at mux.vhd(14)
+Info (10041): Inferred latch for "R[8]" at mux.vhd(14)
+Info (10041): Inferred latch for "R[9]" at mux.vhd(14)
+Info (10041): Inferred latch for "R[10]" at mux.vhd(14)
+Info (10041): Inferred latch for "R[11]" at mux.vhd(14)
+Info (10041): Inferred latch for "R[12]" at mux.vhd(14)
+Info (10041): Inferred latch for "R[13]" at mux.vhd(14)
+Info (10041): Inferred latch for "R[14]" at mux.vhd(14)
+Info (10041): Inferred latch for "R[15]" at mux.vhd(14)
+Info (12128): Elaborating entity "DEMUX" for hierarchy "bancoDeRegistradores:inst1|DEMUX:inst20"
+Warning (10631): VHDL Process Statement warning at demux.vhd(14): inferring latch(es) for signal or variable "D0", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at demux.vhd(14): inferring latch(es) for signal or variable "D1", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at demux.vhd(14): inferring latch(es) for signal or variable "D2", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at demux.vhd(14): inferring latch(es) for signal or variable "D3", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at demux.vhd(14): inferring latch(es) for signal or variable "D4", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at demux.vhd(14): inferring latch(es) for signal or variable "D5", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at demux.vhd(14): inferring latch(es) for signal or variable "D6", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at demux.vhd(14): inferring latch(es) for signal or variable "D7", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at demux.vhd(14): inferring latch(es) for signal or variable "D8", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at demux.vhd(14): inferring latch(es) for signal or variable "D9", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at demux.vhd(14): inferring latch(es) for signal or variable "Da", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at demux.vhd(14): inferring latch(es) for signal or variable "Db", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at demux.vhd(14): inferring latch(es) for signal or variable "Dc", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at demux.vhd(14): inferring latch(es) for signal or variable "Dd", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at demux.vhd(14): inferring latch(es) for signal or variable "De", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at demux.vhd(14): inferring latch(es) for signal or variable "Df", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Df[0]" at demux.vhd(14)
+Info (10041): Inferred latch for "Df[1]" at demux.vhd(14)
+Info (10041): Inferred latch for "Df[2]" at demux.vhd(14)
+Info (10041): Inferred latch for "Df[3]" at demux.vhd(14)
+Info (10041): Inferred latch for "Df[4]" at demux.vhd(14)
+Info (10041): Inferred latch for "Df[5]" at demux.vhd(14)
+Info (10041): Inferred latch for "Df[6]" at demux.vhd(14)
+Info (10041): Inferred latch for "Df[7]" at demux.vhd(14)
+Info (10041): Inferred latch for "Df[8]" at demux.vhd(14)
+Info (10041): Inferred latch for "Df[9]" at demux.vhd(14)
+Info (10041): Inferred latch for "Df[10]" at demux.vhd(14)
+Info (10041): Inferred latch for "Df[11]" at demux.vhd(14)
+Info (10041): Inferred latch for "Df[12]" at demux.vhd(14)
+Info (10041): Inferred latch for "Df[13]" at demux.vhd(14)
+Info (10041): Inferred latch for "Df[14]" at demux.vhd(14)
+Info (10041): Inferred latch for "Df[15]" at demux.vhd(14)
+Info (10041): Inferred latch for "De[0]" at demux.vhd(14)
+Info (10041): Inferred latch for "De[1]" at demux.vhd(14)
+Info (10041): Inferred latch for "De[2]" at demux.vhd(14)
+Info (10041): Inferred latch for "De[3]" at demux.vhd(14)
+Info (10041): Inferred latch for "De[4]" at demux.vhd(14)
+Info (10041): Inferred latch for "De[5]" at demux.vhd(14)
+Info (10041): Inferred latch for "De[6]" at demux.vhd(14)
+Info (10041): Inferred latch for "De[7]" at demux.vhd(14)
+Info (10041): Inferred latch for "De[8]" at demux.vhd(14)
+Info (10041): Inferred latch for "De[9]" at demux.vhd(14)
+Info (10041): Inferred latch for "De[10]" at demux.vhd(14)
+Info (10041): Inferred latch for "De[11]" at demux.vhd(14)
+Info (10041): Inferred latch for "De[12]" at demux.vhd(14)
+Info (10041): Inferred latch for "De[13]" at demux.vhd(14)
+Info (10041): Inferred latch for "De[14]" at demux.vhd(14)
+Info (10041): Inferred latch for "De[15]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dd[0]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dd[1]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dd[2]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dd[3]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dd[4]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dd[5]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dd[6]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dd[7]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dd[8]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dd[9]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dd[10]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dd[11]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dd[12]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dd[13]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dd[14]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dd[15]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dc[0]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dc[1]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dc[2]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dc[3]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dc[4]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dc[5]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dc[6]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dc[7]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dc[8]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dc[9]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dc[10]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dc[11]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dc[12]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dc[13]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dc[14]" at demux.vhd(14)
+Info (10041): Inferred latch for "Dc[15]" at demux.vhd(14)
+Info (10041): Inferred latch for "Db[0]" at demux.vhd(14)
+Info (10041): Inferred latch for "Db[1]" at demux.vhd(14)
+Info (10041): Inferred latch for "Db[2]" at demux.vhd(14)
+Info (10041): Inferred latch for "Db[3]" at demux.vhd(14)
+Info (10041): Inferred latch for "Db[4]" at demux.vhd(14)
+Info (10041): Inferred latch for "Db[5]" at demux.vhd(14)
+Info (10041): Inferred latch for "Db[6]" at demux.vhd(14)
+Info (10041): Inferred latch for "Db[7]" at demux.vhd(14)
+Info (10041): Inferred latch for "Db[8]" at demux.vhd(14)
+Info (10041): Inferred latch for "Db[9]" at demux.vhd(14)
+Info (10041): Inferred latch for "Db[10]" at demux.vhd(14)
+Info (10041): Inferred latch for "Db[11]" at demux.vhd(14)
+Info (10041): Inferred latch for "Db[12]" at demux.vhd(14)
+Info (10041): Inferred latch for "Db[13]" at demux.vhd(14)
+Info (10041): Inferred latch for "Db[14]" at demux.vhd(14)
+Info (10041): Inferred latch for "Db[15]" at demux.vhd(14)
+Info (10041): Inferred latch for "Da[0]" at demux.vhd(14)
+Info (10041): Inferred latch for "Da[1]" at demux.vhd(14)
+Info (10041): Inferred latch for "Da[2]" at demux.vhd(14)
+Info (10041): Inferred latch for "Da[3]" at demux.vhd(14)
+Info (10041): Inferred latch for "Da[4]" at demux.vhd(14)
+Info (10041): Inferred latch for "Da[5]" at demux.vhd(14)
+Info (10041): Inferred latch for "Da[6]" at demux.vhd(14)
+Info (10041): Inferred latch for "Da[7]" at demux.vhd(14)
+Info (10041): Inferred latch for "Da[8]" at demux.vhd(14)
+Info (10041): Inferred latch for "Da[9]" at demux.vhd(14)
+Info (10041): Inferred latch for "Da[10]" at demux.vhd(14)
+Info (10041): Inferred latch for "Da[11]" at demux.vhd(14)
+Info (10041): Inferred latch for "Da[12]" at demux.vhd(14)
+Info (10041): Inferred latch for "Da[13]" at demux.vhd(14)
+Info (10041): Inferred latch for "Da[14]" at demux.vhd(14)
+Info (10041): Inferred latch for "Da[15]" at demux.vhd(14)
+Info (10041): Inferred latch for "D9[0]" at demux.vhd(14)
+Info (10041): Inferred latch for "D9[1]" at demux.vhd(14)
+Info (10041): Inferred latch for "D9[2]" at demux.vhd(14)
+Info (10041): Inferred latch for "D9[3]" at demux.vhd(14)
+Info (10041): Inferred latch for "D9[4]" at demux.vhd(14)
+Info (10041): Inferred latch for "D9[5]" at demux.vhd(14)
+Info (10041): Inferred latch for "D9[6]" at demux.vhd(14)
+Info (10041): Inferred latch for "D9[7]" at demux.vhd(14)
+Info (10041): Inferred latch for "D9[8]" at demux.vhd(14)
+Info (10041): Inferred latch for "D9[9]" at demux.vhd(14)
+Info (10041): Inferred latch for "D9[10]" at demux.vhd(14)
+Info (10041): Inferred latch for "D9[11]" at demux.vhd(14)
+Info (10041): Inferred latch for "D9[12]" at demux.vhd(14)
+Info (10041): Inferred latch for "D9[13]" at demux.vhd(14)
+Info (10041): Inferred latch for "D9[14]" at demux.vhd(14)
+Info (10041): Inferred latch for "D9[15]" at demux.vhd(14)
+Info (10041): Inferred latch for "D8[0]" at demux.vhd(14)
+Info (10041): Inferred latch for "D8[1]" at demux.vhd(14)
+Info (10041): Inferred latch for "D8[2]" at demux.vhd(14)
+Info (10041): Inferred latch for "D8[3]" at demux.vhd(14)
+Info (10041): Inferred latch for "D8[4]" at demux.vhd(14)
+Info (10041): Inferred latch for "D8[5]" at demux.vhd(14)
+Info (10041): Inferred latch for "D8[6]" at demux.vhd(14)
+Info (10041): Inferred latch for "D8[7]" at demux.vhd(14)
+Info (10041): Inferred latch for "D8[8]" at demux.vhd(14)
+Info (10041): Inferred latch for "D8[9]" at demux.vhd(14)
+Info (10041): Inferred latch for "D8[10]" at demux.vhd(14)
+Info (10041): Inferred latch for "D8[11]" at demux.vhd(14)
+Info (10041): Inferred latch for "D8[12]" at demux.vhd(14)
+Info (10041): Inferred latch for "D8[13]" at demux.vhd(14)
+Info (10041): Inferred latch for "D8[14]" at demux.vhd(14)
+Info (10041): Inferred latch for "D8[15]" at demux.vhd(14)
+Info (10041): Inferred latch for "D7[0]" at demux.vhd(14)
+Info (10041): Inferred latch for "D7[1]" at demux.vhd(14)
+Info (10041): Inferred latch for "D7[2]" at demux.vhd(14)
+Info (10041): Inferred latch for "D7[3]" at demux.vhd(14)
+Info (10041): Inferred latch for "D7[4]" at demux.vhd(14)
+Info (10041): Inferred latch for "D7[5]" at demux.vhd(14)
+Info (10041): Inferred latch for "D7[6]" at demux.vhd(14)
+Info (10041): Inferred latch for "D7[7]" at demux.vhd(14)
+Info (10041): Inferred latch for "D7[8]" at demux.vhd(14)
+Info (10041): Inferred latch for "D7[9]" at demux.vhd(14)
+Info (10041): Inferred latch for "D7[10]" at demux.vhd(14)
+Info (10041): Inferred latch for "D7[11]" at demux.vhd(14)
+Info (10041): Inferred latch for "D7[12]" at demux.vhd(14)
+Info (10041): Inferred latch for "D7[13]" at demux.vhd(14)
+Info (10041): Inferred latch for "D7[14]" at demux.vhd(14)
+Info (10041): Inferred latch for "D7[15]" at demux.vhd(14)
+Info (10041): Inferred latch for "D6[0]" at demux.vhd(14)
+Info (10041): Inferred latch for "D6[1]" at demux.vhd(14)
+Info (10041): Inferred latch for "D6[2]" at demux.vhd(14)
+Info (10041): Inferred latch for "D6[3]" at demux.vhd(14)
+Info (10041): Inferred latch for "D6[4]" at demux.vhd(14)
+Info (10041): Inferred latch for "D6[5]" at demux.vhd(14)
+Info (10041): Inferred latch for "D6[6]" at demux.vhd(14)
+Info (10041): Inferred latch for "D6[7]" at demux.vhd(14)
+Info (10041): Inferred latch for "D6[8]" at demux.vhd(14)
+Info (10041): Inferred latch for "D6[9]" at demux.vhd(14)
+Info (10041): Inferred latch for "D6[10]" at demux.vhd(14)
+Info (10041): Inferred latch for "D6[11]" at demux.vhd(14)
+Info (10041): Inferred latch for "D6[12]" at demux.vhd(14)
+Info (10041): Inferred latch for "D6[13]" at demux.vhd(14)
+Info (10041): Inferred latch for "D6[14]" at demux.vhd(14)
+Info (10041): Inferred latch for "D6[15]" at demux.vhd(14)
+Info (10041): Inferred latch for "D5[0]" at demux.vhd(14)
+Info (10041): Inferred latch for "D5[1]" at demux.vhd(14)
+Info (10041): Inferred latch for "D5[2]" at demux.vhd(14)
+Info (10041): Inferred latch for "D5[3]" at demux.vhd(14)
+Info (10041): Inferred latch for "D5[4]" at demux.vhd(14)
+Info (10041): Inferred latch for "D5[5]" at demux.vhd(14)
+Info (10041): Inferred latch for "D5[6]" at demux.vhd(14)
+Info (10041): Inferred latch for "D5[7]" at demux.vhd(14)
+Info (10041): Inferred latch for "D5[8]" at demux.vhd(14)
+Info (10041): Inferred latch for "D5[9]" at demux.vhd(14)
+Info (10041): Inferred latch for "D5[10]" at demux.vhd(14)
+Info (10041): Inferred latch for "D5[11]" at demux.vhd(14)
+Info (10041): Inferred latch for "D5[12]" at demux.vhd(14)
+Info (10041): Inferred latch for "D5[13]" at demux.vhd(14)
+Info (10041): Inferred latch for "D5[14]" at demux.vhd(14)
+Info (10041): Inferred latch for "D5[15]" at demux.vhd(14)
+Info (10041): Inferred latch for "D4[0]" at demux.vhd(14)
+Info (10041): Inferred latch for "D4[1]" at demux.vhd(14)
+Info (10041): Inferred latch for "D4[2]" at demux.vhd(14)
+Info (10041): Inferred latch for "D4[3]" at demux.vhd(14)
+Info (10041): Inferred latch for "D4[4]" at demux.vhd(14)
+Info (10041): Inferred latch for "D4[5]" at demux.vhd(14)
+Info (10041): Inferred latch for "D4[6]" at demux.vhd(14)
+Info (10041): Inferred latch for "D4[7]" at demux.vhd(14)
+Info (10041): Inferred latch for "D4[8]" at demux.vhd(14)
+Info (10041): Inferred latch for "D4[9]" at demux.vhd(14)
+Info (10041): Inferred latch for "D4[10]" at demux.vhd(14)
+Info (10041): Inferred latch for "D4[11]" at demux.vhd(14)
+Info (10041): Inferred latch for "D4[12]" at demux.vhd(14)
+Info (10041): Inferred latch for "D4[13]" at demux.vhd(14)
+Info (10041): Inferred latch for "D4[14]" at demux.vhd(14)
+Info (10041): Inferred latch for "D4[15]" at demux.vhd(14)
+Info (10041): Inferred latch for "D3[0]" at demux.vhd(14)
+Info (10041): Inferred latch for "D3[1]" at demux.vhd(14)
+Info (10041): Inferred latch for "D3[2]" at demux.vhd(14)
+Info (10041): Inferred latch for "D3[3]" at demux.vhd(14)
+Info (10041): Inferred latch for "D3[4]" at demux.vhd(14)
+Info (10041): Inferred latch for "D3[5]" at demux.vhd(14)
+Info (10041): Inferred latch for "D3[6]" at demux.vhd(14)
+Info (10041): Inferred latch for "D3[7]" at demux.vhd(14)
+Info (10041): Inferred latch for "D3[8]" at demux.vhd(14)
+Info (10041): Inferred latch for "D3[9]" at demux.vhd(14)
+Info (10041): Inferred latch for "D3[10]" at demux.vhd(14)
+Info (10041): Inferred latch for "D3[11]" at demux.vhd(14)
+Info (10041): Inferred latch for "D3[12]" at demux.vhd(14)
+Info (10041): Inferred latch for "D3[13]" at demux.vhd(14)
+Info (10041): Inferred latch for "D3[14]" at demux.vhd(14)
+Info (10041): Inferred latch for "D3[15]" at demux.vhd(14)
+Info (10041): Inferred latch for "D2[0]" at demux.vhd(14)
+Info (10041): Inferred latch for "D2[1]" at demux.vhd(14)
+Info (10041): Inferred latch for "D2[2]" at demux.vhd(14)
+Info (10041): Inferred latch for "D2[3]" at demux.vhd(14)
+Info (10041): Inferred latch for "D2[4]" at demux.vhd(14)
+Info (10041): Inferred latch for "D2[5]" at demux.vhd(14)
+Info (10041): Inferred latch for "D2[6]" at demux.vhd(14)
+Info (10041): Inferred latch for "D2[7]" at demux.vhd(14)
+Info (10041): Inferred latch for "D2[8]" at demux.vhd(14)
+Info (10041): Inferred latch for "D2[9]" at demux.vhd(14)
+Info (10041): Inferred latch for "D2[10]" at demux.vhd(14)
+Info (10041): Inferred latch for "D2[11]" at demux.vhd(14)
+Info (10041): Inferred latch for "D2[12]" at demux.vhd(14)
+Info (10041): Inferred latch for "D2[13]" at demux.vhd(14)
+Info (10041): Inferred latch for "D2[14]" at demux.vhd(14)
+Info (10041): Inferred latch for "D2[15]" at demux.vhd(14)
+Info (10041): Inferred latch for "D1[0]" at demux.vhd(14)
+Info (10041): Inferred latch for "D1[1]" at demux.vhd(14)
+Info (10041): Inferred latch for "D1[2]" at demux.vhd(14)
+Info (10041): Inferred latch for "D1[3]" at demux.vhd(14)
+Info (10041): Inferred latch for "D1[4]" at demux.vhd(14)
+Info (10041): Inferred latch for "D1[5]" at demux.vhd(14)
+Info (10041): Inferred latch for "D1[6]" at demux.vhd(14)
+Info (10041): Inferred latch for "D1[7]" at demux.vhd(14)
+Info (10041): Inferred latch for "D1[8]" at demux.vhd(14)
+Info (10041): Inferred latch for "D1[9]" at demux.vhd(14)
+Info (10041): Inferred latch for "D1[10]" at demux.vhd(14)
+Info (10041): Inferred latch for "D1[11]" at demux.vhd(14)
+Info (10041): Inferred latch for "D1[12]" at demux.vhd(14)
+Info (10041): Inferred latch for "D1[13]" at demux.vhd(14)
+Info (10041): Inferred latch for "D1[14]" at demux.vhd(14)
+Info (10041): Inferred latch for "D1[15]" at demux.vhd(14)
+Info (10041): Inferred latch for "D0[0]" at demux.vhd(14)
+Info (10041): Inferred latch for "D0[1]" at demux.vhd(14)
+Info (10041): Inferred latch for "D0[2]" at demux.vhd(14)
+Info (10041): Inferred latch for "D0[3]" at demux.vhd(14)
+Info (10041): Inferred latch for "D0[4]" at demux.vhd(14)
+Info (10041): Inferred latch for "D0[5]" at demux.vhd(14)
+Info (10041): Inferred latch for "D0[6]" at demux.vhd(14)
+Info (10041): Inferred latch for "D0[7]" at demux.vhd(14)
+Info (10041): Inferred latch for "D0[8]" at demux.vhd(14)
+Info (10041): Inferred latch for "D0[9]" at demux.vhd(14)
+Info (10041): Inferred latch for "D0[10]" at demux.vhd(14)
+Info (10041): Inferred latch for "D0[11]" at demux.vhd(14)
+Info (10041): Inferred latch for "D0[12]" at demux.vhd(14)
+Info (10041): Inferred latch for "D0[13]" at demux.vhd(14)
+Info (10041): Inferred latch for "D0[14]" at demux.vhd(14)
+Info (10041): Inferred latch for "D0[15]" at demux.vhd(14)
+Info (12128): Elaborating entity "sign_extend" for hierarchy "sign_extend:inst3"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "pin_name6"
-Info (21057): Implemented 66 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 34 input pins
-    Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 16 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4854 megabytes
-    Info: Processing ended: Sun Nov 03 22:12:09 2019
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:43
+Warning (21074): Design contains 17 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk"
+    Warning (15610): No output dependent on input pin "instruction[15]"
+    Warning (15610): No output dependent on input pin "instruction[14]"
+    Warning (15610): No output dependent on input pin "instruction[13]"
+    Warning (15610): No output dependent on input pin "instruction[12]"
+    Warning (15610): No output dependent on input pin "instruction[11]"
+    Warning (15610): No output dependent on input pin "instruction[10]"
+    Warning (15610): No output dependent on input pin "instruction[9]"
+    Warning (15610): No output dependent on input pin "instruction[8]"
+    Warning (15610): No output dependent on input pin "instruction[7]"
+    Warning (15610): No output dependent on input pin "instruction[6]"
+    Warning (15610): No output dependent on input pin "instruction[5]"
+    Warning (15610): No output dependent on input pin "instruction[4]"
+    Warning (15610): No output dependent on input pin "instruction[3]"
+    Warning (15610): No output dependent on input pin "instruction[2]"
+    Warning (15610): No output dependent on input pin "instruction[1]"
+    Warning (15610): No output dependent on input pin "instruction[0]"
+Info (21057): Implemented 17 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 17 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 42 warnings
+    Info: Peak virtual memory: 4855 megabytes
+    Info: Processing ended: Thu Nov 07 21:42:05 2019
+    Info: Elapsed time: 00:00:35
+    Info: Total CPU time (on all processors): 00:00:53
 
 

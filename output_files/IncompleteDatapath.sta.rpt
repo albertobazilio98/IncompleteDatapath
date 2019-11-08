@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for IncompleteDatapath
-Sun Nov 03 22:12:42 2019
+Thu Nov 07 21:42:52 2019
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -17,50 +17,34 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
   9. Slow 1200mV 85C Model Recovery Summary
  10. Slow 1200mV 85C Model Removal Summary
  11. Slow 1200mV 85C Model Minimum Pulse Width Summary
- 12. Slow 1200mV 85C Model Minimum Pulse Width: 'pin_name5'
- 13. Setup Times
- 14. Hold Times
- 15. Clock to Output Times
- 16. Minimum Clock to Output Times
- 17. Slow 1200mV 85C Model Metastability Report
- 18. Slow 1200mV 0C Model Fmax Summary
- 19. Slow 1200mV 0C Model Setup Summary
- 20. Slow 1200mV 0C Model Hold Summary
- 21. Slow 1200mV 0C Model Recovery Summary
- 22. Slow 1200mV 0C Model Removal Summary
- 23. Slow 1200mV 0C Model Minimum Pulse Width Summary
- 24. Slow 1200mV 0C Model Minimum Pulse Width: 'pin_name5'
- 25. Setup Times
- 26. Hold Times
- 27. Clock to Output Times
- 28. Minimum Clock to Output Times
- 29. Slow 1200mV 0C Model Metastability Report
- 30. Fast 1200mV 0C Model Setup Summary
- 31. Fast 1200mV 0C Model Hold Summary
- 32. Fast 1200mV 0C Model Recovery Summary
- 33. Fast 1200mV 0C Model Removal Summary
- 34. Fast 1200mV 0C Model Minimum Pulse Width Summary
- 35. Fast 1200mV 0C Model Minimum Pulse Width: 'pin_name5'
- 36. Setup Times
- 37. Hold Times
- 38. Clock to Output Times
- 39. Minimum Clock to Output Times
- 40. Fast 1200mV 0C Model Metastability Report
- 41. Multicorner Timing Analysis Summary
- 42. Setup Times
- 43. Hold Times
- 44. Clock to Output Times
- 45. Minimum Clock to Output Times
- 46. Board Trace Model Assignments
- 47. Input Transition Times
- 48. Signal Integrity Metrics (Slow 1200mv 0c Model)
- 49. Signal Integrity Metrics (Slow 1200mv 85c Model)
- 50. Signal Integrity Metrics (Fast 1200mv 0c Model)
- 51. Clock Transfers
- 52. Report TCCS
- 53. Report RSKM
- 54. Unconstrained Paths
- 55. TimeQuest Timing Analyzer Messages
+ 12. Slow 1200mV 85C Model Datasheet Report
+ 13. Slow 1200mV 85C Model Metastability Report
+ 14. Slow 1200mV 0C Model Fmax Summary
+ 15. Slow 1200mV 0C Model Setup Summary
+ 16. Slow 1200mV 0C Model Hold Summary
+ 17. Slow 1200mV 0C Model Recovery Summary
+ 18. Slow 1200mV 0C Model Removal Summary
+ 19. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 20. Slow 1200mV 0C Model Datasheet Report
+ 21. Slow 1200mV 0C Model Metastability Report
+ 22. Fast 1200mV 0C Model Setup Summary
+ 23. Fast 1200mV 0C Model Hold Summary
+ 24. Fast 1200mV 0C Model Recovery Summary
+ 25. Fast 1200mV 0C Model Removal Summary
+ 26. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 27. Fast 1200mV 0C Model Datasheet Report
+ 28. Fast 1200mV 0C Model Metastability Report
+ 29. Multicorner Timing Analysis Summary
+ 30. Board Trace Model Assignments
+ 31. Input Transition Times
+ 32. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 33. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 34. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 35. Clock Transfers
+ 36. Report TCCS
+ 37. Report RSKM
+ 38. Unconstrained Paths
+ 39. TimeQuest Timing Analyzer Messages
 
 
 
@@ -90,7 +74,7 @@ agreement for further details.
 ; Quartus II Version ; Version 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name      ; IncompleteDatapath                                 ;
 ; Device Family      ; Cyclone IV GX                                      ;
-; Device Name        ; EP4CGX22CF19C6                                     ;
+; Device Name        ; EP4CGX15BF14C6                                     ;
 ; Timing Models      ; Final                                              ;
 ; Delay Model        ; Combined                                           ;
 ; Rise/Fall Delays   ; Enabled                                            ;
@@ -115,13 +99,10 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                                ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
-; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets       ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
-; pin_name5  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { pin_name5 } ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+----------
+; Clocks ;
+----------
+No clocks to report.
 
 
 --------------------------------------
@@ -160,240 +141,16 @@ No paths to report.
 No paths to report.
 
 
-+---------------------------------------------------+
+-----------------------------------------------------
 ; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
-+-----------+--------+------------------------------+
-; Clock     ; Slack  ; End Point TNS                ;
-+-----------+--------+------------------------------+
-; pin_name5 ; -3.000 ; -19.000                      ;
-+-----------+--------+------------------------------+
+-----------------------------------------------------
+No paths to report.
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Minimum Pulse Width: 'pin_name5'                                                                ;
-+--------+--------------+----------------+------------------+-----------+------------+----------------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock     ; Clock Edge ; Target                           ;
-+--------+--------------+----------------+------------------+-----------+------------+----------------------------------+
-; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; pin_name5 ; Rise       ; pin_name5                        ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[0]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[10] ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[11] ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[12] ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[13] ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[14] ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[15] ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[1]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[2]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[3]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[4]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[5]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[6]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[7]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[8]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[9]  ;
-; 0.209  ; 0.393        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[12] ;
-; 0.210  ; 0.394        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[14] ;
-; 0.210  ; 0.394        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[1]  ;
-; 0.210  ; 0.394        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[5]  ;
-; 0.210  ; 0.394        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[8]  ;
-; 0.213  ; 0.397        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[0]  ;
-; 0.213  ; 0.397        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[11] ;
-; 0.214  ; 0.398        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[10] ;
-; 0.214  ; 0.398        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[15] ;
-; 0.214  ; 0.398        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[2]  ;
-; 0.214  ; 0.398        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[4]  ;
-; 0.214  ; 0.398        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[6]  ;
-; 0.214  ; 0.398        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[9]  ;
-; 0.216  ; 0.400        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[7]  ;
-; 0.217  ; 0.401        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[13] ;
-; 0.218  ; 0.402        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[3]  ;
-; 0.326  ; 0.326        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; pin_name5~input|o                ;
-; 0.339  ; 0.339        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; pin_name5~inputclkctrl|inclk[0]  ;
-; 0.339  ; 0.339        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; pin_name5~inputclkctrl|outclk    ;
-; 0.370  ; 0.370        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[14]|clk             ;
-; 0.370  ; 0.370        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[1]|clk              ;
-; 0.370  ; 0.370        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[5]|clk              ;
-; 0.370  ; 0.370        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[8]|clk              ;
-; 0.371  ; 0.371        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[12]|clk             ;
-; 0.374  ; 0.374        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[0]|clk              ;
-; 0.374  ; 0.374        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[10]|clk             ;
-; 0.374  ; 0.374        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[11]|clk             ;
-; 0.374  ; 0.374        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[15]|clk             ;
-; 0.374  ; 0.374        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[2]|clk              ;
-; 0.374  ; 0.374        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[4]|clk              ;
-; 0.374  ; 0.374        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[6]|clk              ;
-; 0.375  ; 0.375        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[9]|clk              ;
-; 0.377  ; 0.377        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[13]|clk             ;
-; 0.377  ; 0.377        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[7]|clk              ;
-; 0.378  ; 0.378        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[3]|clk              ;
-; 0.382  ; 0.598        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[3]  ;
-; 0.383  ; 0.599        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[13] ;
-; 0.383  ; 0.599        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[7]  ;
-; 0.385  ; 0.601        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[9]  ;
-; 0.386  ; 0.602        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[0]  ;
-; 0.386  ; 0.602        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[10] ;
-; 0.386  ; 0.602        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[11] ;
-; 0.386  ; 0.602        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[15] ;
-; 0.386  ; 0.602        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[2]  ;
-; 0.386  ; 0.602        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[4]  ;
-; 0.386  ; 0.602        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[6]  ;
-; 0.389  ; 0.605        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[12] ;
-; 0.390  ; 0.606        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[14] ;
-; 0.390  ; 0.606        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[1]  ;
-; 0.390  ; 0.606        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[5]  ;
-; 0.390  ; 0.606        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[8]  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; pin_name5~input|i                ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; pin_name5~input|i                ;
-; 0.620  ; 0.620        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[3]|clk              ;
-; 0.621  ; 0.621        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[13]|clk             ;
-; 0.622  ; 0.622        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[7]|clk              ;
-; 0.624  ; 0.624        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[10]|clk             ;
-; 0.624  ; 0.624        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[15]|clk             ;
-; 0.624  ; 0.624        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[2]|clk              ;
-; 0.624  ; 0.624        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[4]|clk              ;
-; 0.624  ; 0.624        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[6]|clk              ;
-; 0.624  ; 0.624        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[9]|clk              ;
-; 0.625  ; 0.625        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[0]|clk              ;
-; 0.625  ; 0.625        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[11]|clk             ;
-; 0.628  ; 0.628        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[14]|clk             ;
-; 0.628  ; 0.628        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[1]|clk              ;
-; 0.628  ; 0.628        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[5]|clk              ;
-; 0.628  ; 0.628        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[8]|clk              ;
-; 0.629  ; 0.629        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[12]|clk             ;
-; 0.661  ; 0.661        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; pin_name5~inputclkctrl|inclk[0]  ;
-; 0.661  ; 0.661        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; pin_name5~inputclkctrl|outclk    ;
-; 0.674  ; 0.674        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; pin_name5~input|o                ;
-+--------+--------------+----------------+------------------+-----------+------------+----------------------------------+
-
-
-+----------------------------------------------------------------------------+
-; Setup Times                                                                ;
-+----------------+------------+-------+-------+------------+-----------------+
-; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+----------------+------------+-------+-------+------------+-----------------+
-; pin_name4[*]   ; pin_name5  ; 1.593 ; 2.060 ; Rise       ; pin_name5       ;
-;  pin_name4[0]  ; pin_name5  ; 1.319 ; 1.745 ; Rise       ; pin_name5       ;
-;  pin_name4[1]  ; pin_name5  ; 1.432 ; 1.884 ; Rise       ; pin_name5       ;
-;  pin_name4[2]  ; pin_name5  ; 1.516 ; 1.982 ; Rise       ; pin_name5       ;
-;  pin_name4[3]  ; pin_name5  ; 1.391 ; 1.826 ; Rise       ; pin_name5       ;
-;  pin_name4[4]  ; pin_name5  ; 1.292 ; 1.717 ; Rise       ; pin_name5       ;
-;  pin_name4[5]  ; pin_name5  ; 1.580 ; 2.046 ; Rise       ; pin_name5       ;
-;  pin_name4[6]  ; pin_name5  ; 1.103 ; 1.536 ; Rise       ; pin_name5       ;
-;  pin_name4[7]  ; pin_name5  ; 1.386 ; 1.859 ; Rise       ; pin_name5       ;
-;  pin_name4[8]  ; pin_name5  ; 1.457 ; 1.908 ; Rise       ; pin_name5       ;
-;  pin_name4[9]  ; pin_name5  ; 1.383 ; 1.856 ; Rise       ; pin_name5       ;
-;  pin_name4[10] ; pin_name5  ; 1.588 ; 2.056 ; Rise       ; pin_name5       ;
-;  pin_name4[11] ; pin_name5  ; 1.593 ; 2.060 ; Rise       ; pin_name5       ;
-;  pin_name4[12] ; pin_name5  ; 1.583 ; 2.050 ; Rise       ; pin_name5       ;
-;  pin_name4[13] ; pin_name5  ; 1.345 ; 1.818 ; Rise       ; pin_name5       ;
-;  pin_name4[14] ; pin_name5  ; 1.561 ; 2.023 ; Rise       ; pin_name5       ;
-;  pin_name4[15] ; pin_name5  ; 1.098 ; 1.527 ; Rise       ; pin_name5       ;
-; pin_name50     ; pin_name5  ; 1.468 ; 1.897 ; Rise       ; pin_name5       ;
-; pin_name51     ; pin_name5  ; 1.351 ; 1.776 ; Rise       ; pin_name5       ;
-; pin_name52     ; pin_name5  ; 1.341 ; 1.815 ; Rise       ; pin_name5       ;
-; pin_name53     ; pin_name5  ; 1.333 ; 1.807 ; Rise       ; pin_name5       ;
-; pin_name54     ; pin_name5  ; 1.575 ; 2.043 ; Rise       ; pin_name5       ;
-; pin_name55     ; pin_name5  ; 1.366 ; 1.787 ; Rise       ; pin_name5       ;
-; pin_name56     ; pin_name5  ; 1.500 ; 1.965 ; Rise       ; pin_name5       ;
-; pin_name57     ; pin_name5  ; 1.501 ; 1.957 ; Rise       ; pin_name5       ;
-; pin_name58     ; pin_name5  ; 1.354 ; 1.783 ; Rise       ; pin_name5       ;
-; pin_name59     ; pin_name5  ; 1.143 ; 1.575 ; Rise       ; pin_name5       ;
-; pin_name510    ; pin_name5  ; 1.438 ; 1.869 ; Rise       ; pin_name5       ;
-; pin_name511    ; pin_name5  ; 1.374 ; 1.794 ; Rise       ; pin_name5       ;
-; pin_name512    ; pin_name5  ; 1.491 ; 1.940 ; Rise       ; pin_name5       ;
-; pin_name513    ; pin_name5  ; 1.115 ; 1.547 ; Rise       ; pin_name5       ;
-; pin_name514    ; pin_name5  ; 1.447 ; 1.896 ; Rise       ; pin_name5       ;
-; pin_name515    ; pin_name5  ; 0.424 ; 0.465 ; Rise       ; pin_name5       ;
-+----------------+------------+-------+-------+------------+-----------------+
-
-
-+------------------------------------------------------------------------------+
-; Hold Times                                                                   ;
-+----------------+------------+--------+--------+------------+-----------------+
-; Data Port      ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+----------------+------------+--------+--------+------------+-----------------+
-; pin_name4[*]   ; pin_name5  ; -0.722 ; -1.128 ; Rise       ; pin_name5       ;
-;  pin_name4[0]  ; pin_name5  ; -0.929 ; -1.335 ; Rise       ; pin_name5       ;
-;  pin_name4[1]  ; pin_name5  ; -1.036 ; -1.467 ; Rise       ; pin_name5       ;
-;  pin_name4[2]  ; pin_name5  ; -1.121 ; -1.564 ; Rise       ; pin_name5       ;
-;  pin_name4[3]  ; pin_name5  ; -1.002 ; -1.413 ; Rise       ; pin_name5       ;
-;  pin_name4[4]  ; pin_name5  ; -0.902 ; -1.307 ; Rise       ; pin_name5       ;
-;  pin_name4[5]  ; pin_name5  ; -1.153 ; -1.577 ; Rise       ; pin_name5       ;
-;  pin_name4[6]  ; pin_name5  ; -0.725 ; -1.134 ; Rise       ; pin_name5       ;
-;  pin_name4[7]  ; pin_name5  ; -0.934 ; -1.369 ; Rise       ; pin_name5       ;
-;  pin_name4[8]  ; pin_name5  ; -1.061 ; -1.492 ; Rise       ; pin_name5       ;
-;  pin_name4[9]  ; pin_name5  ; -0.971 ; -1.398 ; Rise       ; pin_name5       ;
-;  pin_name4[10] ; pin_name5  ; -1.122 ; -1.555 ; Rise       ; pin_name5       ;
-;  pin_name4[11] ; pin_name5  ; -1.171 ; -1.590 ; Rise       ; pin_name5       ;
-;  pin_name4[12] ; pin_name5  ; -1.121 ; -1.548 ; Rise       ; pin_name5       ;
-;  pin_name4[13] ; pin_name5  ; -0.933 ; -1.360 ; Rise       ; pin_name5       ;
-;  pin_name4[14] ; pin_name5  ; -1.097 ; -1.524 ; Rise       ; pin_name5       ;
-;  pin_name4[15] ; pin_name5  ; -0.722 ; -1.128 ; Rise       ; pin_name5       ;
-; pin_name50     ; pin_name5  ; -1.073 ; -1.482 ; Rise       ; pin_name5       ;
-; pin_name51     ; pin_name5  ; -0.958 ; -1.363 ; Rise       ; pin_name5       ;
-; pin_name52     ; pin_name5  ; -0.891 ; -1.326 ; Rise       ; pin_name5       ;
-; pin_name53     ; pin_name5  ; -0.920 ; -1.348 ; Rise       ; pin_name5       ;
-; pin_name54     ; pin_name5  ; -1.148 ; -1.574 ; Rise       ; pin_name5       ;
-; pin_name55     ; pin_name5  ; -0.975 ; -1.375 ; Rise       ; pin_name5       ;
-; pin_name56     ; pin_name5  ; -1.106 ; -1.547 ; Rise       ; pin_name5       ;
-; pin_name57     ; pin_name5  ; -1.106 ; -1.540 ; Rise       ; pin_name5       ;
-; pin_name58     ; pin_name5  ; -0.962 ; -1.371 ; Rise       ; pin_name5       ;
-; pin_name59     ; pin_name5  ; -0.766 ; -1.175 ; Rise       ; pin_name5       ;
-; pin_name510    ; pin_name5  ; -1.040 ; -1.453 ; Rise       ; pin_name5       ;
-; pin_name511    ; pin_name5  ; -0.983 ; -1.384 ; Rise       ; pin_name5       ;
-; pin_name512    ; pin_name5  ; -1.093 ; -1.523 ; Rise       ; pin_name5       ;
-; pin_name513    ; pin_name5  ; -0.738 ; -1.147 ; Rise       ; pin_name5       ;
-; pin_name514    ; pin_name5  ; -1.048 ; -1.477 ; Rise       ; pin_name5       ;
-; pin_name515    ; pin_name5  ; -0.079 ; -0.115 ; Rise       ; pin_name5       ;
-+----------------+------------+--------+--------+------------+-----------------+
-
-
-+-------------------------------------------------------------------------+
-; Clock to Output Times                                                   ;
-+-------------+------------+-------+-------+------------+-----------------+
-; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-------------+------------+-------+-------+------------+-----------------+
-; pin_name60  ; pin_name5  ; 6.098 ; 6.020 ; Rise       ; pin_name5       ;
-; pin_name61  ; pin_name5  ; 5.883 ; 5.805 ; Rise       ; pin_name5       ;
-; pin_name62  ; pin_name5  ; 6.484 ; 6.480 ; Rise       ; pin_name5       ;
-; pin_name63  ; pin_name5  ; 5.803 ; 5.766 ; Rise       ; pin_name5       ;
-; pin_name64  ; pin_name5  ; 6.089 ; 6.008 ; Rise       ; pin_name5       ;
-; pin_name65  ; pin_name5  ; 5.894 ; 5.819 ; Rise       ; pin_name5       ;
-; pin_name66  ; pin_name5  ; 5.816 ; 5.779 ; Rise       ; pin_name5       ;
-; pin_name67  ; pin_name5  ; 5.819 ; 5.782 ; Rise       ; pin_name5       ;
-; pin_name68  ; pin_name5  ; 6.078 ; 5.998 ; Rise       ; pin_name5       ;
-; pin_name69  ; pin_name5  ; 5.997 ; 5.941 ; Rise       ; pin_name5       ;
-; pin_name610 ; pin_name5  ; 5.890 ; 5.810 ; Rise       ; pin_name5       ;
-; pin_name611 ; pin_name5  ; 5.883 ; 5.804 ; Rise       ; pin_name5       ;
-; pin_name612 ; pin_name5  ; 5.903 ; 5.824 ; Rise       ; pin_name5       ;
-; pin_name613 ; pin_name5  ; 6.001 ; 5.952 ; Rise       ; pin_name5       ;
-; pin_name614 ; pin_name5  ; 5.857 ; 5.778 ; Rise       ; pin_name5       ;
-; pin_name615 ; pin_name5  ; 5.804 ; 5.767 ; Rise       ; pin_name5       ;
-+-------------+------------+-------+-------+------------+-----------------+
-
-
-+-------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                           ;
-+-------------+------------+-------+-------+------------+-----------------+
-; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-------------+------------+-------+-------+------------+-----------------+
-; pin_name60  ; pin_name5  ; 5.902 ; 5.823 ; Rise       ; pin_name5       ;
-; pin_name61  ; pin_name5  ; 5.695 ; 5.616 ; Rise       ; pin_name5       ;
-; pin_name62  ; pin_name5  ; 6.297 ; 6.292 ; Rise       ; pin_name5       ;
-; pin_name63  ; pin_name5  ; 5.616 ; 5.577 ; Rise       ; pin_name5       ;
-; pin_name64  ; pin_name5  ; 5.893 ; 5.812 ; Rise       ; pin_name5       ;
-; pin_name65  ; pin_name5  ; 5.707 ; 5.630 ; Rise       ; pin_name5       ;
-; pin_name66  ; pin_name5  ; 5.629 ; 5.590 ; Rise       ; pin_name5       ;
-; pin_name67  ; pin_name5  ; 5.633 ; 5.594 ; Rise       ; pin_name5       ;
-; pin_name68  ; pin_name5  ; 5.882 ; 5.801 ; Rise       ; pin_name5       ;
-; pin_name69  ; pin_name5  ; 5.803 ; 5.746 ; Rise       ; pin_name5       ;
-; pin_name610 ; pin_name5  ; 5.703 ; 5.621 ; Rise       ; pin_name5       ;
-; pin_name611 ; pin_name5  ; 5.696 ; 5.616 ; Rise       ; pin_name5       ;
-; pin_name612 ; pin_name5  ; 5.717 ; 5.636 ; Rise       ; pin_name5       ;
-; pin_name613 ; pin_name5  ; 5.807 ; 5.757 ; Rise       ; pin_name5       ;
-; pin_name614 ; pin_name5  ; 5.670 ; 5.590 ; Rise       ; pin_name5       ;
-; pin_name615 ; pin_name5  ; 5.618 ; 5.579 ; Rise       ; pin_name5       ;
-+-------------+------------+-------+-------+------------+-----------------+
+------------------------------------------
+; Slow 1200mV 85C Model Datasheet Report ;
+------------------------------------------
+Nothing to report.
 
 
 ----------------------------------------------
@@ -432,240 +189,16 @@ No paths to report.
 No paths to report.
 
 
-+--------------------------------------------------+
+----------------------------------------------------
 ; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
-+-----------+--------+-----------------------------+
-; Clock     ; Slack  ; End Point TNS               ;
-+-----------+--------+-----------------------------+
-; pin_name5 ; -3.000 ; -19.000                     ;
-+-----------+--------+-----------------------------+
+----------------------------------------------------
+No paths to report.
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Minimum Pulse Width: 'pin_name5'                                                                 ;
-+--------+--------------+----------------+------------------+-----------+------------+----------------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock     ; Clock Edge ; Target                           ;
-+--------+--------------+----------------+------------------+-----------+------------+----------------------------------+
-; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; pin_name5 ; Rise       ; pin_name5                        ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[0]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[10] ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[11] ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[12] ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[13] ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[14] ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[15] ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[1]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[2]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[3]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[4]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[5]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[6]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[7]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[8]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[9]  ;
-; 0.217  ; 0.401        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[14] ;
-; 0.217  ; 0.401        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[1]  ;
-; 0.217  ; 0.401        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[8]  ;
-; 0.218  ; 0.402        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[12] ;
-; 0.218  ; 0.402        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[5]  ;
-; 0.220  ; 0.404        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[0]  ;
-; 0.220  ; 0.404        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[10] ;
-; 0.220  ; 0.404        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[11] ;
-; 0.220  ; 0.404        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[15] ;
-; 0.220  ; 0.404        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[4]  ;
-; 0.220  ; 0.404        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[6]  ;
-; 0.221  ; 0.405        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[9]  ;
-; 0.222  ; 0.406        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[3]  ;
-; 0.223  ; 0.407        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[2]  ;
-; 0.223  ; 0.407        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[7]  ;
-; 0.225  ; 0.409        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[13] ;
-; 0.344  ; 0.344        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; pin_name5~input|o                ;
-; 0.348  ; 0.348        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; pin_name5~inputclkctrl|inclk[0]  ;
-; 0.348  ; 0.348        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; pin_name5~inputclkctrl|outclk    ;
-; 0.374  ; 0.590        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[13] ;
-; 0.375  ; 0.591        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[2]  ;
-; 0.376  ; 0.592        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[7]  ;
-; 0.377  ; 0.593        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[3]  ;
-; 0.377  ; 0.377        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[14]|clk             ;
-; 0.377  ; 0.377        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[1]|clk              ;
-; 0.377  ; 0.377        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[8]|clk              ;
-; 0.378  ; 0.594        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[6]  ;
-; 0.378  ; 0.594        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[9]  ;
-; 0.378  ; 0.378        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[12]|clk             ;
-; 0.378  ; 0.378        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[5]|clk              ;
-; 0.379  ; 0.595        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[0]  ;
-; 0.379  ; 0.595        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[10] ;
-; 0.379  ; 0.595        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[11] ;
-; 0.379  ; 0.595        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[15] ;
-; 0.379  ; 0.595        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[4]  ;
-; 0.380  ; 0.380        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[0]|clk              ;
-; 0.380  ; 0.380        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[10]|clk             ;
-; 0.380  ; 0.380        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[11]|clk             ;
-; 0.380  ; 0.380        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[15]|clk             ;
-; 0.380  ; 0.380        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[4]|clk              ;
-; 0.380  ; 0.380        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[6]|clk              ;
-; 0.381  ; 0.597        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[12] ;
-; 0.381  ; 0.597        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[1]  ;
-; 0.381  ; 0.597        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[5]  ;
-; 0.381  ; 0.597        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[8]  ;
-; 0.381  ; 0.381        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[9]|clk              ;
-; 0.382  ; 0.598        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[14] ;
-; 0.382  ; 0.382        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[3]|clk              ;
-; 0.383  ; 0.383        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[2]|clk              ;
-; 0.383  ; 0.383        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[7]|clk              ;
-; 0.385  ; 0.385        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[13]|clk             ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; pin_name5~input|i                ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; pin_name5~input|i                ;
-; 0.614  ; 0.614        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[13]|clk             ;
-; 0.615  ; 0.615        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[2]|clk              ;
-; 0.616  ; 0.616        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[7]|clk              ;
-; 0.617  ; 0.617        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[3]|clk              ;
-; 0.618  ; 0.618        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[6]|clk              ;
-; 0.618  ; 0.618        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[9]|clk              ;
-; 0.619  ; 0.619        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[0]|clk              ;
-; 0.619  ; 0.619        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[10]|clk             ;
-; 0.619  ; 0.619        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[11]|clk             ;
-; 0.619  ; 0.619        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[15]|clk             ;
-; 0.619  ; 0.619        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[4]|clk              ;
-; 0.621  ; 0.621        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[12]|clk             ;
-; 0.621  ; 0.621        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[1]|clk              ;
-; 0.621  ; 0.621        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[5]|clk              ;
-; 0.621  ; 0.621        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[8]|clk              ;
-; 0.622  ; 0.622        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[14]|clk             ;
-; 0.652  ; 0.652        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; pin_name5~inputclkctrl|inclk[0]  ;
-; 0.652  ; 0.652        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; pin_name5~inputclkctrl|outclk    ;
-; 0.656  ; 0.656        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; pin_name5~input|o                ;
-+--------+--------------+----------------+------------------+-----------+------------+----------------------------------+
-
-
-+----------------------------------------------------------------------------+
-; Setup Times                                                                ;
-+----------------+------------+-------+-------+------------+-----------------+
-; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+----------------+------------+-------+-------+------------+-----------------+
-; pin_name4[*]   ; pin_name5  ; 1.348 ; 1.718 ; Rise       ; pin_name5       ;
-;  pin_name4[0]  ; pin_name5  ; 1.098 ; 1.436 ; Rise       ; pin_name5       ;
-;  pin_name4[1]  ; pin_name5  ; 1.201 ; 1.562 ; Rise       ; pin_name5       ;
-;  pin_name4[2]  ; pin_name5  ; 1.289 ; 1.657 ; Rise       ; pin_name5       ;
-;  pin_name4[3]  ; pin_name5  ; 1.167 ; 1.514 ; Rise       ; pin_name5       ;
-;  pin_name4[4]  ; pin_name5  ; 1.070 ; 1.408 ; Rise       ; pin_name5       ;
-;  pin_name4[5]  ; pin_name5  ; 1.333 ; 1.704 ; Rise       ; pin_name5       ;
-;  pin_name4[6]  ; pin_name5  ; 0.908 ; 1.249 ; Rise       ; pin_name5       ;
-;  pin_name4[7]  ; pin_name5  ; 1.166 ; 1.538 ; Rise       ; pin_name5       ;
-;  pin_name4[8]  ; pin_name5  ; 1.225 ; 1.586 ; Rise       ; pin_name5       ;
-;  pin_name4[9]  ; pin_name5  ; 1.165 ; 1.539 ; Rise       ; pin_name5       ;
-;  pin_name4[10] ; pin_name5  ; 1.340 ; 1.708 ; Rise       ; pin_name5       ;
-;  pin_name4[11] ; pin_name5  ; 1.348 ; 1.718 ; Rise       ; pin_name5       ;
-;  pin_name4[12] ; pin_name5  ; 1.335 ; 1.703 ; Rise       ; pin_name5       ;
-;  pin_name4[13] ; pin_name5  ; 1.126 ; 1.500 ; Rise       ; pin_name5       ;
-;  pin_name4[14] ; pin_name5  ; 1.314 ; 1.684 ; Rise       ; pin_name5       ;
-;  pin_name4[15] ; pin_name5  ; 0.903 ; 1.244 ; Rise       ; pin_name5       ;
-; pin_name50     ; pin_name5  ; 1.227 ; 1.579 ; Rise       ; pin_name5       ;
-; pin_name51     ; pin_name5  ; 1.121 ; 1.463 ; Rise       ; pin_name5       ;
-; pin_name52     ; pin_name5  ; 1.123 ; 1.498 ; Rise       ; pin_name5       ;
-; pin_name53     ; pin_name5  ; 1.115 ; 1.490 ; Rise       ; pin_name5       ;
-; pin_name54     ; pin_name5  ; 1.328 ; 1.697 ; Rise       ; pin_name5       ;
-; pin_name55     ; pin_name5  ; 1.137 ; 1.477 ; Rise       ; pin_name5       ;
-; pin_name56     ; pin_name5  ; 1.272 ; 1.641 ; Rise       ; pin_name5       ;
-; pin_name57     ; pin_name5  ; 1.267 ; 1.634 ; Rise       ; pin_name5       ;
-; pin_name58     ; pin_name5  ; 1.133 ; 1.472 ; Rise       ; pin_name5       ;
-; pin_name59     ; pin_name5  ; 0.950 ; 1.290 ; Rise       ; pin_name5       ;
-; pin_name510    ; pin_name5  ; 1.198 ; 1.551 ; Rise       ; pin_name5       ;
-; pin_name511    ; pin_name5  ; 1.144 ; 1.485 ; Rise       ; pin_name5       ;
-; pin_name512    ; pin_name5  ; 1.252 ; 1.617 ; Rise       ; pin_name5       ;
-; pin_name513    ; pin_name5  ; 0.921 ; 1.261 ; Rise       ; pin_name5       ;
-; pin_name514    ; pin_name5  ; 1.207 ; 1.572 ; Rise       ; pin_name5       ;
-; pin_name515    ; pin_name5  ; 0.404 ; 0.485 ; Rise       ; pin_name5       ;
-+----------------+------------+-------+-------+------------+-----------------+
-
-
-+------------------------------------------------------------------------------+
-; Hold Times                                                                   ;
-+----------------+------------+--------+--------+------------+-----------------+
-; Data Port      ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+----------------+------------+--------+--------+------------+-----------------+
-; pin_name4[*]   ; pin_name5  ; -0.567 ; -0.894 ; Rise       ; pin_name5       ;
-;  pin_name4[0]  ; pin_name5  ; -0.752 ; -1.077 ; Rise       ; pin_name5       ;
-;  pin_name4[1]  ; pin_name5  ; -0.850 ; -1.196 ; Rise       ; pin_name5       ;
-;  pin_name4[2]  ; pin_name5  ; -0.936 ; -1.289 ; Rise       ; pin_name5       ;
-;  pin_name4[3]  ; pin_name5  ; -0.820 ; -1.153 ; Rise       ; pin_name5       ;
-;  pin_name4[4]  ; pin_name5  ; -0.724 ; -1.048 ; Rise       ; pin_name5       ;
-;  pin_name4[5]  ; pin_name5  ; -0.951 ; -1.292 ; Rise       ; pin_name5       ;
-;  pin_name4[6]  ; pin_name5  ; -0.569 ; -0.897 ; Rise       ; pin_name5       ;
-;  pin_name4[7]  ; pin_name5  ; -0.761 ; -1.106 ; Rise       ; pin_name5       ;
-;  pin_name4[8]  ; pin_name5  ; -0.874 ; -1.219 ; Rise       ; pin_name5       ;
-;  pin_name4[9]  ; pin_name5  ; -0.793 ; -1.136 ; Rise       ; pin_name5       ;
-;  pin_name4[10] ; pin_name5  ; -0.925 ; -1.266 ; Rise       ; pin_name5       ;
-;  pin_name4[11] ; pin_name5  ; -0.971 ; -1.307 ; Rise       ; pin_name5       ;
-;  pin_name4[12] ; pin_name5  ; -0.923 ; -1.260 ; Rise       ; pin_name5       ;
-;  pin_name4[13] ; pin_name5  ; -0.755 ; -1.098 ; Rise       ; pin_name5       ;
-;  pin_name4[14] ; pin_name5  ; -0.901 ; -1.244 ; Rise       ; pin_name5       ;
-;  pin_name4[15] ; pin_name5  ; -0.567 ; -0.894 ; Rise       ; pin_name5       ;
-; pin_name50     ; pin_name5  ; -0.877 ; -1.214 ; Rise       ; pin_name5       ;
-; pin_name51     ; pin_name5  ; -0.774 ; -1.101 ; Rise       ; pin_name5       ;
-; pin_name52     ; pin_name5  ; -0.718 ; -1.066 ; Rise       ; pin_name5       ;
-; pin_name53     ; pin_name5  ; -0.743 ; -1.087 ; Rise       ; pin_name5       ;
-; pin_name54     ; pin_name5  ; -0.947 ; -1.284 ; Rise       ; pin_name5       ;
-; pin_name55     ; pin_name5  ; -0.790 ; -1.117 ; Rise       ; pin_name5       ;
-; pin_name56     ; pin_name5  ; -0.920 ; -1.273 ; Rise       ; pin_name5       ;
-; pin_name57     ; pin_name5  ; -0.915 ; -1.268 ; Rise       ; pin_name5       ;
-; pin_name58     ; pin_name5  ; -0.785 ; -1.111 ; Rise       ; pin_name5       ;
-; pin_name59     ; pin_name5  ; -0.612 ; -0.939 ; Rise       ; pin_name5       ;
-; pin_name510    ; pin_name5  ; -0.846 ; -1.185 ; Rise       ; pin_name5       ;
-; pin_name511    ; pin_name5  ; -0.798 ; -1.125 ; Rise       ; pin_name5       ;
-; pin_name512    ; pin_name5  ; -0.899 ; -1.249 ; Rise       ; pin_name5       ;
-; pin_name513    ; pin_name5  ; -0.584 ; -0.911 ; Rise       ; pin_name5       ;
-; pin_name514    ; pin_name5  ; -0.853 ; -1.204 ; Rise       ; pin_name5       ;
-; pin_name515    ; pin_name5  ; -0.093 ; -0.170 ; Rise       ; pin_name5       ;
-+----------------+------------+--------+--------+------------+-----------------+
-
-
-+-------------------------------------------------------------------------+
-; Clock to Output Times                                                   ;
-+-------------+------------+-------+-------+------------+-----------------+
-; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-------------+------------+-------+-------+------------+-----------------+
-; pin_name60  ; pin_name5  ; 5.472 ; 5.360 ; Rise       ; pin_name5       ;
-; pin_name61  ; pin_name5  ; 5.270 ; 5.165 ; Rise       ; pin_name5       ;
-; pin_name62  ; pin_name5  ; 5.756 ; 5.742 ; Rise       ; pin_name5       ;
-; pin_name63  ; pin_name5  ; 5.190 ; 5.122 ; Rise       ; pin_name5       ;
-; pin_name64  ; pin_name5  ; 5.467 ; 5.350 ; Rise       ; pin_name5       ;
-; pin_name65  ; pin_name5  ; 5.281 ; 5.178 ; Rise       ; pin_name5       ;
-; pin_name66  ; pin_name5  ; 5.205 ; 5.137 ; Rise       ; pin_name5       ;
-; pin_name67  ; pin_name5  ; 5.206 ; 5.138 ; Rise       ; pin_name5       ;
-; pin_name68  ; pin_name5  ; 5.454 ; 5.339 ; Rise       ; pin_name5       ;
-; pin_name69  ; pin_name5  ; 5.375 ; 5.278 ; Rise       ; pin_name5       ;
-; pin_name610 ; pin_name5  ; 5.282 ; 5.174 ; Rise       ; pin_name5       ;
-; pin_name611 ; pin_name5  ; 5.271 ; 5.165 ; Rise       ; pin_name5       ;
-; pin_name612 ; pin_name5  ; 5.293 ; 5.187 ; Rise       ; pin_name5       ;
-; pin_name613 ; pin_name5  ; 5.378 ; 5.288 ; Rise       ; pin_name5       ;
-; pin_name614 ; pin_name5  ; 5.246 ; 5.141 ; Rise       ; pin_name5       ;
-; pin_name615 ; pin_name5  ; 5.191 ; 5.123 ; Rise       ; pin_name5       ;
-+-------------+------------+-------+-------+------------+-----------------+
-
-
-+-------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                           ;
-+-------------+------------+-------+-------+------------+-----------------+
-; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-------------+------------+-------+-------+------------+-----------------+
-; pin_name60  ; pin_name5  ; 5.294 ; 5.183 ; Rise       ; pin_name5       ;
-; pin_name61  ; pin_name5  ; 5.100 ; 4.995 ; Rise       ; pin_name5       ;
-; pin_name62  ; pin_name5  ; 5.590 ; 5.575 ; Rise       ; pin_name5       ;
-; pin_name63  ; pin_name5  ; 5.024 ; 4.955 ; Rise       ; pin_name5       ;
-; pin_name64  ; pin_name5  ; 5.290 ; 5.174 ; Rise       ; pin_name5       ;
-; pin_name65  ; pin_name5  ; 5.112 ; 5.009 ; Rise       ; pin_name5       ;
-; pin_name66  ; pin_name5  ; 5.038 ; 4.969 ; Rise       ; pin_name5       ;
-; pin_name67  ; pin_name5  ; 5.041 ; 4.972 ; Rise       ; pin_name5       ;
-; pin_name68  ; pin_name5  ; 5.276 ; 5.161 ; Rise       ; pin_name5       ;
-; pin_name69  ; pin_name5  ; 5.202 ; 5.106 ; Rise       ; pin_name5       ;
-; pin_name610 ; pin_name5  ; 5.113 ; 5.005 ; Rise       ; pin_name5       ;
-; pin_name611 ; pin_name5  ; 5.102 ; 4.996 ; Rise       ; pin_name5       ;
-; pin_name612 ; pin_name5  ; 5.124 ; 5.018 ; Rise       ; pin_name5       ;
-; pin_name613 ; pin_name5  ; 5.206 ; 5.116 ; Rise       ; pin_name5       ;
-; pin_name614 ; pin_name5  ; 5.077 ; 4.973 ; Rise       ; pin_name5       ;
-; pin_name615 ; pin_name5  ; 5.026 ; 4.957 ; Rise       ; pin_name5       ;
-+-------------+------------+-------+-------+------------+-----------------+
+-----------------------------------------
+; Slow 1200mV 0C Model Datasheet Report ;
+-----------------------------------------
+Nothing to report.
 
 
 ---------------------------------------------
@@ -698,240 +231,16 @@ No paths to report.
 No paths to report.
 
 
-+--------------------------------------------------+
+----------------------------------------------------
 ; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
-+-----------+--------+-----------------------------+
-; Clock     ; Slack  ; End Point TNS               ;
-+-----------+--------+-----------------------------+
-; pin_name5 ; -3.000 ; -19.404                     ;
-+-----------+--------+-----------------------------+
+----------------------------------------------------
+No paths to report.
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Fast 1200mV 0C Model Minimum Pulse Width: 'pin_name5'                                                                 ;
-+--------+--------------+----------------+------------------+-----------+------------+----------------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock     ; Clock Edge ; Target                           ;
-+--------+--------------+----------------+------------------+-----------+------------+----------------------------------+
-; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; pin_name5 ; Rise       ; pin_name5                        ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[0]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[10] ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[11] ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[12] ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[13] ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[14] ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[15] ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[1]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[2]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[3]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[4]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[5]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[6]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[7]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[8]  ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[9]  ;
-; -0.026 ; 0.158        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[0]  ;
-; -0.026 ; 0.158        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[10] ;
-; -0.026 ; 0.158        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[12] ;
-; -0.026 ; 0.158        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[14] ;
-; -0.026 ; 0.158        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[1]  ;
-; -0.026 ; 0.158        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[4]  ;
-; -0.026 ; 0.158        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[5]  ;
-; -0.026 ; 0.158        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[6]  ;
-; -0.026 ; 0.158        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[8]  ;
-; -0.025 ; 0.159        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[11] ;
-; -0.025 ; 0.159        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[15] ;
-; -0.025 ; 0.159        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[7]  ;
-; -0.025 ; 0.159        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[9]  ;
-; -0.024 ; 0.160        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[2]  ;
-; -0.023 ; 0.161        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[13] ;
-; -0.023 ; 0.161        ; 0.184          ; Low Pulse Width  ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[3]  ;
-; 0.125  ; 0.125        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; pin_name5~input|o                ;
-; 0.139  ; 0.139        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; pin_name5~inputclkctrl|inclk[0]  ;
-; 0.139  ; 0.139        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; pin_name5~inputclkctrl|outclk    ;
-; 0.153  ; 0.153        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[0]|clk              ;
-; 0.153  ; 0.153        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[10]|clk             ;
-; 0.153  ; 0.153        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[12]|clk             ;
-; 0.153  ; 0.153        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[14]|clk             ;
-; 0.153  ; 0.153        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[1]|clk              ;
-; 0.153  ; 0.153        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[4]|clk              ;
-; 0.153  ; 0.153        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[6]|clk              ;
-; 0.153  ; 0.153        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[8]|clk              ;
-; 0.154  ; 0.154        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[11]|clk             ;
-; 0.154  ; 0.154        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[15]|clk             ;
-; 0.154  ; 0.154        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[5]|clk              ;
-; 0.154  ; 0.154        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[9]|clk              ;
-; 0.155  ; 0.155        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[2]|clk              ;
-; 0.155  ; 0.155        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[7]|clk              ;
-; 0.156  ; 0.156        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[13]|clk             ;
-; 0.156  ; 0.156        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; inst|inst4|q[3]|clk              ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; pin_name5~input|i                ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name5 ; Rise       ; pin_name5~input|i                ;
-; 0.622  ; 0.838        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[13] ;
-; 0.622  ; 0.838        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[3]  ;
-; 0.623  ; 0.839        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[2]  ;
-; 0.623  ; 0.839        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[7]  ;
-; 0.624  ; 0.840        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[11] ;
-; 0.624  ; 0.840        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[15] ;
-; 0.624  ; 0.840        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[5]  ;
-; 0.624  ; 0.840        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[9]  ;
-; 0.625  ; 0.841        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[0]  ;
-; 0.625  ; 0.841        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[10] ;
-; 0.625  ; 0.841        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[12] ;
-; 0.625  ; 0.841        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[14] ;
-; 0.625  ; 0.841        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[1]  ;
-; 0.625  ; 0.841        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[4]  ;
-; 0.625  ; 0.841        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[6]  ;
-; 0.625  ; 0.841        ; 0.216          ; High Pulse Width ; pin_name5 ; Rise       ; ALU:inst|registrador:inst4|q[8]  ;
-; 0.843  ; 0.843        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[13]|clk             ;
-; 0.843  ; 0.843        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[3]|clk              ;
-; 0.844  ; 0.844        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[2]|clk              ;
-; 0.845  ; 0.845        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[11]|clk             ;
-; 0.845  ; 0.845        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[15]|clk             ;
-; 0.845  ; 0.845        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[7]|clk              ;
-; 0.845  ; 0.845        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[9]|clk              ;
-; 0.846  ; 0.846        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[0]|clk              ;
-; 0.846  ; 0.846        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[10]|clk             ;
-; 0.846  ; 0.846        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[12]|clk             ;
-; 0.846  ; 0.846        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[14]|clk             ;
-; 0.846  ; 0.846        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[1]|clk              ;
-; 0.846  ; 0.846        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[4]|clk              ;
-; 0.846  ; 0.846        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[5]|clk              ;
-; 0.846  ; 0.846        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[6]|clk              ;
-; 0.846  ; 0.846        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; inst|inst4|q[8]|clk              ;
-; 0.861  ; 0.861        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; pin_name5~inputclkctrl|inclk[0]  ;
-; 0.861  ; 0.861        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; pin_name5~inputclkctrl|outclk    ;
-; 0.875  ; 0.875        ; 0.000          ; High Pulse Width ; pin_name5 ; Rise       ; pin_name5~input|o                ;
-+--------+--------------+----------------+------------------+-----------+------------+----------------------------------+
-
-
-+----------------------------------------------------------------------------+
-; Setup Times                                                                ;
-+----------------+------------+-------+-------+------------+-----------------+
-; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+----------------+------------+-------+-------+------------+-----------------+
-; pin_name4[*]   ; pin_name5  ; 0.893 ; 1.472 ; Rise       ; pin_name5       ;
-;  pin_name4[0]  ; pin_name5  ; 0.727 ; 1.285 ; Rise       ; pin_name5       ;
-;  pin_name4[1]  ; pin_name5  ; 0.779 ; 1.351 ; Rise       ; pin_name5       ;
-;  pin_name4[2]  ; pin_name5  ; 0.833 ; 1.417 ; Rise       ; pin_name5       ;
-;  pin_name4[3]  ; pin_name5  ; 0.750 ; 1.322 ; Rise       ; pin_name5       ;
-;  pin_name4[4]  ; pin_name5  ; 0.699 ; 1.256 ; Rise       ; pin_name5       ;
-;  pin_name4[5]  ; pin_name5  ; 0.864 ; 1.446 ; Rise       ; pin_name5       ;
-;  pin_name4[6]  ; pin_name5  ; 0.586 ; 1.137 ; Rise       ; pin_name5       ;
-;  pin_name4[7]  ; pin_name5  ; 0.748 ; 1.323 ; Rise       ; pin_name5       ;
-;  pin_name4[8]  ; pin_name5  ; 0.803 ; 1.375 ; Rise       ; pin_name5       ;
-;  pin_name4[9]  ; pin_name5  ; 0.765 ; 1.334 ; Rise       ; pin_name5       ;
-;  pin_name4[10] ; pin_name5  ; 0.864 ; 1.448 ; Rise       ; pin_name5       ;
-;  pin_name4[11] ; pin_name5  ; 0.893 ; 1.472 ; Rise       ; pin_name5       ;
-;  pin_name4[12] ; pin_name5  ; 0.859 ; 1.443 ; Rise       ; pin_name5       ;
-;  pin_name4[13] ; pin_name5  ; 0.724 ; 1.293 ; Rise       ; pin_name5       ;
-;  pin_name4[14] ; pin_name5  ; 0.856 ; 1.431 ; Rise       ; pin_name5       ;
-;  pin_name4[15] ; pin_name5  ; 0.591 ; 1.138 ; Rise       ; pin_name5       ;
-; pin_name50     ; pin_name5  ; 0.818 ; 1.376 ; Rise       ; pin_name5       ;
-; pin_name51     ; pin_name5  ; 0.726 ; 1.291 ; Rise       ; pin_name5       ;
-; pin_name52     ; pin_name5  ; 0.721 ; 1.290 ; Rise       ; pin_name5       ;
-; pin_name53     ; pin_name5  ; 0.712 ; 1.281 ; Rise       ; pin_name5       ;
-; pin_name54     ; pin_name5  ; 0.856 ; 1.440 ; Rise       ; pin_name5       ;
-; pin_name55     ; pin_name5  ; 0.752 ; 1.313 ; Rise       ; pin_name5       ;
-; pin_name56     ; pin_name5  ; 0.828 ; 1.408 ; Rise       ; pin_name5       ;
-; pin_name57     ; pin_name5  ; 0.815 ; 1.396 ; Rise       ; pin_name5       ;
-; pin_name58     ; pin_name5  ; 0.749 ; 1.309 ; Rise       ; pin_name5       ;
-; pin_name59     ; pin_name5  ; 0.629 ; 1.179 ; Rise       ; pin_name5       ;
-; pin_name510    ; pin_name5  ; 0.789 ; 1.347 ; Rise       ; pin_name5       ;
-; pin_name511    ; pin_name5  ; 0.763 ; 1.324 ; Rise       ; pin_name5       ;
-; pin_name512    ; pin_name5  ; 0.819 ; 1.395 ; Rise       ; pin_name5       ;
-; pin_name513    ; pin_name5  ; 0.598 ; 1.148 ; Rise       ; pin_name5       ;
-; pin_name514    ; pin_name5  ; 0.773 ; 1.350 ; Rise       ; pin_name5       ;
-; pin_name515    ; pin_name5  ; 0.301 ; 0.528 ; Rise       ; pin_name5       ;
-+----------------+------------+-------+-------+------------+-----------------+
-
-
-+------------------------------------------------------------------------------+
-; Hold Times                                                                   ;
-+----------------+------------+--------+--------+------------+-----------------+
-; Data Port      ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+----------------+------------+--------+--------+------------+-----------------+
-; pin_name4[*]   ; pin_name5  ; -0.370 ; -0.906 ; Rise       ; pin_name5       ;
-;  pin_name4[0]  ; pin_name5  ; -0.505 ; -1.049 ; Rise       ; pin_name5       ;
-;  pin_name4[1]  ; pin_name5  ; -0.556 ; -1.113 ; Rise       ; pin_name5       ;
-;  pin_name4[2]  ; pin_name5  ; -0.610 ; -1.177 ; Rise       ; pin_name5       ;
-;  pin_name4[3]  ; pin_name5  ; -0.529 ; -1.086 ; Rise       ; pin_name5       ;
-;  pin_name4[4]  ; pin_name5  ; -0.478 ; -1.022 ; Rise       ; pin_name5       ;
-;  pin_name4[5]  ; pin_name5  ; -0.625 ; -1.180 ; Rise       ; pin_name5       ;
-;  pin_name4[6]  ; pin_name5  ; -0.370 ; -0.906 ; Rise       ; pin_name5       ;
-;  pin_name4[7]  ; pin_name5  ; -0.492 ; -1.044 ; Rise       ; pin_name5       ;
-;  pin_name4[8]  ; pin_name5  ; -0.579 ; -1.136 ; Rise       ; pin_name5       ;
-;  pin_name4[9]  ; pin_name5  ; -0.532 ; -1.075 ; Rise       ; pin_name5       ;
-;  pin_name4[10] ; pin_name5  ; -0.602 ; -1.163 ; Rise       ; pin_name5       ;
-;  pin_name4[11] ; pin_name5  ; -0.653 ; -1.202 ; Rise       ; pin_name5       ;
-;  pin_name4[12] ; pin_name5  ; -0.598 ; -1.154 ; Rise       ; pin_name5       ;
-;  pin_name4[13] ; pin_name5  ; -0.491 ; -1.034 ; Rise       ; pin_name5       ;
-;  pin_name4[14] ; pin_name5  ; -0.594 ; -1.146 ; Rise       ; pin_name5       ;
-;  pin_name4[15] ; pin_name5  ; -0.376 ; -0.909 ; Rise       ; pin_name5       ;
-; pin_name50     ; pin_name5  ; -0.594 ; -1.138 ; Rise       ; pin_name5       ;
-; pin_name51     ; pin_name5  ; -0.505 ; -1.055 ; Rise       ; pin_name5       ;
-; pin_name52     ; pin_name5  ; -0.465 ; -1.011 ; Rise       ; pin_name5       ;
-; pin_name53     ; pin_name5  ; -0.478 ; -1.021 ; Rise       ; pin_name5       ;
-; pin_name54     ; pin_name5  ; -0.616 ; -1.175 ; Rise       ; pin_name5       ;
-; pin_name55     ; pin_name5  ; -0.531 ; -1.078 ; Rise       ; pin_name5       ;
-; pin_name56     ; pin_name5  ; -0.603 ; -1.167 ; Rise       ; pin_name5       ;
-; pin_name57     ; pin_name5  ; -0.592 ; -1.157 ; Rise       ; pin_name5       ;
-; pin_name58     ; pin_name5  ; -0.527 ; -1.073 ; Rise       ; pin_name5       ;
-; pin_name59     ; pin_name5  ; -0.414 ; -0.950 ; Rise       ; pin_name5       ;
-; pin_name510    ; pin_name5  ; -0.566 ; -1.110 ; Rise       ; pin_name5       ;
-; pin_name511    ; pin_name5  ; -0.542 ; -1.089 ; Rise       ; pin_name5       ;
-; pin_name512    ; pin_name5  ; -0.595 ; -1.157 ; Rise       ; pin_name5       ;
-; pin_name513    ; pin_name5  ; -0.383 ; -0.919 ; Rise       ; pin_name5       ;
-; pin_name514    ; pin_name5  ; -0.549 ; -1.111 ; Rise       ; pin_name5       ;
-; pin_name515    ; pin_name5  ; -0.103 ; -0.329 ; Rise       ; pin_name5       ;
-+----------------+------------+--------+--------+------------+-----------------+
-
-
-+-------------------------------------------------------------------------+
-; Clock to Output Times                                                   ;
-+-------------+------------+-------+-------+------------+-----------------+
-; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-------------+------------+-------+-------+------------+-----------------+
-; pin_name60  ; pin_name5  ; 3.571 ; 3.613 ; Rise       ; pin_name5       ;
-; pin_name61  ; pin_name5  ; 3.448 ; 3.476 ; Rise       ; pin_name5       ;
-; pin_name62  ; pin_name5  ; 3.941 ; 3.963 ; Rise       ; pin_name5       ;
-; pin_name63  ; pin_name5  ; 3.470 ; 3.455 ; Rise       ; pin_name5       ;
-; pin_name64  ; pin_name5  ; 3.570 ; 3.609 ; Rise       ; pin_name5       ;
-; pin_name65  ; pin_name5  ; 3.461 ; 3.489 ; Rise       ; pin_name5       ;
-; pin_name66  ; pin_name5  ; 3.481 ; 3.466 ; Rise       ; pin_name5       ;
-; pin_name67  ; pin_name5  ; 3.485 ; 3.470 ; Rise       ; pin_name5       ;
-; pin_name68  ; pin_name5  ; 3.557 ; 3.597 ; Rise       ; pin_name5       ;
-; pin_name69  ; pin_name5  ; 3.569 ; 3.557 ; Rise       ; pin_name5       ;
-; pin_name610 ; pin_name5  ; 3.462 ; 3.488 ; Rise       ; pin_name5       ;
-; pin_name611 ; pin_name5  ; 3.446 ; 3.475 ; Rise       ; pin_name5       ;
-; pin_name612 ; pin_name5  ; 3.473 ; 3.500 ; Rise       ; pin_name5       ;
-; pin_name613 ; pin_name5  ; 3.574 ; 3.566 ; Rise       ; pin_name5       ;
-; pin_name614 ; pin_name5  ; 3.433 ; 3.460 ; Rise       ; pin_name5       ;
-; pin_name615 ; pin_name5  ; 3.468 ; 3.453 ; Rise       ; pin_name5       ;
-+-------------+------------+-------+-------+------------+-----------------+
-
-
-+-------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                           ;
-+-------------+------------+-------+-------+------------+-----------------+
-; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-------------+------------+-------+-------+------------+-----------------+
-; pin_name60  ; pin_name5  ; 3.451 ; 3.491 ; Rise       ; pin_name5       ;
-; pin_name61  ; pin_name5  ; 3.334 ; 3.361 ; Rise       ; pin_name5       ;
-; pin_name62  ; pin_name5  ; 3.828 ; 3.849 ; Rise       ; pin_name5       ;
-; pin_name63  ; pin_name5  ; 3.357 ; 3.341 ; Rise       ; pin_name5       ;
-; pin_name64  ; pin_name5  ; 3.452 ; 3.489 ; Rise       ; pin_name5       ;
-; pin_name65  ; pin_name5  ; 3.347 ; 3.374 ; Rise       ; pin_name5       ;
-; pin_name66  ; pin_name5  ; 3.367 ; 3.351 ; Rise       ; pin_name5       ;
-; pin_name67  ; pin_name5  ; 3.372 ; 3.356 ; Rise       ; pin_name5       ;
-; pin_name68  ; pin_name5  ; 3.438 ; 3.476 ; Rise       ; pin_name5       ;
-; pin_name69  ; pin_name5  ; 3.452 ; 3.439 ; Rise       ; pin_name5       ;
-; pin_name610 ; pin_name5  ; 3.349 ; 3.373 ; Rise       ; pin_name5       ;
-; pin_name611 ; pin_name5  ; 3.332 ; 3.360 ; Rise       ; pin_name5       ;
-; pin_name612 ; pin_name5  ; 3.360 ; 3.385 ; Rise       ; pin_name5       ;
-; pin_name613 ; pin_name5  ; 3.457 ; 3.447 ; Rise       ; pin_name5       ;
-; pin_name614 ; pin_name5  ; 3.319 ; 3.344 ; Rise       ; pin_name5       ;
-; pin_name615 ; pin_name5  ; 3.355 ; 3.339 ; Rise       ; pin_name5       ;
-+-------------+------------+-------+-------+------------+-----------------+
+-----------------------------------------
+; Fast 1200mV 0C Model Datasheet Report ;
+-----------------------------------------
+Nothing to report.
 
 
 ---------------------------------------------
@@ -945,141 +254,9 @@ No synchronizer chains to report.
 +------------------+-------+------+----------+---------+---------------------+
 ; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+-------+------+----------+---------+---------------------+
-; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; -3.000              ;
-;  pin_name5       ; N/A   ; N/A  ; N/A      ; N/A     ; -3.000              ;
-; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; -19.404             ;
-;  pin_name5       ; N/A   ; N/A  ; N/A      ; N/A     ; -19.404             ;
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
 +------------------+-------+------+----------+---------+---------------------+
-
-
-+----------------------------------------------------------------------------+
-; Setup Times                                                                ;
-+----------------+------------+-------+-------+------------+-----------------+
-; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+----------------+------------+-------+-------+------------+-----------------+
-; pin_name4[*]   ; pin_name5  ; 1.593 ; 2.060 ; Rise       ; pin_name5       ;
-;  pin_name4[0]  ; pin_name5  ; 1.319 ; 1.745 ; Rise       ; pin_name5       ;
-;  pin_name4[1]  ; pin_name5  ; 1.432 ; 1.884 ; Rise       ; pin_name5       ;
-;  pin_name4[2]  ; pin_name5  ; 1.516 ; 1.982 ; Rise       ; pin_name5       ;
-;  pin_name4[3]  ; pin_name5  ; 1.391 ; 1.826 ; Rise       ; pin_name5       ;
-;  pin_name4[4]  ; pin_name5  ; 1.292 ; 1.717 ; Rise       ; pin_name5       ;
-;  pin_name4[5]  ; pin_name5  ; 1.580 ; 2.046 ; Rise       ; pin_name5       ;
-;  pin_name4[6]  ; pin_name5  ; 1.103 ; 1.536 ; Rise       ; pin_name5       ;
-;  pin_name4[7]  ; pin_name5  ; 1.386 ; 1.859 ; Rise       ; pin_name5       ;
-;  pin_name4[8]  ; pin_name5  ; 1.457 ; 1.908 ; Rise       ; pin_name5       ;
-;  pin_name4[9]  ; pin_name5  ; 1.383 ; 1.856 ; Rise       ; pin_name5       ;
-;  pin_name4[10] ; pin_name5  ; 1.588 ; 2.056 ; Rise       ; pin_name5       ;
-;  pin_name4[11] ; pin_name5  ; 1.593 ; 2.060 ; Rise       ; pin_name5       ;
-;  pin_name4[12] ; pin_name5  ; 1.583 ; 2.050 ; Rise       ; pin_name5       ;
-;  pin_name4[13] ; pin_name5  ; 1.345 ; 1.818 ; Rise       ; pin_name5       ;
-;  pin_name4[14] ; pin_name5  ; 1.561 ; 2.023 ; Rise       ; pin_name5       ;
-;  pin_name4[15] ; pin_name5  ; 1.098 ; 1.527 ; Rise       ; pin_name5       ;
-; pin_name50     ; pin_name5  ; 1.468 ; 1.897 ; Rise       ; pin_name5       ;
-; pin_name51     ; pin_name5  ; 1.351 ; 1.776 ; Rise       ; pin_name5       ;
-; pin_name52     ; pin_name5  ; 1.341 ; 1.815 ; Rise       ; pin_name5       ;
-; pin_name53     ; pin_name5  ; 1.333 ; 1.807 ; Rise       ; pin_name5       ;
-; pin_name54     ; pin_name5  ; 1.575 ; 2.043 ; Rise       ; pin_name5       ;
-; pin_name55     ; pin_name5  ; 1.366 ; 1.787 ; Rise       ; pin_name5       ;
-; pin_name56     ; pin_name5  ; 1.500 ; 1.965 ; Rise       ; pin_name5       ;
-; pin_name57     ; pin_name5  ; 1.501 ; 1.957 ; Rise       ; pin_name5       ;
-; pin_name58     ; pin_name5  ; 1.354 ; 1.783 ; Rise       ; pin_name5       ;
-; pin_name59     ; pin_name5  ; 1.143 ; 1.575 ; Rise       ; pin_name5       ;
-; pin_name510    ; pin_name5  ; 1.438 ; 1.869 ; Rise       ; pin_name5       ;
-; pin_name511    ; pin_name5  ; 1.374 ; 1.794 ; Rise       ; pin_name5       ;
-; pin_name512    ; pin_name5  ; 1.491 ; 1.940 ; Rise       ; pin_name5       ;
-; pin_name513    ; pin_name5  ; 1.115 ; 1.547 ; Rise       ; pin_name5       ;
-; pin_name514    ; pin_name5  ; 1.447 ; 1.896 ; Rise       ; pin_name5       ;
-; pin_name515    ; pin_name5  ; 0.424 ; 0.528 ; Rise       ; pin_name5       ;
-+----------------+------------+-------+-------+------------+-----------------+
-
-
-+------------------------------------------------------------------------------+
-; Hold Times                                                                   ;
-+----------------+------------+--------+--------+------------+-----------------+
-; Data Port      ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+----------------+------------+--------+--------+------------+-----------------+
-; pin_name4[*]   ; pin_name5  ; -0.370 ; -0.894 ; Rise       ; pin_name5       ;
-;  pin_name4[0]  ; pin_name5  ; -0.505 ; -1.049 ; Rise       ; pin_name5       ;
-;  pin_name4[1]  ; pin_name5  ; -0.556 ; -1.113 ; Rise       ; pin_name5       ;
-;  pin_name4[2]  ; pin_name5  ; -0.610 ; -1.177 ; Rise       ; pin_name5       ;
-;  pin_name4[3]  ; pin_name5  ; -0.529 ; -1.086 ; Rise       ; pin_name5       ;
-;  pin_name4[4]  ; pin_name5  ; -0.478 ; -1.022 ; Rise       ; pin_name5       ;
-;  pin_name4[5]  ; pin_name5  ; -0.625 ; -1.180 ; Rise       ; pin_name5       ;
-;  pin_name4[6]  ; pin_name5  ; -0.370 ; -0.897 ; Rise       ; pin_name5       ;
-;  pin_name4[7]  ; pin_name5  ; -0.492 ; -1.044 ; Rise       ; pin_name5       ;
-;  pin_name4[8]  ; pin_name5  ; -0.579 ; -1.136 ; Rise       ; pin_name5       ;
-;  pin_name4[9]  ; pin_name5  ; -0.532 ; -1.075 ; Rise       ; pin_name5       ;
-;  pin_name4[10] ; pin_name5  ; -0.602 ; -1.163 ; Rise       ; pin_name5       ;
-;  pin_name4[11] ; pin_name5  ; -0.653 ; -1.202 ; Rise       ; pin_name5       ;
-;  pin_name4[12] ; pin_name5  ; -0.598 ; -1.154 ; Rise       ; pin_name5       ;
-;  pin_name4[13] ; pin_name5  ; -0.491 ; -1.034 ; Rise       ; pin_name5       ;
-;  pin_name4[14] ; pin_name5  ; -0.594 ; -1.146 ; Rise       ; pin_name5       ;
-;  pin_name4[15] ; pin_name5  ; -0.376 ; -0.894 ; Rise       ; pin_name5       ;
-; pin_name50     ; pin_name5  ; -0.594 ; -1.138 ; Rise       ; pin_name5       ;
-; pin_name51     ; pin_name5  ; -0.505 ; -1.055 ; Rise       ; pin_name5       ;
-; pin_name52     ; pin_name5  ; -0.465 ; -1.011 ; Rise       ; pin_name5       ;
-; pin_name53     ; pin_name5  ; -0.478 ; -1.021 ; Rise       ; pin_name5       ;
-; pin_name54     ; pin_name5  ; -0.616 ; -1.175 ; Rise       ; pin_name5       ;
-; pin_name55     ; pin_name5  ; -0.531 ; -1.078 ; Rise       ; pin_name5       ;
-; pin_name56     ; pin_name5  ; -0.603 ; -1.167 ; Rise       ; pin_name5       ;
-; pin_name57     ; pin_name5  ; -0.592 ; -1.157 ; Rise       ; pin_name5       ;
-; pin_name58     ; pin_name5  ; -0.527 ; -1.073 ; Rise       ; pin_name5       ;
-; pin_name59     ; pin_name5  ; -0.414 ; -0.939 ; Rise       ; pin_name5       ;
-; pin_name510    ; pin_name5  ; -0.566 ; -1.110 ; Rise       ; pin_name5       ;
-; pin_name511    ; pin_name5  ; -0.542 ; -1.089 ; Rise       ; pin_name5       ;
-; pin_name512    ; pin_name5  ; -0.595 ; -1.157 ; Rise       ; pin_name5       ;
-; pin_name513    ; pin_name5  ; -0.383 ; -0.911 ; Rise       ; pin_name5       ;
-; pin_name514    ; pin_name5  ; -0.549 ; -1.111 ; Rise       ; pin_name5       ;
-; pin_name515    ; pin_name5  ; -0.079 ; -0.115 ; Rise       ; pin_name5       ;
-+----------------+------------+--------+--------+------------+-----------------+
-
-
-+-------------------------------------------------------------------------+
-; Clock to Output Times                                                   ;
-+-------------+------------+-------+-------+------------+-----------------+
-; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-------------+------------+-------+-------+------------+-----------------+
-; pin_name60  ; pin_name5  ; 6.098 ; 6.020 ; Rise       ; pin_name5       ;
-; pin_name61  ; pin_name5  ; 5.883 ; 5.805 ; Rise       ; pin_name5       ;
-; pin_name62  ; pin_name5  ; 6.484 ; 6.480 ; Rise       ; pin_name5       ;
-; pin_name63  ; pin_name5  ; 5.803 ; 5.766 ; Rise       ; pin_name5       ;
-; pin_name64  ; pin_name5  ; 6.089 ; 6.008 ; Rise       ; pin_name5       ;
-; pin_name65  ; pin_name5  ; 5.894 ; 5.819 ; Rise       ; pin_name5       ;
-; pin_name66  ; pin_name5  ; 5.816 ; 5.779 ; Rise       ; pin_name5       ;
-; pin_name67  ; pin_name5  ; 5.819 ; 5.782 ; Rise       ; pin_name5       ;
-; pin_name68  ; pin_name5  ; 6.078 ; 5.998 ; Rise       ; pin_name5       ;
-; pin_name69  ; pin_name5  ; 5.997 ; 5.941 ; Rise       ; pin_name5       ;
-; pin_name610 ; pin_name5  ; 5.890 ; 5.810 ; Rise       ; pin_name5       ;
-; pin_name611 ; pin_name5  ; 5.883 ; 5.804 ; Rise       ; pin_name5       ;
-; pin_name612 ; pin_name5  ; 5.903 ; 5.824 ; Rise       ; pin_name5       ;
-; pin_name613 ; pin_name5  ; 6.001 ; 5.952 ; Rise       ; pin_name5       ;
-; pin_name614 ; pin_name5  ; 5.857 ; 5.778 ; Rise       ; pin_name5       ;
-; pin_name615 ; pin_name5  ; 5.804 ; 5.767 ; Rise       ; pin_name5       ;
-+-------------+------------+-------+-------+------------+-----------------+
-
-
-+-------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                           ;
-+-------------+------------+-------+-------+------------+-----------------+
-; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-------------+------------+-------+-------+------------+-----------------+
-; pin_name60  ; pin_name5  ; 3.451 ; 3.491 ; Rise       ; pin_name5       ;
-; pin_name61  ; pin_name5  ; 3.334 ; 3.361 ; Rise       ; pin_name5       ;
-; pin_name62  ; pin_name5  ; 3.828 ; 3.849 ; Rise       ; pin_name5       ;
-; pin_name63  ; pin_name5  ; 3.357 ; 3.341 ; Rise       ; pin_name5       ;
-; pin_name64  ; pin_name5  ; 3.452 ; 3.489 ; Rise       ; pin_name5       ;
-; pin_name65  ; pin_name5  ; 3.347 ; 3.374 ; Rise       ; pin_name5       ;
-; pin_name66  ; pin_name5  ; 3.367 ; 3.351 ; Rise       ; pin_name5       ;
-; pin_name67  ; pin_name5  ; 3.372 ; 3.356 ; Rise       ; pin_name5       ;
-; pin_name68  ; pin_name5  ; 3.438 ; 3.476 ; Rise       ; pin_name5       ;
-; pin_name69  ; pin_name5  ; 3.452 ; 3.439 ; Rise       ; pin_name5       ;
-; pin_name610 ; pin_name5  ; 3.349 ; 3.373 ; Rise       ; pin_name5       ;
-; pin_name611 ; pin_name5  ; 3.332 ; 3.360 ; Rise       ; pin_name5       ;
-; pin_name612 ; pin_name5  ; 3.360 ; 3.385 ; Rise       ; pin_name5       ;
-; pin_name613 ; pin_name5  ; 3.457 ; 3.447 ; Rise       ; pin_name5       ;
-; pin_name614 ; pin_name5  ; 3.319 ; 3.344 ; Rise       ; pin_name5       ;
-; pin_name615 ; pin_name5  ; 3.355 ; 3.339 ; Rise       ; pin_name5       ;
-+-------------+------------+-------+-------+------------+-----------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1087,70 +264,37 @@ No synchronizer chains to report.
 +---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
 ; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
 +---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
-; pin_name615   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; pin_name614   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; pin_name613   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; pin_name612   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; pin_name611   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; pin_name610   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; pin_name69    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; pin_name68    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; pin_name67    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; pin_name66    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; pin_name65    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; pin_name64    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; pin_name63    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; pin_name62    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; pin_name61    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; pin_name60    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; ~ALTERA_NCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 +---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
 
 
-+-------------------------------------------------------------------+
-; Input Transition Times                                            ;
-+----------------+--------------+-----------------+-----------------+
-; Pin            ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
-+----------------+--------------+-----------------+-----------------+
-; pin_name6      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name515    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name4[15]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name5      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name514    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name4[14]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name513    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name4[13]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name512    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name4[12]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name511    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name4[11]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name510    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name4[10]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name59     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name4[9]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name58     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name4[8]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name57     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name4[7]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name56     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name4[6]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name55     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name4[5]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name54     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name4[4]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name53     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name4[3]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name52     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name4[2]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name51     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name4[1]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name50     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; pin_name4[0]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; ~ALTERA_DATA0~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; ~ALTERA_ASDO~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; ~ALTERA_NCSO~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-+----------------+--------------+-----------------+-----------------+
++--------------------------------------------------------------------+
+; Input Transition Times                                             ;
++-----------------+--------------+-----------------+-----------------+
+; Pin             ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-----------------+--------------+-----------------+-----------------+
+; clk             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; instruction[15] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; instruction[14] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; instruction[13] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; instruction[12] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; instruction[11] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; instruction[10] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; instruction[9]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; instruction[8]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; instruction[7]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; instruction[6]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; instruction[5]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; instruction[4]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; instruction[3]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; instruction[2]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; instruction[1]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; instruction[0]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO~   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_NCSO~   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-----------------+--------------+-----------------+-----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1158,22 +302,6 @@ No synchronizer chains to report.
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
-; pin_name615   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
-; pin_name614   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
-; pin_name613   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
-; pin_name612   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
-; pin_name611   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
-; pin_name610   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
-; pin_name69    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
-; pin_name68    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
-; pin_name67    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
-; pin_name66    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
-; pin_name65    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
-; pin_name64    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
-; pin_name63    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
-; pin_name62    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.34 V              ; -0.00633 V          ; 0.232 V                              ; 0.083 V                              ; 1.94e-09 s                  ; 1.83e-09 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.34 V             ; -0.00633 V         ; 0.232 V                             ; 0.083 V                             ; 1.94e-09 s                 ; 1.83e-09 s                 ; No                        ; Yes                       ;
-; pin_name61    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
-; pin_name60    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
 ; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.76e-09 V                   ; 2.4 V               ; -0.034 V            ; 0.102 V                              ; 0.065 V                              ; 2.49e-10 s                  ; 3.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.76e-09 V                  ; 2.4 V              ; -0.034 V           ; 0.102 V                             ; 0.065 V                             ; 2.49e-10 s                 ; 3.49e-10 s                 ; Yes                       ; Yes                       ;
 ; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.94e-09 V                   ; 2.39 V              ; -0.0344 V           ; 0.156 V                              ; 0.089 V                              ; 2.68e-10 s                  ; 2.6e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.94e-09 V                  ; 2.39 V             ; -0.0344 V          ; 0.156 V                             ; 0.089 V                             ; 2.68e-10 s                 ; 2.6e-10 s                  ; Yes                       ; Yes                       ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
@@ -1184,22 +312,6 @@ No synchronizer chains to report.
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
-; pin_name615   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
-; pin_name614   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
-; pin_name613   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
-; pin_name612   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
-; pin_name611   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
-; pin_name610   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
-; pin_name69    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
-; pin_name68    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
-; pin_name67    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
-; pin_name66    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
-; pin_name65    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
-; pin_name64    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
-; pin_name63    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
-; pin_name62    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.33 V              ; -0.00252 V          ; 0.203 V                              ; 0.046 V                              ; 2.34e-09 s                  ; 2.24e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.33 V             ; -0.00252 V         ; 0.203 V                             ; 0.046 V                             ; 2.34e-09 s                 ; 2.24e-09 s                 ; Yes                       ; Yes                       ;
-; pin_name61    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
-; pin_name60    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
 ; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.93e-07 V                   ; 2.37 V              ; -0.0278 V           ; 0.106 V                              ; 0.115 V                              ; 2.69e-10 s                  ; 4.05e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.93e-07 V                  ; 2.37 V             ; -0.0278 V          ; 0.106 V                             ; 0.115 V                             ; 2.69e-10 s                 ; 4.05e-10 s                 ; Yes                       ; Yes                       ;
 ; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.76e-07 V                   ; 2.36 V              ; -0.00439 V          ; 0.088 V                              ; 0.007 V                              ; 4.05e-10 s                  ; 3.35e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 9.76e-07 V                  ; 2.36 V             ; -0.00439 V         ; 0.088 V                             ; 0.007 V                             ; 4.05e-10 s                 ; 3.35e-10 s                 ; Yes                       ; Yes                       ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
@@ -1210,22 +322,6 @@ No synchronizer chains to report.
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
-; pin_name615   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
-; pin_name614   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
-; pin_name613   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
-; pin_name612   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
-; pin_name611   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
-; pin_name610   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
-; pin_name69    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
-; pin_name68    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
-; pin_name67    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
-; pin_name66    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
-; pin_name65    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
-; pin_name64    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
-; pin_name63    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
-; pin_name62    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.65 V              ; -0.0109 V           ; 0.234 V                              ; 0.125 V                              ; 1.64e-09 s                  ; 1.59e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.65 V             ; -0.0109 V          ; 0.234 V                             ; 0.125 V                             ; 1.64e-09 s                 ; 1.59e-09 s                 ; No                        ; Yes                       ;
-; pin_name61    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
-; pin_name60    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
 ; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.06e-08 V                   ; 2.86 V              ; -0.0341 V           ; 0.364 V                              ; 0.046 V                              ; 1.17e-10 s                  ; 2.6e-10 s                   ; No                         ; Yes                        ; 2.62 V                      ; 3.06e-08 V                  ; 2.86 V             ; -0.0341 V          ; 0.364 V                             ; 0.046 V                             ; 1.17e-10 s                 ; 2.6e-10 s                  ; No                        ; Yes                       ;
 ; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.81e-08 V                   ; 2.72 V              ; -0.0542 V           ; 0.144 V                              ; 0.087 V                              ; 2.55e-10 s                  ; 2.14e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 3.81e-08 V                  ; 2.72 V             ; -0.0542 V          ; 0.144 V                             ; 0.087 V                             ; 2.55e-10 s                 ; 2.14e-10 s                 ; Yes                       ; Yes                       ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
@@ -1256,10 +352,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 32    ; 32   ;
-; Unconstrained Input Port Paths  ; 32    ; 32   ;
-; Unconstrained Output Ports      ; 16    ; 16   ;
-; Unconstrained Output Port Paths ; 16    ; 16   ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 0     ; 0    ;
+; Unconstrained Output Port Paths ; 0     ; 0    ;
 +---------------------------------+-------+------+
 
 
@@ -1269,7 +365,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Sun Nov 03 22:12:38 2019
+    Info: Processing started: Thu Nov 07 21:42:42 2019
 Info: Command: quartus_sta IncompleteDatapath -c IncompleteDatapath
 Info: qsta_default_script.tcl version: #3
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
@@ -1277,56 +373,48 @@ Info (21076): High junction temperature operating condition is not set. Assuming
 Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'IncompleteDatapath.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name pin_name5 pin_name5
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
 Info: Analyzing Slow 1200mV 85C Model
 Info (332140): No fmax paths to report
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Critical Warning (332148): Timing requirements not met
-    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case minimum pulse width slack is -3.000
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -19.000 pin_name5 
+Info (332140): No Minimum Pulse Width paths to report
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332140): No fmax paths to report
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Critical Warning (332148): Timing requirements not met
-    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case minimum pulse width slack is -3.000
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -19.000 pin_name5 
+Info (332140): No Minimum Pulse Width paths to report
 Info: Analyzing Fast 1200mV 0C Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Critical Warning (332148): Timing requirements not met
-    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case minimum pulse width slack is -3.000
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -19.404 pin_name5 
-Info (332102): Design is not fully constrained for setup requirements
-Info (332102): Design is not fully constrained for hold requirements
+Info (332140): No Minimum Pulse Width paths to report
+Info (332101): Design is fully constrained for setup requirements
+Info (332101): Design is fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4800 megabytes
-    Info: Processing ended: Sun Nov 03 22:12:42 2019
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 4772 megabytes
+    Info: Processing ended: Thu Nov 07 21:42:52 2019
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:05
 
 
