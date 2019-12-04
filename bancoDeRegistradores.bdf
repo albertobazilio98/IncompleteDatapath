@@ -732,14 +732,14 @@ agreement for further details.
 )
 (symbol
 	(rect 912 -360 1080 -24)
-	(text "MUX" (rect 5 0 27 12)(font "Arial" ))
-	(text "inst17" (rect 8 320 37 332)(font "Arial" ))
+	(text "MUX_16" (rect 5 0 45 12)(font "Arial" ))
+	(text "inst16" (rect 8 320 37 332)(font "Arial" ))
 	(port
-		(pt 88 0)
+		(pt 80 0)
 		(input)
 		(text "S[3..0]" (rect 0 0 33 12)(font "Arial" ))
-		(text "S[3..0]" (rect 80 25 92 58)(font "Arial" )(vertical))
-		(line (pt 88 0)(pt 88 16)(line_width 3))
+		(text "S[3..0]" (rect 72 25 84 58)(font "Arial" )(vertical))
+		(line (pt 80 0)(pt 80 16)(line_width 3))
 	)
 	(port
 		(pt 0 48)
@@ -857,7 +857,7 @@ agreement for further details.
 		(pt 168 168)
 		(output)
 		(text "R[15..0]" (rect 0 0 40 12)(font "Arial" ))
-		(text "R[15..0]" (rect 114 163 154 175)(font "Arial" ))
+		(text "R[15..0]" (rect 103 160 143 172)(font "Arial" ))
 		(line (pt 168 168)(pt 152 168)(line_width 3))
 	)
 	(drawing
@@ -866,14 +866,14 @@ agreement for further details.
 )
 (symbol
 	(rect 912 16 1080 352)
-	(text "MUX" (rect 5 0 27 12)(font "Arial" ))
-	(text "inst18" (rect 8 320 37 332)(font "Arial" ))
+	(text "MUX_16" (rect 5 0 45 12)(font "Arial" ))
+	(text "inst17" (rect 8 320 37 332)(font "Arial" ))
 	(port
-		(pt 88 0)
+		(pt 80 0)
 		(input)
 		(text "S[3..0]" (rect 0 0 33 12)(font "Arial" ))
-		(text "S[3..0]" (rect 80 25 92 58)(font "Arial" )(vertical))
-		(line (pt 88 0)(pt 88 16)(line_width 3))
+		(text "S[3..0]" (rect 72 25 84 58)(font "Arial" )(vertical))
+		(line (pt 80 0)(pt 80 16)(line_width 3))
 	)
 	(port
 		(pt 0 48)
@@ -991,7 +991,7 @@ agreement for further details.
 		(pt 168 168)
 		(output)
 		(text "R[15..0]" (rect 0 0 40 12)(font "Arial" ))
-		(text "R[15..0]" (rect 114 163 154 175)(font "Arial" ))
+		(text "R[15..0]" (rect 103 160 143 172)(font "Arial" ))
 		(line (pt 168 168)(pt 152 168)(line_width 3))
 	)
 	(drawing
@@ -1744,28 +1744,8 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1000 16)
-	(pt 1000 0)
-	(bus)
-)
-(connector
-	(pt 504 0)
-	(pt 1000 0)
-	(bus)
-)
-(connector
 	(pt -208 -488)
 	(pt 504 -488)
-	(bus)
-)
-(connector
-	(pt 504 -488)
-	(pt 504 0)
-	(bus)
-)
-(connector
-	(pt 520 -360)
-	(pt 1000 -360)
 	(bus)
 )
 (connector
@@ -1843,6 +1823,26 @@ agreement for further details.
 (connector
 	(pt 1224 184)
 	(pt 1080 184)
+	(bus)
+)
+(connector
+	(pt 520 -360)
+	(pt 992 -360)
+	(bus)
+)
+(connector
+	(pt 992 16)
+	(pt 992 0)
+	(bus)
+)
+(connector
+	(pt 504 0)
+	(pt 992 0)
+	(bus)
+)
+(connector
+	(pt 504 -488)
+	(pt 504 0)
 	(bus)
 )
 (junction (pt 648 64))

@@ -1,0 +1,597 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/altera/14.1
+Eadder16bit
+Z0 w1574737368
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim
+Z4 8C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/adder16bit.vhd
+Z5 FC:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/adder16bit.vhd
+l0
+L25
+VNPFAB4QP<[W]fbC1:kieM3
+!s100 n?nF2gBB0Rc5Kgm=beikl3
+Z6 OV;C;10.3c;59
+32
+Z7 !s110 1574737910
+!i10b 1
+Z8 !s108 1574737910.464000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/adder16bit.vhd|
+Z10 !s107 C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/adder16bit.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1
+Abdf_type
+R1
+R2
+DEx4 work 10 adder16bit 0 22 NPFAB4QP<[W]fbC1:kieM3
+l62
+L34
+V<4;m@3N2V1P92mYR_z47V0
+!s100 E68ZCOXQM;Hm1A^Cln_Xl3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ealu
+Z13 w1574737516
+R1
+R2
+R3
+Z14 8C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/ALU.vhd
+Z15 FC:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/ALU.vhd
+l0
+L25
+VCD9=6kQ5k2`AIQ^6zYQfj1
+!s100 2zCG4LN[=@F[;`7`9:;K70
+R6
+32
+Z16 !s110 1574737911
+!i10b 1
+Z17 !s108 1574737911.160000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/ALU.vhd|
+Z19 !s107 C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/ALU.vhd|
+!i113 1
+R11
+R12
+Abdf_type
+R1
+R2
+DEx4 work 3 alu 0 22 CD9=6kQ5k2`AIQ^6zYQfj1
+l69
+L36
+VPZKZ@Y]af5h:zl[4e8e9Q1
+!s100 7fBQe1?GVCFHW]c[acel`2
+R6
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Ebancoderegistradores
+Z20 w1574736967
+R1
+R2
+R3
+Z21 8C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/bancoDeRegistradores.vhd
+Z22 FC:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/bancoDeRegistradores.vhd
+l0
+L25
+V]<lZ^C=z20mfgJ0VU=T_32
+!s100 foVU^SnW@4?]33b@OOG]m0
+R6
+32
+R16
+!i10b 1
+Z23 !s108 1574737911.831000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/bancoDeRegistradores.vhd|
+Z25 !s107 C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/bancoDeRegistradores.vhd|
+!i113 1
+R11
+R12
+Abdf_type
+R1
+R2
+DEx4 work 20 bancoderegistradores 0 22 ]<lZ^C=z20mfgJ0VU=T_32
+l125
+L38
+VjShiYK[6[a5`z10J7MzSd3
+!s100 VFFGNRXnD5XNle5:5oeaY0
+R6
+32
+R16
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R11
+R12
+Ecu
+Z26 w1573176669
+R1
+R2
+R3
+Z27 8C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/CU.vhd
+Z28 FC:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/CU.vhd
+l0
+L4
+V1OPQYzK5Z@CIb`[B1724g0
+!s100 ZHb]hE01[LB[6H`2NdD[T0
+R6
+32
+Z29 !s110 1574737912
+!i10b 1
+Z30 !s108 1574737912.522000
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/CU.vhd|
+Z32 !s107 C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/CU.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R1
+R2
+DEx4 work 2 cu 0 22 1OPQYzK5Z@CIb`[B1724g0
+l15
+L14
+V1z7S;;Ae]mS3=olhfIXKn1
+!s100 0]QnaA<lf?A84dB8RcM_Y2
+R6
+32
+R29
+!i10b 1
+R30
+R31
+R32
+!i113 1
+R11
+R12
+Edemux
+Z33 w1572827143
+R1
+R2
+R3
+Z34 8C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/demux.vhd
+Z35 FC:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/demux.vhd
+l0
+L4
+VaTSWg@1zOh23m]aZC37zH3
+!s100 gb=jS`HIcTZCIdJAf]X@h2
+R6
+32
+Z36 !s110 1574737913
+!i10b 1
+Z37 !s108 1574737913.168000
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/demux.vhd|
+Z39 !s107 C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/demux.vhd|
+!i113 1
+R11
+R12
+Aselector
+R1
+R2
+DEx4 work 5 demux 0 22 aTSWg@1zOh23m]aZC37zH3
+l13
+L12
+VOKi=Z;VPUdBcm23dfZDV61
+!s100 =CK5haY]56<:67_1OU@la0
+R6
+32
+R36
+!i10b 1
+R37
+R38
+R39
+!i113 1
+R11
+R12
+Edemux2bit
+Z40 w1572830035
+R1
+R2
+R3
+Z41 8C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/demux2bit.vhd
+Z42 FC:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/demux2bit.vhd
+l0
+L4
+VPVlJmz`Z@kO]]mUY>[Eek1
+!s100 <m:hejR9ne07NAAk_bz1h1
+R6
+32
+Z43 !s110 1574737914
+!i10b 1
+Z44 !s108 1574737914.138000
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/demux2bit.vhd|
+Z46 !s107 C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/demux2bit.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R1
+R2
+DEx4 work 9 demux2bit 0 22 PVlJmz`Z@kO]]mUY>[Eek1
+l14
+L13
+Vjc:=T5GP2VHGNCh0;gC@X3
+!s100 EeB^O=7M5NK_:KU[YK?Mi0
+R6
+32
+R43
+!i10b 1
+R44
+R45
+R46
+!i113 1
+R11
+R12
+Efulladder
+Z47 w1572821671
+R1
+R2
+R3
+Z48 8C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/fullAdder.vhd
+Z49 FC:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/fullAdder.vhd
+l0
+L4
+V7?:ld9hd6WPoc]PWXB:1>2
+!s100 K<_ohm:8kkZj6BgO@N17^0
+R6
+32
+R43
+!i10b 1
+Z50 !s108 1574737914.810000
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/fullAdder.vhd|
+Z52 !s107 C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/fullAdder.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R1
+R2
+DEx4 work 9 fulladder 0 22 7?:ld9hd6WPoc]PWXB:1>2
+l13
+L12
+V9mcTk_?_:8Yl=0E08GNoJ0
+!s100 jLC]c?TjQDG?2^zTLWlK80
+R6
+32
+R43
+!i10b 1
+R50
+R51
+R52
+!i113 1
+R11
+R12
+Ehalfadder
+R47
+R1
+R2
+R3
+Z53 8C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/halfAdder.vhd
+Z54 FC:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/halfAdder.vhd
+l0
+L4
+VDb=AcU9J3<CZKZfGKKC;f3
+!s100 PHdm=n_E8[fQ7JO72]d[J1
+R6
+32
+Z55 !s110 1574737915
+!i10b 1
+Z56 !s108 1574737915.854000
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/halfAdder.vhd|
+Z58 !s107 C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/halfAdder.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R1
+R2
+DEx4 work 9 halfadder 0 22 Db=AcU9J3<CZKZfGKKC;f3
+l13
+L12
+V3fzoLS<6a1]Y<jN6efHRB0
+!s100 h_lP?on_3_^69lm[M>=?@3
+R6
+32
+R55
+!i10b 1
+R56
+R57
+R58
+!i113 1
+R11
+R12
+Eincompletedatapath
+Z59 w1574737710
+R1
+R2
+R3
+Z60 8C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/IncompleteDatapath.vhd
+Z61 FC:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/IncompleteDatapath.vhd
+l0
+L25
+VVSi09gzQ>6HkTf`LecGM;2
+!s100 N?;;DD6oa>JZd2?^j4F;k3
+R6
+32
+Z62 !s110 1574737916
+!i10b 1
+Z63 !s108 1574737916.507000
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/IncompleteDatapath.vhd|
+Z65 !s107 C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/IncompleteDatapath.vhd|
+!i113 1
+R11
+R12
+Abdf_type
+R1
+R2
+DEx4 work 18 incompletedatapath 0 22 VSi09gzQ>6HkTf`LecGM;2
+l90
+L34
+VUOgj;Fe4L?_X<hLI_IVz71
+!s100 k57F=9H>QBJg_T=_Oz?9E1
+R6
+32
+R62
+!i10b 1
+R63
+R64
+R65
+!i113 1
+R11
+R12
+Elcu
+Z66 w1574685761
+R1
+R2
+R3
+Z67 8C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/LCU.vhd
+Z68 FC:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/LCU.vhd
+l0
+L4
+VlcPBB2fPMZL9YZMUjTo]M2
+!s100 nLH`aOHMf3QlOKJUNUeZW3
+R6
+32
+Z69 !s110 1574737917
+!i10b 1
+Z70 !s108 1574737917.178000
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/LCU.vhd|
+Z72 !s107 C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/LCU.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R1
+R2
+DEx4 work 3 lcu 0 22 lcPBB2fPMZL9YZMUjTo]M2
+l14
+L12
+Vjh6e]l3VUjlIU3?oo27f<2
+!s100 WoD37nO^F>?IT<f:imW[10
+R6
+32
+R69
+!i10b 1
+R70
+R71
+R72
+!i113 1
+R11
+R12
+Emux
+Z73 w1572827438
+R1
+R2
+R3
+Z74 8C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/mux.vhd
+Z75 FC:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/mux.vhd
+l0
+L4
+V=UhgZ[RXCc@b8;CbG;kmc1
+!s100 b5@b=>S4zNXURzD6a8Iab1
+R6
+32
+Z76 !s110 1574737918
+!i10b 1
+Z77 !s108 1574737918.113000
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/mux.vhd|
+Z79 !s107 C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/mux.vhd|
+!i113 1
+R11
+R12
+Aselector
+R1
+R2
+DEx4 work 3 mux 0 22 =UhgZ[RXCc@b8;CbG;kmc1
+l13
+L12
+VJJ5Dh?eMVOA``hAim<HjY3
+!s100 ?5z[fQAzFJ6bdUQP3jKBS2
+R6
+32
+R76
+!i10b 1
+R77
+R78
+R79
+!i113 1
+R11
+R12
+Emux_16
+Z80 w1574736713
+R1
+R2
+R3
+Z81 8C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/mux_16.vhd
+Z82 FC:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/mux_16.vhd
+l0
+L4
+VK>N_=9>8M:Rzc]PRh]Wo80
+!s100 nFa[2=Pk;JjJf]G72>Scn0
+R6
+32
+Z83 !s110 1574737919
+!i10b 1
+Z84 !s108 1574737919.433000
+Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/mux_16.vhd|
+Z86 !s107 C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/mux_16.vhd|
+!i113 1
+R11
+R12
+Aselector
+R1
+R2
+DEx4 work 6 mux_16 0 22 K>N_=9>8M:Rzc]PRh]Wo80
+l13
+L12
+VDEVCS]m7X;[;m_n<FnDGo0
+!s100 Amz6_Vi?=F1e;zh;R6ajz1
+R6
+32
+R83
+!i10b 1
+R84
+R85
+R86
+!i113 1
+R11
+R12
+Emux_1_bit
+Z87 w1573170831
+R1
+R2
+R3
+Z88 8C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/mux_1_bit.vhd
+Z89 FC:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/mux_1_bit.vhd
+l0
+L4
+VkFgTZO5QnAI>AV0<X[IBd1
+!s100 Cg2RRLoUcNc2jFj0Q8<fz2
+R6
+32
+R76
+!i10b 1
+Z90 !s108 1574737918.765000
+Z91 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/mux_1_bit.vhd|
+Z92 !s107 C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/mux_1_bit.vhd|
+!i113 1
+R11
+R12
+Aselector
+R1
+R2
+DEx4 work 9 mux_1_bit 0 22 kFgTZO5QnAI>AV0<X[IBd1
+l13
+L12
+V7BY<eA19o@gHCbjg13_6Q2
+!s100 GT=@]<]mLUidg[n9OO3IP2
+R6
+32
+R76
+!i10b 1
+R90
+R91
+R92
+!i113 1
+R11
+R12
+Eregistrador
+Z93 w1572817502
+R1
+R2
+R3
+Z94 8C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/registrador.vhd
+Z95 FC:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/registrador.vhd
+l0
+L3
+V9YFf3^jKPHYZeR9FMi6Nm3
+!s100 OB7=Q9==1Ch;:Se5o?<oa1
+R6
+32
+Z96 !s110 1574737920
+!i10b 1
+Z97 !s108 1574737920.159000
+Z98 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/registrador.vhd|
+Z99 !s107 C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/registrador.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R1
+R2
+Z100 DEx4 work 11 registrador 0 22 9YFf3^jKPHYZeR9FMi6Nm3
+l12
+L11
+Z101 VPJSmgfHc2B>hMMEX1NWeT0
+Z102 !s100 oaUSnEmLM?c;dSzW6@VQc2
+R6
+32
+R96
+!i10b 1
+R97
+R98
+R99
+!i113 1
+R11
+R12
+Esign_extend
+Z103 w1573173372
+Z104 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R1
+R2
+R3
+Z105 8C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/sign_extend.vhd
+Z106 FC:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/sign_extend.vhd
+l0
+L5
+V?YclBbX1kE772ANH]A<5m0
+!s100 d9Kah>@CK364FKBE>QUBd2
+R6
+32
+Z107 !s110 1574737909
+!i10b 1
+Z108 !s108 1574737909.817000
+Z109 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/sign_extend.vhd|
+Z110 !s107 C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/sign_extend.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R104
+R1
+R2
+DEx4 work 11 sign_extend 0 22 ?YclBbX1kE772ANH]A<5m0
+l13
+L12
+Vj?d]DOCRT9XjMXTX^fWlC0
+!s100 n:5JFle;AVQT5WaY2=jeh1
+R6
+32
+R107
+!i10b 1
+R108
+R109
+R110
+!i113 1
+R11
+R12

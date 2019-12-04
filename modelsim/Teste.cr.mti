@@ -1,0 +1,122 @@
+C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/halfAdder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/halfAdder.vhd
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity halfAdder
+-- Compiling architecture behavior of halfAdder
+
+} {} {}} C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/LCU.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/LCU.vhd
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity LCU
+-- Compiling architecture behavior of LCU
+
+} {} {}} C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/demux2bit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/demux2bit.vhd
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity demux2bit
+-- Compiling architecture behavior of demux2bit
+
+} {} {}} C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/IncompleteDatapath.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/IncompleteDatapath.vhd
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity IncompleteDatapath
+-- Compiling architecture bdf_type of IncompleteDatapath
+
+} {} {}} C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/mux_16.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/mux_16.vhd
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX_16
+-- Compiling architecture SELECTOR of MUX_16
+
+} {} {}} C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/CU.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/CU.vhd
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity CU
+-- Compiling architecture behavior of CU
+
+} {} {}} C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/bancoDeRegistradores.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/bancoDeRegistradores.vhd
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity bancoDeRegistradores
+-- Compiling architecture bdf_type of bancoDeRegistradores
+
+} {} {}} C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/ALU.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/ALU.vhd
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ALU
+-- Compiling architecture bdf_type of ALU
+
+} {} {}} C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/mux.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/mux.vhd
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX
+-- Compiling architecture SELECTOR of MUX
+
+} {} {}} C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/demux.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/demux.vhd
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity DEMUX
+-- Compiling architecture SELECTOR of DEMUX
+
+} {} {}} C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/fullAdder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/fullAdder.vhd
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fullAdder
+-- Compiling architecture behavior of fullAdder
+
+} {} {}} C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/adder16bit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/adder16bit.vhd
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity adder16bit
+-- Compiling architecture bdf_type of adder16bit
+
+} {} {}} C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/registrador.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/registrador.vhd
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity registrador
+-- Compiling architecture behavior of registrador
+
+} {} {}} C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/mux_1_bit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/mux_1_bit.vhd
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX_1_bit
+-- Compiling architecture SELECTOR of MUX_1_bit
+
+} {} {}} C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/sign_extend.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/modelsim/sign_extend.vhd
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity sign_extend
+-- Compiling architecture behavior of sign_extend
+
+} {} {}}

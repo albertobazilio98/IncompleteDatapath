@@ -1,5 +1,5 @@
 Analysis & Synthesis report for IncompleteDatapath
-Thu Nov 07 21:42:05 2019
+Mon Nov 25 23:09:21 2019
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -13,10 +13,13 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Port Connectivity Checks: "ALU:b2v_inst8|adder16bit:b2v_inst2|LCU:b2v_inst"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +46,16 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 07 21:42:05 2019      ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 25 23:09:21 2019      ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                      ; IncompleteDatapath                         ;
 ; Top-level Entity Name              ; IncompleteDatapath                         ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 0                                          ;
-;     Total combinational functions  ; 0                                          ;
-;     Dedicated logic registers      ; 0                                          ;
-; Total registers                    ; 0                                          ;
-; Total pins                         ; 17                                         ;
+; Total logic elements               ; 677                                        ;
+;     Total combinational functions  ; 677                                        ;
+;     Dedicated logic registers      ; 272                                        ;
+; Total registers                    ; 272                                        ;
+; Total pins                         ; 33                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -167,26 +170,26 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                      ; Library ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------+---------+
-; CU.vhd                           ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/CU.vhd                   ;         ;
-; ALU.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/ALU.bdf                  ;         ;
-; demux2bit.vhd                    ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/demux2bit.vhd            ;         ;
-; IncompleteDatapath.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/IncompleteDatapath.bdf   ;         ;
-; bancoDeRegistradores.bdf         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/bancoDeRegistradores.bdf ;         ;
-; LCU.vhd                          ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/LCU.vhd                  ;         ;
-; halfAdder.vhd                    ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/halfAdder.vhd            ;         ;
-; fullAdder.vhd                    ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/fullAdder.vhd            ;         ;
-; adder16bit.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/adder16bit.bdf           ;         ;
-; registrador.vhd                  ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/registrador.vhd          ;         ;
-; mux.vhd                          ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/mux.vhd                  ;         ;
-; demux.vhd                        ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/demux.vhd                ;         ;
-; mux_1_bit.vhd                    ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/mux_1_bit.vhd            ;         ;
-; sign_extend.vhd                  ; yes             ; User VHDL File                     ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/sign_extend.vhd          ;         ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                             ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                      ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------+---------+
+; IncompleteDatapath.vhd           ; yes             ; User VHDL File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/IncompleteDatapath.vhd   ;         ;
+; ALU.vhd                          ; yes             ; User VHDL File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/ALU.vhd                  ;         ;
+; adder16bit.vhd                   ; yes             ; User VHDL File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/adder16bit.vhd           ;         ;
+; bancoDeRegistradores.vhd         ; yes             ; User VHDL File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/bancoDeRegistradores.vhd ;         ;
+; mux_16.vhd                       ; yes             ; User VHDL File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/mux_16.vhd               ;         ;
+; CU.vhd                           ; yes             ; User VHDL File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/CU.vhd                   ;         ;
+; demux2bit.vhd                    ; yes             ; User VHDL File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/demux2bit.vhd            ;         ;
+; LCU.vhd                          ; yes             ; User VHDL File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/LCU.vhd                  ;         ;
+; halfAdder.vhd                    ; yes             ; User VHDL File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/halfAdder.vhd            ;         ;
+; fullAdder.vhd                    ; yes             ; User VHDL File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/fullAdder.vhd            ;         ;
+; registrador.vhd                  ; yes             ; User VHDL File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/registrador.vhd          ;         ;
+; demux.vhd                        ; yes             ; User VHDL File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/demux.vhd                ;         ;
+; mux_1_bit.vhd                    ; yes             ; User VHDL File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/mux_1_bit.vhd            ;         ;
+; sign_extend.vhd                  ; yes             ; User VHDL File  ; C:/Users/alber/Desktop/arquitetura/IncompleteDatapath/IncompleteDatapath/sign_extend.vhd          ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -194,25 +197,164 @@ agreement for further details.
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 17               ;
+; I/O pins                 ; 33               ;
 ;                          ;                  ;
 ; DSP block 9-bit elements ; 0                ;
 ;                          ;                  ;
-; Maximum fan-out node     ; clk              ;
-; Maximum fan-out          ; 1                ;
-; Total fan-out            ; 17               ;
-; Average fan-out          ; 0.50             ;
+; Maximum fan-out node     ; clk~input        ;
+; Maximum fan-out          ; 272              ;
+; Total fan-out            ; 2973             ;
+; Average fan-out          ; 2.93             ;
 +--------------------------+------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |IncompleteDatapath        ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 17   ; 0            ; |IncompleteDatapath ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                      ;
++-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node          ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                         ; Library Name ;
++-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------+--------------+
+; |IncompleteDatapath                 ; 677 (0)           ; 272 (0)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 33   ; 0            ; |IncompleteDatapath                                                         ; work         ;
+;    |ALU:b2v_inst8|                  ; 62 (1)            ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|ALU:b2v_inst8                                           ; work         ;
+;       |adder16bit:b2v_inst2|        ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2                      ; work         ;
+;          |LCU:b2v_inst|             ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2|LCU:b2v_inst         ; work         ;
+;          |fullAdder:b2v_bit_15|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2|fullAdder:b2v_bit_15 ; work         ;
+;       |demux2bit:b2v_inst|          ; 47 (47)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|ALU:b2v_inst8|demux2bit:b2v_inst                        ; work         ;
+;       |registrador:b2v_inst4|       ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|ALU:b2v_inst8|registrador:b2v_inst4                     ; work         ;
+;    |CU:b2v_inst6|                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|CU:b2v_inst6                                            ; work         ;
+;    |MUX_1_bit:b2v_inst2|            ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|MUX_1_bit:b2v_inst2                                     ; work         ;
+;    |MUX_1_bit:b2v_inst4|            ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|MUX_1_bit:b2v_inst4                                     ; work         ;
+;    |bancoDeRegistradores:b2v_inst7| ; 571 (0)           ; 256 (0)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7                          ; work         ;
+;       |DEMUX:b2v_inst20|            ; 272 (272)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20         ; work         ;
+;       |MUX_16:b2v_inst16|           ; 159 (159)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst16        ; work         ;
+;       |MUX_16:b2v_inst17|           ; 140 (140)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst17        ; work         ;
+;       |registrador:b2v_inst10|      ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|registrador:b2v_inst10   ; work         ;
+;       |registrador:b2v_inst11|      ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|registrador:b2v_inst11   ; work         ;
+;       |registrador:b2v_inst12|      ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|registrador:b2v_inst12   ; work         ;
+;       |registrador:b2v_inst13|      ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|registrador:b2v_inst13   ; work         ;
+;       |registrador:b2v_inst14|      ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|registrador:b2v_inst14   ; work         ;
+;       |registrador:b2v_inst15|      ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|registrador:b2v_inst15   ; work         ;
+;       |registrador:b2v_inst1|       ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|registrador:b2v_inst1    ; work         ;
+;       |registrador:b2v_inst2|       ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|registrador:b2v_inst2    ; work         ;
+;       |registrador:b2v_inst3|       ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|registrador:b2v_inst3    ; work         ;
+;       |registrador:b2v_inst4|       ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|registrador:b2v_inst4    ; work         ;
+;       |registrador:b2v_inst5|       ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|registrador:b2v_inst5    ; work         ;
+;       |registrador:b2v_inst6|       ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|registrador:b2v_inst6    ; work         ;
+;       |registrador:b2v_inst7|       ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|registrador:b2v_inst7    ; work         ;
+;       |registrador:b2v_inst8|       ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|registrador:b2v_inst8    ; work         ;
+;       |registrador:b2v_inst9|       ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|registrador:b2v_inst9    ; work         ;
+;       |registrador:b2v_inst|        ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|registrador:b2v_inst     ; work         ;
++-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                                     ;
++-------------------------------------------------------+--------------------------------------------------------+------------------------+
+; Latch Name                                            ; Latch Enable Signal                                    ; Free of Timing Hazards ;
++-------------------------------------------------------+--------------------------------------------------------+------------------------+
+; CU:b2v_inst6|aluOp[0]                                 ; CU:b2v_inst6|aluOp[1]                                  ; yes                    ;
+; CU:b2v_inst6|bInvert                                  ; CU:b2v_inst6|aluOp[1]                                  ; yes                    ;
+; CU:b2v_inst6|aluOp[1]                                 ; CU:b2v_inst6|aluOp[1]                                  ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D5[0] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D9[0] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D1[0] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Dd[0] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Da[0] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D6[0] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D2[0] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|De[0] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D4[0] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D8[0] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D0[0] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Dc[0] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Db[0] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D7[0] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D3[0] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Df[0] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D9[1] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Da[1] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D8[1] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Db[1] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D5[1] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D6[1] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D4[1] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D7[1] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D1[1] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D2[1] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D0[1] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D3[1] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Dd[1] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|De[1] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Dc[1] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Df[1] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D6[2] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Da[2] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D2[2] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|De[2] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D9[2] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D5[2] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D1[2] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Dd[2] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D8[2] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D4[2] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D0[2] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Dc[2] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D7[2] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Db[2] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D3[2] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Df[2] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Da[3] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Dc[3] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D8[3] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|De[3] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D3[3] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D5[3] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D1[3] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D7[3] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D2[3] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D4[3] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D0[3] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D6[3] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Dd[3] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Db[3] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D9[3] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Df[3] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D5[4] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D9[4] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D1[4] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Dd[4] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Da[4] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D6[4] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D2[4] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|De[4] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D4[4] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D8[4] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D0[4] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Dc[4] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Db[4] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D7[4] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D3[4] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Df[4] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Dc[5] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Da[5] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D8[5] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|De[5] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D3[5] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D5[5] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D1[5] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D7[5] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D2[5] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D4[5] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D0[5] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D6[5] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Db[5] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Dd[5] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D9[5] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Df[5] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|D6[6] ; bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20|Equal0 ; yes                    ;
+; Number of user-specified and inferred latches = 259   ;                                                        ;                        ;
++-------------------------------------------------------+--------------------------------------------------------+------------------------+
+Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -220,7 +362,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 272   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -230,16 +372,44 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |IncompleteDatapath|ALU:b2v_inst8|registrador:b2v_inst4|q[4]               ;
+; 16:1               ; 16 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst16|R[14] ;
+; 16:1               ; 14 bits   ; 140 LEs       ; 140 LEs              ; 0 LEs                  ; No         ; |IncompleteDatapath|bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst17|R[1]  ;
+; 32:1               ; 2 bits    ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; No         ; |IncompleteDatapath|MUX_1_bit:b2v_inst4|R[0]                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:b2v_inst8|adder16bit:b2v_inst2|LCU:b2v_inst"                                     ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; c[15] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 17                              ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 33                          ;
+; cycloneiii_ff         ; 272                         ;
+;     plain             ; 272                         ;
+; cycloneiii_lcell_comb ; 677                         ;
+;     normal            ; 677                         ;
+;         2 data inputs ; 18                          ;
+;         3 data inputs ; 292                         ;
+;         4 data inputs ; 367                         ;
+;                       ;                             ;
+; Max LUT depth         ; 21.00                       ;
+; Average LUT depth     ; 7.87                        ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -247,7 +417,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -257,21 +427,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Thu Nov 07 21:41:30 2019
+    Info: Processing started: Mon Nov 25 23:08:59 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off IncompleteDatapath -c IncompleteDatapath
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info (12021): Found 2 design units, including 1 entities, in source file incompletedatapath.vhd
+    Info (12022): Found design unit 1: IncompleteDatapath-bdf_type
+    Info (12023): Found entity 1: IncompleteDatapath
+Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
+    Info (12022): Found design unit 1: ALU-bdf_type
+    Info (12023): Found entity 1: ALU
+Info (12021): Found 2 design units, including 1 entities, in source file adder16bit.vhd
+    Info (12022): Found design unit 1: adder16bit-bdf_type
+    Info (12023): Found entity 1: adder16bit
+Info (12021): Found 2 design units, including 1 entities, in source file bancoderegistradores.vhd
+    Info (12022): Found design unit 1: bancoDeRegistradores-bdf_type
+    Info (12023): Found entity 1: bancoDeRegistradores
+Info (12021): Found 2 design units, including 1 entities, in source file mux_16.vhd
+    Info (12022): Found design unit 1: MUX_16-SELECTOR
+    Info (12023): Found entity 1: MUX_16
 Info (12021): Found 2 design units, including 1 entities, in source file cu.vhd
     Info (12022): Found design unit 1: CU-behavior
     Info (12023): Found entity 1: CU
-Info (12021): Found 1 design units, including 1 entities, in source file alu.bdf
-    Info (12023): Found entity 1: ALU
 Info (12021): Found 2 design units, including 1 entities, in source file demux2bit.vhd
     Info (12022): Found design unit 1: demux2bit-behavior
     Info (12023): Found entity 1: demux2bit
-Info (12021): Found 1 design units, including 1 entities, in source file incompletedatapath.bdf
-    Info (12023): Found entity 1: IncompleteDatapath
-Info (12021): Found 1 design units, including 1 entities, in source file bancoderegistradores.bdf
-    Info (12023): Found entity 1: bancoDeRegistradores
 Info (12021): Found 2 design units, including 1 entities, in source file lcu.vhd
     Info (12022): Found design unit 1: LCU-behavior
     Info (12023): Found entity 1: LCU
@@ -281,15 +460,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file halfadd
 Info (12021): Found 2 design units, including 1 entities, in source file fulladder.vhd
     Info (12022): Found design unit 1: fullAdder-behavior
     Info (12023): Found entity 1: fullAdder
-Info (12021): Found 1 design units, including 1 entities, in source file adder16bit.bdf
-    Info (12023): Found entity 1: adder16bit
 Info (12021): Found 2 design units, including 1 entities, in source file registrador.vhd
     Info (12022): Found design unit 1: registrador-behavior
     Info (12023): Found entity 1: registrador
-Warning (12090): Entity "MUX" obtained from "mux.vhd" instead of from Quartus II megafunction library
-Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
-    Info (12022): Found design unit 1: MUX-SELECTOR
-    Info (12023): Found entity 1: MUX
 Info (12021): Found 2 design units, including 1 entities, in source file demux.vhd
     Info (12022): Found design unit 1: DEMUX-SELECTOR
     Info (12023): Found entity 1: DEMUX
@@ -300,44 +473,35 @@ Info (12021): Found 2 design units, including 1 entities, in source file sign_ex
     Info (12022): Found design unit 1: sign_extend-behavior
     Info (12023): Found entity 1: sign_extend
 Info (12127): Elaborating entity "IncompleteDatapath" for the top level hierarchy
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst"
-Warning (275011): Block or symbol "NOT" of instance "inst1" overlaps another block or symbol
-Info (12128): Elaborating entity "registrador" for hierarchy "ALU:inst|registrador:inst4"
-Info (12128): Elaborating entity "demux2bit" for hierarchy "ALU:inst|demux2bit:inst"
-Warning (10492): VHDL Process Statement warning at demux2bit.vhd(24): signal "e3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info (12128): Elaborating entity "adder16bit" for hierarchy "ALU:inst|adder16bit:inst3"
-Info (12128): Elaborating entity "halfAdder" for hierarchy "ALU:inst|adder16bit:inst3|halfAdder:bit_0"
-Info (12128): Elaborating entity "fullAdder" for hierarchy "ALU:inst|adder16bit:inst3|fullAdder:bit_1"
-Info (12128): Elaborating entity "LCU" for hierarchy "ALU:inst|adder16bit:inst3|LCU:inst"
-Warning (10492): VHDL Process Statement warning at LCU.vhd(19): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at LCU.vhd(21): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info (12128): Elaborating entity "MUX_1_bit" for hierarchy "MUX_1_bit:inst4"
-Info (12128): Elaborating entity "CU" for hierarchy "CU:inst6"
+Info (12128): Elaborating entity "MUX_1_bit" for hierarchy "MUX_1_bit:b2v_inst2"
+Info (12128): Elaborating entity "sign_extend" for hierarchy "sign_extend:b2v_inst3"
+Info (12128): Elaborating entity "CU" for hierarchy "CU:b2v_inst6"
 Warning (10631): VHDL Process Statement warning at CU.vhd(16): inferring latch(es) for signal or variable "aluOp", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at CU.vhd(16): inferring latch(es) for signal or variable "bInvert", which holds its previous value in one or more paths through the process
 Info (10041): Inferred latch for "bInvert" at CU.vhd(16)
 Info (10041): Inferred latch for "aluOp[0]" at CU.vhd(16)
 Info (10041): Inferred latch for "aluOp[1]" at CU.vhd(16)
-Info (12128): Elaborating entity "bancoDeRegistradores" for hierarchy "bancoDeRegistradores:inst1"
-Info (12128): Elaborating entity "MUX" for hierarchy "bancoDeRegistradores:inst1|MUX:inst18"
-Warning (10631): VHDL Process Statement warning at mux.vhd(14): inferring latch(es) for signal or variable "R", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "R[0]" at mux.vhd(14)
-Info (10041): Inferred latch for "R[1]" at mux.vhd(14)
-Info (10041): Inferred latch for "R[2]" at mux.vhd(14)
-Info (10041): Inferred latch for "R[3]" at mux.vhd(14)
-Info (10041): Inferred latch for "R[4]" at mux.vhd(14)
-Info (10041): Inferred latch for "R[5]" at mux.vhd(14)
-Info (10041): Inferred latch for "R[6]" at mux.vhd(14)
-Info (10041): Inferred latch for "R[7]" at mux.vhd(14)
-Info (10041): Inferred latch for "R[8]" at mux.vhd(14)
-Info (10041): Inferred latch for "R[9]" at mux.vhd(14)
-Info (10041): Inferred latch for "R[10]" at mux.vhd(14)
-Info (10041): Inferred latch for "R[11]" at mux.vhd(14)
-Info (10041): Inferred latch for "R[12]" at mux.vhd(14)
-Info (10041): Inferred latch for "R[13]" at mux.vhd(14)
-Info (10041): Inferred latch for "R[14]" at mux.vhd(14)
-Info (10041): Inferred latch for "R[15]" at mux.vhd(14)
-Info (12128): Elaborating entity "DEMUX" for hierarchy "bancoDeRegistradores:inst1|DEMUX:inst20"
+Info (12128): Elaborating entity "bancoDeRegistradores" for hierarchy "bancoDeRegistradores:b2v_inst7"
+Info (12128): Elaborating entity "registrador" for hierarchy "bancoDeRegistradores:b2v_inst7|registrador:b2v_inst"
+Info (12128): Elaborating entity "MUX_16" for hierarchy "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst16"
+Warning (10631): VHDL Process Statement warning at mux_16.vhd(14): inferring latch(es) for signal or variable "R", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "R[0]" at mux_16.vhd(14)
+Info (10041): Inferred latch for "R[1]" at mux_16.vhd(14)
+Info (10041): Inferred latch for "R[2]" at mux_16.vhd(14)
+Info (10041): Inferred latch for "R[3]" at mux_16.vhd(14)
+Info (10041): Inferred latch for "R[4]" at mux_16.vhd(14)
+Info (10041): Inferred latch for "R[5]" at mux_16.vhd(14)
+Info (10041): Inferred latch for "R[6]" at mux_16.vhd(14)
+Info (10041): Inferred latch for "R[7]" at mux_16.vhd(14)
+Info (10041): Inferred latch for "R[8]" at mux_16.vhd(14)
+Info (10041): Inferred latch for "R[9]" at mux_16.vhd(14)
+Info (10041): Inferred latch for "R[10]" at mux_16.vhd(14)
+Info (10041): Inferred latch for "R[11]" at mux_16.vhd(14)
+Info (10041): Inferred latch for "R[12]" at mux_16.vhd(14)
+Info (10041): Inferred latch for "R[13]" at mux_16.vhd(14)
+Info (10041): Inferred latch for "R[14]" at mux_16.vhd(14)
+Info (10041): Inferred latch for "R[15]" at mux_16.vhd(14)
+Info (12128): Elaborating entity "DEMUX" for hierarchy "bancoDeRegistradores:b2v_inst7|DEMUX:b2v_inst20"
 Warning (10631): VHDL Process Statement warning at demux.vhd(14): inferring latch(es) for signal or variable "D0", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at demux.vhd(14): inferring latch(es) for signal or variable "D1", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at demux.vhd(14): inferring latch(es) for signal or variable "D2", which holds its previous value in one or more paths through the process
@@ -610,34 +774,79 @@ Info (10041): Inferred latch for "D0[12]" at demux.vhd(14)
 Info (10041): Inferred latch for "D0[13]" at demux.vhd(14)
 Info (10041): Inferred latch for "D0[14]" at demux.vhd(14)
 Info (10041): Inferred latch for "D0[15]" at demux.vhd(14)
-Info (12128): Elaborating entity "sign_extend" for hierarchy "sign_extend:inst3"
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:b2v_inst8"
+Info (12128): Elaborating entity "demux2bit" for hierarchy "ALU:b2v_inst8|demux2bit:b2v_inst"
+Warning (10492): VHDL Process Statement warning at demux2bit.vhd(24): signal "e3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "adder16bit" for hierarchy "ALU:b2v_inst8|adder16bit:b2v_inst2"
+Info (12128): Elaborating entity "halfAdder" for hierarchy "ALU:b2v_inst8|adder16bit:b2v_inst2|halfAdder:b2v_bit_0"
+Info (12128): Elaborating entity "fullAdder" for hierarchy "ALU:b2v_inst8|adder16bit:b2v_inst2|fullAdder:b2v_bit_1"
+Info (12128): Elaborating entity "LCU" for hierarchy "ALU:b2v_inst8|adder16bit:b2v_inst2|LCU:b2v_inst"
+Warning (10492): VHDL Process Statement warning at LCU.vhd(19): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LCU.vhd(20): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LCU.vhd(21): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LCU.vhd(22): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LCU.vhd(23): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LCU.vhd(24): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LCU.vhd(25): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LCU.vhd(26): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LCU.vhd(27): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LCU.vhd(28): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LCU.vhd(29): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LCU.vhd(30): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LCU.vhd(31): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LCU.vhd(32): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LCU.vhd(33): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LCU.vhd(34): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LCU.vhd(36): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst17|R[0]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst16|R[0]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst17|R[1]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst16|R[1]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst17|R[2]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst16|R[2]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst17|R[3]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst16|R[3]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst17|R[4]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst16|R[4]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst17|R[5]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst16|R[5]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst17|R[6]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst16|R[6]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst17|R[7]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst16|R[7]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst17|R[8]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst16|R[8]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst17|R[9]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst16|R[9]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst17|R[10]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst16|R[10]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst17|R[11]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst16|R[11]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst17|R[12]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst16|R[12]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst17|R[13]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst16|R[13]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst17|R[14]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst16|R[14]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst17|R[15]" is permanently enabled
+Warning (14026): LATCH primitive "bancoDeRegistradores:b2v_inst7|MUX_16:b2v_inst16|R[15]" is permanently enabled
+Warning (13012): Latch CU:b2v_inst6|aluOp[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal instruction[13]
+Warning (13012): Latch CU:b2v_inst6|bInvert has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal instruction[13]
+Warning (13012): Latch CU:b2v_inst6|aluOp[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal instruction[14]
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 17 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk"
-    Warning (15610): No output dependent on input pin "instruction[15]"
-    Warning (15610): No output dependent on input pin "instruction[14]"
-    Warning (15610): No output dependent on input pin "instruction[13]"
-    Warning (15610): No output dependent on input pin "instruction[12]"
-    Warning (15610): No output dependent on input pin "instruction[11]"
-    Warning (15610): No output dependent on input pin "instruction[10]"
-    Warning (15610): No output dependent on input pin "instruction[9]"
-    Warning (15610): No output dependent on input pin "instruction[8]"
-    Warning (15610): No output dependent on input pin "instruction[7]"
-    Warning (15610): No output dependent on input pin "instruction[6]"
-    Warning (15610): No output dependent on input pin "instruction[5]"
-    Warning (15610): No output dependent on input pin "instruction[4]"
-    Warning (15610): No output dependent on input pin "instruction[3]"
-    Warning (15610): No output dependent on input pin "instruction[2]"
-    Warning (15610): No output dependent on input pin "instruction[1]"
-    Warning (15610): No output dependent on input pin "instruction[0]"
-Info (21057): Implemented 17 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 966 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 17 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 42 warnings
-    Info: Peak virtual memory: 4855 megabytes
-    Info: Processing ended: Thu Nov 07 21:42:05 2019
-    Info: Elapsed time: 00:00:35
-    Info: Total CPU time (on all processors): 00:00:53
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 933 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 75 warnings
+    Info: Peak virtual memory: 4860 megabytes
+    Info: Processing ended: Mon Nov 25 23:09:21 2019
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:45
 
 
