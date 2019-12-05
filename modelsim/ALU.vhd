@@ -15,7 +15,7 @@
 
 -- PROGRAM		"Quartus II 64-Bit"
 -- VERSION		"Version 14.1.0 Build 186 12/03/2014 SJ Web Edition"
--- CREATED		"Mon Nov 25 23:05:16 2019"
+-- CREATED		"Wed Dec 04 20:49:43 2019"
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
@@ -45,10 +45,10 @@ COMPONENT demux2bit
 	);
 END COMPONENT;
 
-COMPONENT adder16bit
+COMPONENT adder_16bit_v2
 	PORT(A : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
 		 B : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-		 result : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+		 Result : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
 	);
 END COMPONENT;
 
@@ -72,33 +72,28 @@ BEGIN
 
 b2v_inst : demux2bit
 PORT MAP(e0 => SYNTHESIZED_WIRE_0,
-		 e1 => SYNTHESIZED_WIRE_1,
-		 e2 => SYNTHESIZED_WIRE_2,
-		 e3 => SYNTHESIZED_WIRE_3,
-		 s => aluOp,
-		 q => SYNTHESIZED_WIRE_4);
+         e1 => SYNTHESIZED_WIRE_1,
+         e2 => SYNTHESIZED_WIRE_2,
+         e3 => SYNTHESIZED_WIRE_3,
+         s => aluOp,
+         q => SYNTHESIZED_WIRE_4);
 
 
 SYNTHESIZED_WIRE_0 <= NOT(a);
 
+SYNTHESIZED_WIRE_1 <= a AND b;
 
+SYNTHESIZED_WIRE_2 <= a OR b;
 
-b2v_inst2 : adder16bit
+b2v_inst3 : adder_16bit_v2
 PORT MAP(A => a,
-		 B => b,
-		 result => SYNTHESIZED_WIRE_1);
-
+         B => b,
+         Result => SYNTHESIZED_WIRE_3);
 
 b2v_inst4 : registrador
 PORT MAP(clk => clock,
-		 d => SYNTHESIZED_WIRE_4,
-		 q => result);
-
-
-SYNTHESIZED_WIRE_2 <= a AND b;
-
-
-SYNTHESIZED_WIRE_3 <= b OR a;
+         d => SYNTHESIZED_WIRE_4,
+         q => result);
 
 
 END bdf_type;
