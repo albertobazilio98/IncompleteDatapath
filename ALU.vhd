@@ -72,33 +72,28 @@ BEGIN
 
 b2v_inst : demux2bit
 PORT MAP(e0 => SYNTHESIZED_WIRE_0,
-		 e1 => SYNTHESIZED_WIRE_1,
-		 e2 => SYNTHESIZED_WIRE_2,
-		 e3 => SYNTHESIZED_WIRE_3,
-		 s => aluOp,
-		 q => SYNTHESIZED_WIRE_4);
+         e1 => SYNTHESIZED_WIRE_1,
+         e2 => SYNTHESIZED_WIRE_2,
+         e3 => SYNTHESIZED_WIRE_3,
+         s => aluOp,
+         q => SYNTHESIZED_WIRE_4);
 
 
 SYNTHESIZED_WIRE_0 <= NOT(a);
 
+SYNTHESIZED_WIRE_1 <= a AND b;
 
+SYNTHESIZED_WIRE_2 <= a OR b;
 
 b2v_inst3 : adder_16bit_v2
 PORT MAP(A => a,
-		 B => b,
-		 Result => SYNTHESIZED_WIRE_1);
-
+         B => b,
+         Result => SYNTHESIZED_WIRE_3);
 
 b2v_inst4 : registrador
 PORT MAP(clk => clock,
-		 d => SYNTHESIZED_WIRE_4,
-		 q => result);
-
-
-SYNTHESIZED_WIRE_2 <= a AND b;
-
-
-SYNTHESIZED_WIRE_3 <= b OR a;
+         d => SYNTHESIZED_WIRE_4,
+         q => result);
 
 
 END bdf_type;
