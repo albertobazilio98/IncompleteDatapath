@@ -25,22 +25,22 @@ instruction[12] => bancoderegistradores:b2v_inst7.RD[3]
 instruction[13] => cu:b2v_inst6.opcode[0]
 instruction[14] => cu:b2v_inst6.opcode[1]
 instruction[15] => cu:b2v_inst6.opcode[2]
-pin_name1[0] <= mux_1_bit:b2v_inst2.R[0]
-pin_name1[1] <= mux_1_bit:b2v_inst2.R[1]
-pin_name1[2] <= mux_1_bit:b2v_inst2.R[2]
-pin_name1[3] <= mux_1_bit:b2v_inst2.R[3]
-pin_name1[4] <= mux_1_bit:b2v_inst2.R[4]
-pin_name1[5] <= mux_1_bit:b2v_inst2.R[5]
-pin_name1[6] <= mux_1_bit:b2v_inst2.R[6]
-pin_name1[7] <= mux_1_bit:b2v_inst2.R[7]
-pin_name1[8] <= mux_1_bit:b2v_inst2.R[8]
-pin_name1[9] <= mux_1_bit:b2v_inst2.R[9]
-pin_name1[10] <= mux_1_bit:b2v_inst2.R[10]
-pin_name1[11] <= mux_1_bit:b2v_inst2.R[11]
-pin_name1[12] <= mux_1_bit:b2v_inst2.R[12]
-pin_name1[13] <= mux_1_bit:b2v_inst2.R[13]
-pin_name1[14] <= mux_1_bit:b2v_inst2.R[14]
-pin_name1[15] <= mux_1_bit:b2v_inst2.R[15]
+pin_name1[0] << mux_1_bit:b2v_inst2.R[0]
+pin_name1[1] << mux_1_bit:b2v_inst2.R[1]
+pin_name1[2] << mux_1_bit:b2v_inst2.R[2]
+pin_name1[3] << mux_1_bit:b2v_inst2.R[3]
+pin_name1[4] << mux_1_bit:b2v_inst2.R[4]
+pin_name1[5] << mux_1_bit:b2v_inst2.R[5]
+pin_name1[6] << mux_1_bit:b2v_inst2.R[6]
+pin_name1[7] << mux_1_bit:b2v_inst2.R[7]
+pin_name1[8] << mux_1_bit:b2v_inst2.R[8]
+pin_name1[9] << mux_1_bit:b2v_inst2.R[9]
+pin_name1[10] << mux_1_bit:b2v_inst2.R[10]
+pin_name1[11] << mux_1_bit:b2v_inst2.R[11]
+pin_name1[12] << mux_1_bit:b2v_inst2.R[12]
+pin_name1[13] << mux_1_bit:b2v_inst2.R[13]
+pin_name1[14] << mux_1_bit:b2v_inst2.R[14]
+pin_name1[15] << mux_1_bit:b2v_inst2.R[15]
 
 
 |IncompleteDatapath|MUX_1_bit:b2v_inst2
@@ -2393,118 +2393,118 @@ q[15] <= q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 clock => registrador:b2v_inst4.clk
 a[0] => SYNTHESIZED_WIRE_2[0].IN0
 a[0] => SYNTHESIZED_WIRE_3[0].IN0
-a[0] => adder16bit:b2v_inst2.A[0]
+a[0] => adder_16bit_v2:b2v_inst3.A[0]
 a[0] => demux2bit:b2v_inst.e0[0]
 a[1] => SYNTHESIZED_WIRE_2[1].IN0
 a[1] => SYNTHESIZED_WIRE_3[1].IN0
-a[1] => adder16bit:b2v_inst2.A[1]
+a[1] => adder_16bit_v2:b2v_inst3.A[1]
 a[1] => demux2bit:b2v_inst.e0[1]
 a[2] => SYNTHESIZED_WIRE_2[2].IN0
 a[2] => SYNTHESIZED_WIRE_3[2].IN0
-a[2] => adder16bit:b2v_inst2.A[2]
+a[2] => adder_16bit_v2:b2v_inst3.A[2]
 a[2] => demux2bit:b2v_inst.e0[2]
 a[3] => SYNTHESIZED_WIRE_2[3].IN0
 a[3] => SYNTHESIZED_WIRE_3[3].IN0
-a[3] => adder16bit:b2v_inst2.A[3]
+a[3] => adder_16bit_v2:b2v_inst3.A[3]
 a[3] => demux2bit:b2v_inst.e0[3]
 a[4] => SYNTHESIZED_WIRE_2[4].IN0
 a[4] => SYNTHESIZED_WIRE_3[4].IN0
-a[4] => adder16bit:b2v_inst2.A[4]
+a[4] => adder_16bit_v2:b2v_inst3.A[4]
 a[4] => demux2bit:b2v_inst.e0[4]
 a[5] => SYNTHESIZED_WIRE_2[5].IN0
 a[5] => SYNTHESIZED_WIRE_3[5].IN0
-a[5] => adder16bit:b2v_inst2.A[5]
+a[5] => adder_16bit_v2:b2v_inst3.A[5]
 a[5] => demux2bit:b2v_inst.e0[5]
 a[6] => SYNTHESIZED_WIRE_2[6].IN0
 a[6] => SYNTHESIZED_WIRE_3[6].IN0
-a[6] => adder16bit:b2v_inst2.A[6]
+a[6] => adder_16bit_v2:b2v_inst3.A[6]
 a[6] => demux2bit:b2v_inst.e0[6]
 a[7] => SYNTHESIZED_WIRE_2[7].IN0
 a[7] => SYNTHESIZED_WIRE_3[7].IN0
-a[7] => adder16bit:b2v_inst2.A[7]
+a[7] => adder_16bit_v2:b2v_inst3.A[7]
 a[7] => demux2bit:b2v_inst.e0[7]
 a[8] => SYNTHESIZED_WIRE_2[8].IN0
 a[8] => SYNTHESIZED_WIRE_3[8].IN0
-a[8] => adder16bit:b2v_inst2.A[8]
+a[8] => adder_16bit_v2:b2v_inst3.A[8]
 a[8] => demux2bit:b2v_inst.e0[8]
 a[9] => SYNTHESIZED_WIRE_2[9].IN0
 a[9] => SYNTHESIZED_WIRE_3[9].IN0
-a[9] => adder16bit:b2v_inst2.A[9]
+a[9] => adder_16bit_v2:b2v_inst3.A[9]
 a[9] => demux2bit:b2v_inst.e0[9]
 a[10] => SYNTHESIZED_WIRE_2[10].IN0
 a[10] => SYNTHESIZED_WIRE_3[10].IN0
-a[10] => adder16bit:b2v_inst2.A[10]
+a[10] => adder_16bit_v2:b2v_inst3.A[10]
 a[10] => demux2bit:b2v_inst.e0[10]
 a[11] => SYNTHESIZED_WIRE_2[11].IN0
 a[11] => SYNTHESIZED_WIRE_3[11].IN0
-a[11] => adder16bit:b2v_inst2.A[11]
+a[11] => adder_16bit_v2:b2v_inst3.A[11]
 a[11] => demux2bit:b2v_inst.e0[11]
 a[12] => SYNTHESIZED_WIRE_2[12].IN0
 a[12] => SYNTHESIZED_WIRE_3[12].IN0
-a[12] => adder16bit:b2v_inst2.A[12]
+a[12] => adder_16bit_v2:b2v_inst3.A[12]
 a[12] => demux2bit:b2v_inst.e0[12]
 a[13] => SYNTHESIZED_WIRE_2[13].IN0
 a[13] => SYNTHESIZED_WIRE_3[13].IN0
-a[13] => adder16bit:b2v_inst2.A[13]
+a[13] => adder_16bit_v2:b2v_inst3.A[13]
 a[13] => demux2bit:b2v_inst.e0[13]
 a[14] => SYNTHESIZED_WIRE_2[14].IN0
 a[14] => SYNTHESIZED_WIRE_3[14].IN0
-a[14] => adder16bit:b2v_inst2.A[14]
+a[14] => adder_16bit_v2:b2v_inst3.A[14]
 a[14] => demux2bit:b2v_inst.e0[14]
 a[15] => SYNTHESIZED_WIRE_2[15].IN0
 a[15] => SYNTHESIZED_WIRE_3[15].IN0
-a[15] => adder16bit:b2v_inst2.A[15]
+a[15] => adder_16bit_v2:b2v_inst3.A[15]
 a[15] => demux2bit:b2v_inst.e0[15]
 aluOp[0] => demux2bit:b2v_inst.s[0]
 aluOp[1] => demux2bit:b2v_inst.s[1]
 b[0] => SYNTHESIZED_WIRE_2[0].IN1
 b[0] => SYNTHESIZED_WIRE_3[0].IN1
-b[0] => adder16bit:b2v_inst2.B[0]
+b[0] => adder_16bit_v2:b2v_inst3.B[0]
 b[1] => SYNTHESIZED_WIRE_2[1].IN1
 b[1] => SYNTHESIZED_WIRE_3[1].IN1
-b[1] => adder16bit:b2v_inst2.B[1]
+b[1] => adder_16bit_v2:b2v_inst3.B[1]
 b[2] => SYNTHESIZED_WIRE_2[2].IN1
 b[2] => SYNTHESIZED_WIRE_3[2].IN1
-b[2] => adder16bit:b2v_inst2.B[2]
+b[2] => adder_16bit_v2:b2v_inst3.B[2]
 b[3] => SYNTHESIZED_WIRE_2[3].IN1
 b[3] => SYNTHESIZED_WIRE_3[3].IN1
-b[3] => adder16bit:b2v_inst2.B[3]
+b[3] => adder_16bit_v2:b2v_inst3.B[3]
 b[4] => SYNTHESIZED_WIRE_2[4].IN1
 b[4] => SYNTHESIZED_WIRE_3[4].IN1
-b[4] => adder16bit:b2v_inst2.B[4]
+b[4] => adder_16bit_v2:b2v_inst3.B[4]
 b[5] => SYNTHESIZED_WIRE_2[5].IN1
 b[5] => SYNTHESIZED_WIRE_3[5].IN1
-b[5] => adder16bit:b2v_inst2.B[5]
+b[5] => adder_16bit_v2:b2v_inst3.B[5]
 b[6] => SYNTHESIZED_WIRE_2[6].IN1
 b[6] => SYNTHESIZED_WIRE_3[6].IN1
-b[6] => adder16bit:b2v_inst2.B[6]
+b[6] => adder_16bit_v2:b2v_inst3.B[6]
 b[7] => SYNTHESIZED_WIRE_2[7].IN1
 b[7] => SYNTHESIZED_WIRE_3[7].IN1
-b[7] => adder16bit:b2v_inst2.B[7]
+b[7] => adder_16bit_v2:b2v_inst3.B[7]
 b[8] => SYNTHESIZED_WIRE_2[8].IN1
 b[8] => SYNTHESIZED_WIRE_3[8].IN1
-b[8] => adder16bit:b2v_inst2.B[8]
+b[8] => adder_16bit_v2:b2v_inst3.B[8]
 b[9] => SYNTHESIZED_WIRE_2[9].IN1
 b[9] => SYNTHESIZED_WIRE_3[9].IN1
-b[9] => adder16bit:b2v_inst2.B[9]
+b[9] => adder_16bit_v2:b2v_inst3.B[9]
 b[10] => SYNTHESIZED_WIRE_2[10].IN1
 b[10] => SYNTHESIZED_WIRE_3[10].IN1
-b[10] => adder16bit:b2v_inst2.B[10]
+b[10] => adder_16bit_v2:b2v_inst3.B[10]
 b[11] => SYNTHESIZED_WIRE_2[11].IN1
 b[11] => SYNTHESIZED_WIRE_3[11].IN1
-b[11] => adder16bit:b2v_inst2.B[11]
+b[11] => adder_16bit_v2:b2v_inst3.B[11]
 b[12] => SYNTHESIZED_WIRE_2[12].IN1
 b[12] => SYNTHESIZED_WIRE_3[12].IN1
-b[12] => adder16bit:b2v_inst2.B[12]
+b[12] => adder_16bit_v2:b2v_inst3.B[12]
 b[13] => SYNTHESIZED_WIRE_2[13].IN1
 b[13] => SYNTHESIZED_WIRE_3[13].IN1
-b[13] => adder16bit:b2v_inst2.B[13]
+b[13] => adder_16bit_v2:b2v_inst3.B[13]
 b[14] => SYNTHESIZED_WIRE_2[14].IN1
 b[14] => SYNTHESIZED_WIRE_3[14].IN1
-b[14] => adder16bit:b2v_inst2.B[14]
+b[14] => adder_16bit_v2:b2v_inst3.B[14]
 b[15] => SYNTHESIZED_WIRE_2[15].IN1
 b[15] => SYNTHESIZED_WIRE_3[15].IN1
-b[15] => adder16bit:b2v_inst2.B[15]
+b[15] => adder_16bit_v2:b2v_inst3.B[15]
 result[0] <= registrador:b2v_inst4.q[0]
 result[1] <= registrador:b2v_inst4.q[1]
 result[2] <= registrador:b2v_inst4.q[2]
@@ -2612,279 +2612,279 @@ q[14] <= q.DB_MAX_OUTPUT_PORT_TYPE
 q[15] <= q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2
-A[0] => halfadder:b2v_bit_0.a
-A[0] => lcu:b2v_inst.a[0]
-A[1] => fulladder:b2v_bit_1.a
-A[1] => lcu:b2v_inst.a[1]
-A[2] => fulladder:b2v_bit_2.a
-A[2] => lcu:b2v_inst.a[2]
-A[3] => fulladder:b2v_bit_3.a
-A[3] => lcu:b2v_inst.a[3]
-A[4] => fulladder:b2v_bit_4.a
-A[4] => lcu:b2v_inst.a[4]
-A[5] => fulladder:b2v_bit_5.a
-A[5] => lcu:b2v_inst.a[5]
-A[6] => fulladder:b2v_bit_6.a
-A[6] => lcu:b2v_inst.a[6]
-A[7] => fulladder:b2v_bit_7.a
-A[7] => lcu:b2v_inst.a[7]
-A[8] => fulladder:b2v_bit_8.a
-A[8] => lcu:b2v_inst.a[8]
-A[9] => fulladder:b2v_bit_9.a
-A[9] => lcu:b2v_inst.a[9]
-A[10] => fulladder:b2v_bit_10.a
-A[10] => lcu:b2v_inst.a[10]
-A[11] => fulladder:b2v_bit_11.a
-A[11] => lcu:b2v_inst.a[11]
-A[12] => fulladder:b2v_bit_12.a
-A[12] => lcu:b2v_inst.a[12]
-A[13] => fulladder:b2v_bit_13.a
-A[13] => lcu:b2v_inst.a[13]
-A[14] => fulladder:b2v_bit_14.a
-A[14] => lcu:b2v_inst.a[14]
-A[15] => fulladder:b2v_bit_15.a
-A[15] => lcu:b2v_inst.a[15]
-B[0] => halfadder:b2v_bit_0.b
-B[0] => lcu:b2v_inst.b[0]
-B[1] => fulladder:b2v_bit_1.b
-B[1] => lcu:b2v_inst.b[1]
-B[2] => fulladder:b2v_bit_2.b
-B[2] => lcu:b2v_inst.b[2]
-B[3] => fulladder:b2v_bit_3.b
-B[3] => lcu:b2v_inst.b[3]
-B[4] => fulladder:b2v_bit_4.b
-B[4] => lcu:b2v_inst.b[4]
-B[5] => fulladder:b2v_bit_5.b
-B[5] => lcu:b2v_inst.b[5]
-B[6] => fulladder:b2v_bit_6.b
-B[6] => lcu:b2v_inst.b[6]
-B[7] => fulladder:b2v_bit_7.b
-B[7] => lcu:b2v_inst.b[7]
-B[8] => fulladder:b2v_bit_8.b
-B[8] => lcu:b2v_inst.b[8]
-B[9] => fulladder:b2v_bit_9.b
-B[9] => lcu:b2v_inst.b[9]
-B[10] => fulladder:b2v_bit_10.b
-B[10] => lcu:b2v_inst.b[10]
-B[11] => fulladder:b2v_bit_11.b
-B[11] => lcu:b2v_inst.b[11]
-B[12] => fulladder:b2v_bit_12.b
-B[12] => lcu:b2v_inst.b[12]
-B[13] => fulladder:b2v_bit_13.b
-B[13] => lcu:b2v_inst.b[13]
-B[14] => fulladder:b2v_bit_14.b
-B[14] => lcu:b2v_inst.b[14]
-B[15] => fulladder:b2v_bit_15.b
-B[15] => lcu:b2v_inst.b[15]
-result[0] <= halfadder:b2v_bit_0.s
-result[1] <= fulladder:b2v_bit_1.s
-result[2] <= fulladder:b2v_bit_2.s
-result[3] <= fulladder:b2v_bit_3.s
-result[4] <= fulladder:b2v_bit_4.s
-result[5] <= fulladder:b2v_bit_5.s
-result[6] <= fulladder:b2v_bit_6.s
-result[7] <= fulladder:b2v_bit_7.s
-result[8] <= fulladder:b2v_bit_8.s
-result[9] <= fulladder:b2v_bit_9.s
-result[10] <= fulladder:b2v_bit_10.s
-result[11] <= fulladder:b2v_bit_11.s
-result[12] <= fulladder:b2v_bit_12.s
-result[13] <= fulladder:b2v_bit_13.s
-result[14] <= fulladder:b2v_bit_14.s
-result[15] <= fulladder:b2v_bit_15.s
+|IncompleteDatapath|ALU:b2v_inst8|adder_16bit_V2:b2v_inst3
+A[0] => fullAdder:gen:0:fAdders.a
+A[1] => fullAdder:gen:1:fAdders.a
+A[2] => fullAdder:gen:2:fAdders.a
+A[3] => fullAdder:gen:3:fAdders.a
+A[4] => fullAdder:gen:4:fAdders.a
+A[5] => fullAdder:gen:5:fAdders.a
+A[6] => fullAdder:gen:6:fAdders.a
+A[7] => fullAdder:gen:7:fAdders.a
+A[8] => fullAdder:gen:8:fAdders.a
+A[9] => fullAdder:gen:9:fAdders.a
+A[10] => fullAdder:gen:10:fAdders.a
+A[11] => fullAdder:gen:11:fAdders.a
+A[12] => fullAdder:gen:12:fAdders.a
+A[13] => fullAdder:gen:13:fAdders.a
+A[14] => fullAdder:gen:14:fAdders.a
+A[15] => fullAdder:gen:15:fAdders.a
+B[0] => fullAdder:gen:0:fAdders.b
+B[1] => fullAdder:gen:1:fAdders.b
+B[2] => fullAdder:gen:2:fAdders.b
+B[3] => fullAdder:gen:3:fAdders.b
+B[4] => fullAdder:gen:4:fAdders.b
+B[5] => fullAdder:gen:5:fAdders.b
+B[6] => fullAdder:gen:6:fAdders.b
+B[7] => fullAdder:gen:7:fAdders.b
+B[8] => fullAdder:gen:8:fAdders.b
+B[9] => fullAdder:gen:9:fAdders.b
+B[10] => fullAdder:gen:10:fAdders.b
+B[11] => fullAdder:gen:11:fAdders.b
+B[12] => fullAdder:gen:12:fAdders.b
+B[13] => fullAdder:gen:13:fAdders.b
+B[14] => fullAdder:gen:14:fAdders.b
+B[15] => fullAdder:gen:15:fAdders.b
+Result[0] <= fullAdder:gen:0:fAdders.s
+Result[1] <= fullAdder:gen:1:fAdders.s
+Result[2] <= fullAdder:gen:2:fAdders.s
+Result[3] <= fullAdder:gen:3:fAdders.s
+Result[4] <= fullAdder:gen:4:fAdders.s
+Result[5] <= fullAdder:gen:5:fAdders.s
+Result[6] <= fullAdder:gen:6:fAdders.s
+Result[7] <= fullAdder:gen:7:fAdders.s
+Result[8] <= fullAdder:gen:8:fAdders.s
+Result[9] <= fullAdder:gen:9:fAdders.s
+Result[10] <= fullAdder:gen:10:fAdders.s
+Result[11] <= fullAdder:gen:11:fAdders.s
+Result[12] <= fullAdder:gen:12:fAdders.s
+Result[13] <= fullAdder:gen:13:fAdders.s
+Result[14] <= fullAdder:gen:14:fAdders.s
+Result[15] <= fullAdder:gen:15:fAdders.s
 
 
-|IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2|halfAdder:b2v_bit_0
+|IncompleteDatapath|ALU:b2v_inst8|adder_16bit_V2:b2v_inst3|fullAdder:\gen:0:fAdders
 a => s.IN0
+a => c.IN0
+a => c.IN0
 b => s.IN1
-s <= s.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2|fullAdder:b2v_bit_1
-a => s.IN0
-b => s.IN1
+b => c.IN1
+b => c.IN0
 cin => s.IN1
+cin => c.IN1
+cin => c.IN1
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2|fullAdder:b2v_bit_10
+|IncompleteDatapath|ALU:b2v_inst8|adder_16bit_V2:b2v_inst3|fullAdder:\gen:1:fAdders
 a => s.IN0
+a => c.IN0
+a => c.IN0
 b => s.IN1
+b => c.IN1
+b => c.IN0
 cin => s.IN1
+cin => c.IN1
+cin => c.IN1
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2|fullAdder:b2v_bit_11
+|IncompleteDatapath|ALU:b2v_inst8|adder_16bit_V2:b2v_inst3|fullAdder:\gen:2:fAdders
 a => s.IN0
+a => c.IN0
+a => c.IN0
 b => s.IN1
+b => c.IN1
+b => c.IN0
 cin => s.IN1
+cin => c.IN1
+cin => c.IN1
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2|fullAdder:b2v_bit_12
+|IncompleteDatapath|ALU:b2v_inst8|adder_16bit_V2:b2v_inst3|fullAdder:\gen:3:fAdders
 a => s.IN0
+a => c.IN0
+a => c.IN0
 b => s.IN1
+b => c.IN1
+b => c.IN0
 cin => s.IN1
+cin => c.IN1
+cin => c.IN1
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2|fullAdder:b2v_bit_13
+|IncompleteDatapath|ALU:b2v_inst8|adder_16bit_V2:b2v_inst3|fullAdder:\gen:4:fAdders
 a => s.IN0
+a => c.IN0
+a => c.IN0
 b => s.IN1
+b => c.IN1
+b => c.IN0
 cin => s.IN1
+cin => c.IN1
+cin => c.IN1
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2|fullAdder:b2v_bit_14
+|IncompleteDatapath|ALU:b2v_inst8|adder_16bit_V2:b2v_inst3|fullAdder:\gen:5:fAdders
 a => s.IN0
+a => c.IN0
+a => c.IN0
 b => s.IN1
+b => c.IN1
+b => c.IN0
 cin => s.IN1
+cin => c.IN1
+cin => c.IN1
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2|fullAdder:b2v_bit_15
+|IncompleteDatapath|ALU:b2v_inst8|adder_16bit_V2:b2v_inst3|fullAdder:\gen:6:fAdders
 a => s.IN0
+a => c.IN0
+a => c.IN0
 b => s.IN1
+b => c.IN1
+b => c.IN0
 cin => s.IN1
+cin => c.IN1
+cin => c.IN1
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2|fullAdder:b2v_bit_2
+|IncompleteDatapath|ALU:b2v_inst8|adder_16bit_V2:b2v_inst3|fullAdder:\gen:7:fAdders
 a => s.IN0
+a => c.IN0
+a => c.IN0
 b => s.IN1
+b => c.IN1
+b => c.IN0
 cin => s.IN1
+cin => c.IN1
+cin => c.IN1
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2|fullAdder:b2v_bit_3
+|IncompleteDatapath|ALU:b2v_inst8|adder_16bit_V2:b2v_inst3|fullAdder:\gen:8:fAdders
 a => s.IN0
+a => c.IN0
+a => c.IN0
 b => s.IN1
+b => c.IN1
+b => c.IN0
 cin => s.IN1
+cin => c.IN1
+cin => c.IN1
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2|fullAdder:b2v_bit_4
+|IncompleteDatapath|ALU:b2v_inst8|adder_16bit_V2:b2v_inst3|fullAdder:\gen:9:fAdders
 a => s.IN0
+a => c.IN0
+a => c.IN0
 b => s.IN1
+b => c.IN1
+b => c.IN0
 cin => s.IN1
+cin => c.IN1
+cin => c.IN1
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2|fullAdder:b2v_bit_5
+|IncompleteDatapath|ALU:b2v_inst8|adder_16bit_V2:b2v_inst3|fullAdder:\gen:10:fAdders
 a => s.IN0
+a => c.IN0
+a => c.IN0
 b => s.IN1
+b => c.IN1
+b => c.IN0
 cin => s.IN1
+cin => c.IN1
+cin => c.IN1
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2|fullAdder:b2v_bit_6
+|IncompleteDatapath|ALU:b2v_inst8|adder_16bit_V2:b2v_inst3|fullAdder:\gen:11:fAdders
 a => s.IN0
+a => c.IN0
+a => c.IN0
 b => s.IN1
+b => c.IN1
+b => c.IN0
 cin => s.IN1
+cin => c.IN1
+cin => c.IN1
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2|fullAdder:b2v_bit_7
+|IncompleteDatapath|ALU:b2v_inst8|adder_16bit_V2:b2v_inst3|fullAdder:\gen:12:fAdders
 a => s.IN0
+a => c.IN0
+a => c.IN0
 b => s.IN1
+b => c.IN1
+b => c.IN0
 cin => s.IN1
+cin => c.IN1
+cin => c.IN1
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2|fullAdder:b2v_bit_8
+|IncompleteDatapath|ALU:b2v_inst8|adder_16bit_V2:b2v_inst3|fullAdder:\gen:13:fAdders
 a => s.IN0
+a => c.IN0
+a => c.IN0
 b => s.IN1
+b => c.IN1
+b => c.IN0
 cin => s.IN1
+cin => c.IN1
+cin => c.IN1
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2|fullAdder:b2v_bit_9
+|IncompleteDatapath|ALU:b2v_inst8|adder_16bit_V2:b2v_inst3|fullAdder:\gen:14:fAdders
 a => s.IN0
+a => c.IN0
+a => c.IN0
 b => s.IN1
+b => c.IN1
+b => c.IN0
 cin => s.IN1
+cin => c.IN1
+cin => c.IN1
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|IncompleteDatapath|ALU:b2v_inst8|adder16bit:b2v_inst2|LCU:b2v_inst
-a[0] => cin.IN0
-a[1] => cin.IN1
-a[1] => cin.IN0
-a[2] => cin.IN1
-a[2] => cin.IN0
-a[3] => cin.IN1
-a[3] => cin.IN0
-a[4] => cin.IN1
-a[4] => cin.IN0
-a[5] => cin.IN1
-a[5] => cin.IN0
-a[6] => cin.IN1
-a[6] => cin.IN0
-a[7] => cin.IN1
-a[7] => cin.IN0
-a[8] => cin.IN1
-a[8] => cin.IN0
-a[9] => cin.IN1
-a[9] => cin.IN0
-a[10] => cin.IN1
-a[10] => cin.IN0
-a[11] => cin.IN1
-a[11] => cin.IN0
-a[12] => cin.IN1
-a[12] => cin.IN0
-a[13] => cin.IN1
-a[13] => cin.IN0
-a[14] => cin.IN1
-a[14] => cin.IN0
-a[15] => cin.IN1
-a[15] => cin.IN0
-b[0] => cin.IN1
-b[1] => cin.IN1
-b[1] => cin.IN1
-b[2] => cin.IN1
-b[2] => cin.IN1
-b[3] => cin.IN1
-b[3] => cin.IN1
-b[4] => cin.IN1
-b[4] => cin.IN1
-b[5] => cin.IN1
-b[5] => cin.IN1
-b[6] => cin.IN1
-b[6] => cin.IN1
-b[7] => cin.IN1
-b[7] => cin.IN1
-b[8] => cin.IN1
-b[8] => cin.IN1
-b[9] => cin.IN1
-b[9] => cin.IN1
-b[10] => cin.IN1
-b[10] => cin.IN1
-b[11] => cin.IN1
-b[11] => cin.IN1
-b[12] => cin.IN1
-b[12] => cin.IN1
-b[13] => cin.IN1
-b[13] => cin.IN1
-b[14] => cin.IN1
-b[14] => cin.IN1
-b[15] => cin.IN1
-b[15] => cin.IN1
-c[0] <= cin.DB_MAX_OUTPUT_PORT_TYPE
-c[1] <= cin.DB_MAX_OUTPUT_PORT_TYPE
-c[2] <= cin.DB_MAX_OUTPUT_PORT_TYPE
-c[3] <= cin.DB_MAX_OUTPUT_PORT_TYPE
-c[4] <= cin.DB_MAX_OUTPUT_PORT_TYPE
-c[5] <= cin.DB_MAX_OUTPUT_PORT_TYPE
-c[6] <= cin.DB_MAX_OUTPUT_PORT_TYPE
-c[7] <= cin.DB_MAX_OUTPUT_PORT_TYPE
-c[8] <= cin.DB_MAX_OUTPUT_PORT_TYPE
-c[9] <= cin.DB_MAX_OUTPUT_PORT_TYPE
-c[10] <= cin.DB_MAX_OUTPUT_PORT_TYPE
-c[11] <= cin.DB_MAX_OUTPUT_PORT_TYPE
-c[12] <= cin.DB_MAX_OUTPUT_PORT_TYPE
-c[13] <= cin.DB_MAX_OUTPUT_PORT_TYPE
-c[14] <= cin.DB_MAX_OUTPUT_PORT_TYPE
-c[15] <= cin.DB_MAX_OUTPUT_PORT_TYPE
+|IncompleteDatapath|ALU:b2v_inst8|adder_16bit_V2:b2v_inst3|fullAdder:\gen:15:fAdders
+a => s.IN0
+a => c.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+b => c.IN0
+cin => s.IN1
+cin => c.IN1
+cin => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |IncompleteDatapath|ALU:b2v_inst8|registrador:b2v_inst4

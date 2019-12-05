@@ -270,9 +270,9 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 352 280 528 360)
-	(text "adder16bit" (rect 5 0 55 12)(font "Arial" ))
-	(text "inst2" (rect 8 64 31 76)(font "Arial" ))
+	(rect 352 280 536 360)
+	(text "adder_16bit_V2" (rect 5 0 80 12)(font "Arial" ))
+	(text "inst3" (rect 8 64 31 76)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -288,14 +288,14 @@ agreement for further details.
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
-		(pt 176 32)
+		(pt 184 32)
 		(output)
-		(text "result[15..0]" (rect 0 0 59 12)(font "Arial" ))
-		(text "result[15..0]" (rect 106 27 165 39)(font "Arial" ))
-		(line (pt 176 32)(pt 160 32)(line_width 3))
+		(text "Result[15..0]" (rect 0 0 63 12)(font "Arial" ))
+		(text "Result[15..0]" (rect 110 27 173 39)(font "Arial" ))
+		(line (pt 184 32)(pt 168 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 160 64))
+		(rectangle (rect 16 16 168 64))
 	)
 )
 (connector
@@ -462,7 +462,7 @@ agreement for further details.
 	(color 0 0 0)
 )
 (connector
-	(pt 528 312)
+	(pt 536 312)
 	(pt 552 312)
 	(bus)
 	(color 255 0 127)
